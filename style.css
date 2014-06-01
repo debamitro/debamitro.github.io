@@ -1,0 +1,12 @@
+body {
+    padding: 10px;
+    font-family: Garamond, serif;
+}
+header {
+    font-size: 28px;
+    border-bottom: solid 1px black;
+}
+.content {
+    font-size: 20px;
+    margin-top: 10px;
+}
