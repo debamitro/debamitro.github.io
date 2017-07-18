@@ -10,7 +10,7 @@ function rollBlinker () {
                        "",
                        "",
                        "1. My technical blog is at http://yetanothertechnicalblog.blotspot.in",
-                       "2. My general blog is at http://isometimesblogt.blotspot.in",
+                       "2. My general blog is at http://isometimesblogat.blogspot.in",
                        "3. My music blog is at http://mysearchformelody.blotspot.in"
                       ];
     var prompt             = "$ ";
