@@ -1,0 +1,5 @@
+baseURL = "https://debamitro.github.io/hugo"
+languageCode = "en-us"
+title = "Home of Debamitro Chakraborti"
+publishDir = "../"
+disableKinds = ["RSS"]
