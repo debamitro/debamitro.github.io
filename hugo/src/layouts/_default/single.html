@@ -6,10 +6,16 @@
       {{ .Title }}
     </title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" />
   </head>
   <body>
-    {{ .Content }}
+    {{ partial "top_menu.html" . }}
+    <div class="my-page-head">
+      {{ .Title }}
+    </div>
+    <div class="my-page-content">
+      {{ .Content }}
+    </div>
   </body>
   
 </html>

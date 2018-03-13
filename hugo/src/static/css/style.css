@@ -7,3 +7,41 @@ h2 {
     font-family: "Times New Roman";
     font-size: 24px;
 }
+
+.my-menu {
+    display: inline;
+    list-style-type: none;
+}
+
+.my-menu-item {
+    display: inline;
+    text-transform: uppercase;
+    font-family: "Arial", "Helvetica";
+    font-size: 12px;
+    margin-left:5px;
+    margin-right:5px;
+    color: black;
+}
+
+.my-menu-item-link {
+    text-decoration: none;
+}
+
+.my-menu-item-link:hover {
+    text-decoration: underline;
+}
+
+.my-menu-bar {
+    width:100%;
+    text-align:right;
+    background-color: #f0f0f0;
+}
+
+.my-page-content {
+    width: 500px;
+}
+
+.my-page-head {
+    font-family: "Garamond";
+    font-size: 40px;
+}

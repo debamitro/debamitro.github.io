@@ -4,11 +4,16 @@
     <title>
 {{ .Title }}
     </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" />
   </head>
   <body>
-    <ul>
-    </ul>
-    Nothing of importance at the moment
+    {{ partial "top_menu.html" . }}
+    <div class="my-page-head">
+      debamitro.github.io
+    </div>
+
+    <div class="my-page-content">
+      Nothing of importance at the moment
+    </div>
   </body>
 </html>
