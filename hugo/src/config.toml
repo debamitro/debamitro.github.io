@@ -1,4 +1,4 @@
-baseURL = "https://debamitro.github.io/hugo"
+baseURL = "https://debamitro.github.io"
 languageCode = "en-us"
 title = "Home page of Debamitro Chakraborti"
 publishDir = "../"
