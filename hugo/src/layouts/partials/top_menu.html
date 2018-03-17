@@ -3,11 +3,10 @@
     <li class="my-menu-item">
       <a href="{{ .Site.BaseURL }}" class="my-menu-item-link">Home</a>
     </li>
+    {{ range .Site.Menus.main }}
     <li class="my-menu-item">
-      <a href="{{ .Site.BaseURL }}/projects" class="my-menu-item-link">Projects</a>
+      <a href="{{ .URL }}" class="my-menu-item-link">{{ .Name }}</a>
     </li>
-    <li class="my-menu-item">
-      <a href="{{ .Site.BaseURL }}/about" class="my-menu-item-link">About</a>
-    </li>
+    {{ end }}
   </ul>
 </div>
