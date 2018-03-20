@@ -2,20 +2,22 @@
 <html>
   <head>
     <title>
-{{ .Title }}
+      {{ .Title }}
     </title>
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" />
   </head>
   <body>
     {{ partial "top_menu.html" . }}
-    <div class="my-page-head">
-      Debamitro Chakraborti
-    </div>
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Debamitro Chakraborti
+      </div>
 
-    <div class="my-page-content">
-      Nothing of importance at the moment, please follow the links at the top
+      <div class="my-page-content">
+        Nothing of importance at the moment, please follow the links at the top
+      </div>
     </div>
-
     {{ partial "bottom.html" . }}
   </body>
 </html>

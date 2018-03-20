@@ -6,16 +6,20 @@
       {{ .Title }}
     </title>
 
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" />
   </head>
   <body>
     {{ partial "top_menu.html" . }}
-    <div class="my-page-head">
-      {{ .Title }}
+    <div class="my-page-container">
+      <div class="my-page-head">
+        {{ .Title }}
+      </div>
+      <div class="my-page-content">
+        {{ .Content }}
+      </div>
     </div>
-    <div class="my-page-content">
-      {{ .Content }}
-    </div>
+    
     {{ partial "bottom.html" . }}
   </body>
   
