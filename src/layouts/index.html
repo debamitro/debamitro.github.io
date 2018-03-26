@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    {{ partial "meta_tags.html" . }}
     <title>
       {{ .Title }}
     </title>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" />
+    {{ partial "head_stylesheets.html" . }}
   </head>
   <body>
     {{ partial "top_menu.html" . }}
