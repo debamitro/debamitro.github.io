@@ -1,7 +1,6 @@
 ---
 title: "RC Mini 5 - Day 0"
 date: 2018-08-12T13:11:41-04:00
-draft: true
 ---
 
 ### 10:57 am
@@ -27,3 +26,6 @@ I am on the bus to NYC now. I am trying to get Hugo to create a blog post, but t
 
 ### 1:08 pm
 I tried to find out a bunch of stuff about Hugo that might help me get past my error. I also tried to see if I could install a specific version of Hugo - I couldn't find that out. I got as far as discovering that my version of Hugo was not expecting the archetypes file to have front matter in TOML format. After hand-converting that to YAML (it was only three lines) I tried again but even that didn't work. So I decided to move to the latest version of Hugo on homebrew - 0.46. I don't like this aspect of open source software at all. Creators of open source software forget that their users might not be interested in troubleshooting problems like this (even if the user is a programmer).
+
+### 10:48 pm
+I got home a while ago after the pre-batch dinner. I chatted a lot with people starting a full batch, in the middle of a full batch, and also some people starting a mini batch like myself. RC seems a very interesting place even before it started.
