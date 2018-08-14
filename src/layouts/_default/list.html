@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
     {{ partial "meta_tags.html" . }}
+
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
     <title>
       {{ .Title }}
     </title>
