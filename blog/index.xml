@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>RC Mini 5 - Day 2</title>
+      <link>https://debamitro.github.io/blog/rc-mini5-day2/</link>
+      <pubDate>Tue, 14 Aug 2018 07:56:15 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/rc-mini5-day2/</guid>
+      <description>(My notes from the second day of RC Mini 5 batch)
+7:58 am I have been up since 6:30am. Can&amp;rsquo;t wait to get started with today at RC. I have been thinking about how to process a variable number of characters from a string in Clojure. I keep getting stuck because I still have the C++ while loop code in my head!
+10:10 am I was the first person in RC today.</description>
+    </item>
+    
+    <item>
       <title>RC Mini 5 - Day 1</title>
       <link>https://debamitro.github.io/blog/rc-mini5-day1/</link>
       <pubDate>Mon, 13 Aug 2018 09:13:23 -0400</pubDate>
