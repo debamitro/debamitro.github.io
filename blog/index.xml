@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>RC Mini 5 - Day 3</title>
+      <link>https://debamitro.github.io/blog/rc-mini5-day3/</link>
+      <pubDate>Wed, 15 Aug 2018 08:15:43 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/rc-mini5-day3/</guid>
+      <description>(My notes from the third day of RC Mini 5 batch)
+8:19 am I have been reading The Joy of Clojure everyday. I need to find ways to improve my Clojure code. So far I have succeeded in avoiding loops by using recursion. I haven&amp;rsquo;t been able to operate on lists as a whole yet, and neither have I been able to use things like the continuation-passing-style. I can&amp;rsquo;t use something &amp;lsquo;foo&amp;rsquo; unless the code stares at me in the face and says &amp;ldquo;this is the place to try out foo&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>RC Mini 5 - Day 2</title>
       <link>https://debamitro.github.io/blog/rc-mini5-day2/</link>
       <pubDate>Tue, 14 Aug 2018 07:56:15 -0400</pubDate>
