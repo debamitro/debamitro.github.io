@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      RC Mini 5 - Day 4
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+
+  </head>
+  <body>
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">About</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        RC Mini 5 - Day 4
+      </div>
+      <div class="my-page-content">
+        
+
+<p>(<em>My notes from the fourth day of RC Mini 5 batch</em>)</p>
+
+<h3 id="9-47-am">9:47 am</h3>
+
+<p>I started a bit late today, and got delayed by having to skip one subway train because it was soooo crowded. I am beginning to feel that although I have completed most of my work in Clojure, I haven&rsquo;t done <em>functional programming</em> yet. I have not used any global state, and accomplished everything by calling a series of functions from other functions. I have used recursion a lot, even though Stu Halloway warns people against using it.</p>
+
+<h3 id="11-04-am">11:04 am</h3>
+
+<p>Finally I have my unit testing system ready. The way to get here was to have my core code in a .cljc file so that both the Clojure test and the ClojureScript app can see it.</p>
+
+<h3 id="12-07-pm">12:07 pm</h3>
+
+<p>I have started using Atom for Clojure. I was using it for writing my blog posts since yesterday. I moved to it for code because my unit tests have Unicode characters and emacs doesn&rsquo;t show them well in terminal mode. Let&rsquo;s see how long I can use Atom - haven&rsquo;t switched to a new editing environment in years!</p>
+
+<h3 id="2-54-pm">2:54 pm</h3>
+
+<p>Had a really nice post-lunch conversation about JavaScript virtual machines and other stuff. On the Atom front, I haven&rsquo;t given up yet. The fonts and editing experience are really nice. I was suspecting I would miss my emacs shortcuts but I haven&rsquo;t. I guess the reason may be most of my shortcuts are specific to C/C++ development. This might be a nice lesson for future me: when learning a new programming language try to use a new editor for that.</p>
+
+<h3 id="4-43-pm">4:43 pm</h3>
+
+<p>Paired with someone here and learned how to use the &ldquo;thread-first macro&rdquo; operator in Clojure. It seems to be a neat way to write a series of function calls which need to happen in a pipeline-like manner. Previously I was calling  functions from other functions. So in order to ensure that function1 happened before function2, I would do (or think about doing) either of the following:
+* call function2 with a call to function1 as the argument
+* write function2 as an anonymous function which calls function1
+* pass function2 as an argument to function1 and call it from inside</p>
+
+<p>With the <a href="https://clojure.org/guides/threading_macros#thread-first">-&gt; operator</a> code is sooo much more readable now!</p>
+
+<h3 id="11-02-pm">11:02 pm</h3>
+
+<p>The evening went by in presentations followed by a lot of conversations with different people. I need to find a way to cope with reality after RC, specially from next week!</p>
+
+      </div>
+    </div>
+    
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+</div>
+
+  </body>
+  
+</html>

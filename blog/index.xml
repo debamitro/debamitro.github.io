@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>RC Mini 5 - Day 4</title>
+      <link>https://debamitro.github.io/blog/rc-mini5-day4/</link>
+      <pubDate>Thu, 16 Aug 2018 09:37:15 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/rc-mini5-day4/</guid>
+      <description>(My notes from the fourth day of RC Mini 5 batch)
+9:47 am I started a bit late today, and got delayed by having to skip one subway train because it was soooo crowded. I am beginning to feel that although I have completed most of my work in Clojure, I haven&amp;rsquo;t done functional programming yet. I have not used any global state, and accomplished everything by calling a series of functions from other functions.</description>
+    </item>
+    
+    <item>
       <title>RC Mini 5 - Day 3</title>
       <link>https://debamitro.github.io/blog/rc-mini5-day3/</link>
       <pubDate>Wed, 15 Aug 2018 08:15:43 -0400</pubDate>
