@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>RC Mini 5 - Day 5</title>
+      <link>https://debamitro.github.io/blog/rc-mini5-day5/</link>
+      <pubDate>Fri, 17 Aug 2018 08:37:20 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/rc-mini5-day5/</guid>
+      <description>(My notes from the final day of RC Mini 5 batch)
+8:39 am Today is the last day of my batch. I plan to spend the day exploring some codebases. I don&amp;rsquo;t want to spend a lot of time writing code today. I might write some fun code, though.
+11:08 am I tried to read the alda codebase to find out where they specify frequencies of notes. Alda was my first exposure to Clojure, and I had wanted to experiment with the frequencies of the notes to see if I could play accurate Indian classical music.</description>
+    </item>
+    
+    <item>
       <title>RC Mini 5 - Day 4</title>
       <link>https://debamitro.github.io/blog/rc-mini5-day4/</link>
       <pubDate>Thu, 16 Aug 2018 09:37:15 -0400</pubDate>
