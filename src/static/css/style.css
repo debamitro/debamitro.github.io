@@ -21,6 +21,10 @@ body {
     text-decoration: none;
 }
 
+.my-menu-item-link img {
+    height: 16px;
+}
+
 .my-menu-item-link:hover {
     text-decoration: underline;
 }

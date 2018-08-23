@@ -12,3 +12,8 @@ Here are some very tiny and simple things I have tried.
 
 * [TicTacToe using reagent](http://debamitro.github.io/tictactoe-reagent-demo/)
 * [Generating MIDI files using C++11](https://github.com/debamitro/generate-midi)
+
+Here are some not-so-tiny things I have done.
+
+* [Bangla transliterator from Roman letters to Unicode](https://github.com/debamitro/generate-bangla-utf8)
+* [ClojureScript version of the above](https://github.com/debamitro/generate-bangla-utf8-cljs)
