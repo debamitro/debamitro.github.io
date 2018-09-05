@@ -16,4 +16,4 @@ Here are some very tiny and simple things I have tried.
 Here are some not-so-tiny things I have done.
 
 * [Bangla transliterator from Roman letters to Unicode](https://github.com/debamitro/generate-bangla-utf8)
-* [ClojureScript version of the above](https://github.com/debamitro/generate-bangla-utf8-cljs)
+* [ClojureScript version of the above](http://debamitro.github.io/generate-bangla-utf8-cljs-demo/)
