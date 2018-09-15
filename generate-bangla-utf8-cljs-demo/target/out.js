@@ -5381,24 +5381,25 @@ oc.prototype.J = function(a, b, c) {
   return Nd(b, Td, "(", " ", ")", c, this);
 };
 var Wd = new F(null, "y", "y", -1757859776), Xd = new F(null, "rh", "rh", 1692287680), Yd = new F(null, "gh", "gh", 1385800480), Zd = new F(null, "kh", "kh", 1424866946), $d = new F(null, "r", "r", -471384190), ae = new F(null, "I", "I", 1827140963), be = new F(null, "dh", "dh", 528137731), ce = new F(null, "o", "o", -1350007228), de = new F(null, "A", "A", -1688942394), ee = new F(null, "Sh", "Sh", 1983328968), fe = new F(null, "converted", "converted", 1590204425), ge = new F(null, "n", "n", 562130025), 
-he = new F(null, "m", "m", 1632677161), ie = new F(null, "th", "th", -545608566), je = new F(null, "D", "D", -8015893), ke = new F(null, "J", "J", 1394734828), le = new F(null, "T", "T", 175240877), me = new F(null, "Rh", "Rh", -2009561363), ne = new F(null, "e", "e", 1381269198), oe = new F(null, "s", "s", 1705939918), pe = new F(null, "l", "l", 1395893423), qe = new F(null, "ch", "ch", -554717905), re = new F(null, "k", "k", -2146297393), se = new F(null, "Dh", "Dh", -1978234897), te = new F(null, 
-"bh", "bh", 1597530704), ue = new F(null, "g", "g", 1738089905), ve = new F(null, "Th", "Th", 1409372402), we = new F(null, "G", "G", -738544397), xe = new F(null, "j", "j", -1397974765), ye = new F(null, "NG", "NG", 1793600243), ze = new F(null, "h", "h", 1109658740), Ae = new F(null, "Ch", "Ch", -358160907), Be = new F(null, "ou", "ou", 1767333654), Ce = new F(null, "b", "b", 1482224470), Z = new F(null, "unconverted", "unconverted", 1230657463), De = new F(null, "d", "d", 1972142424), Ee = new F(null, 
-"f", "f", -1597136552), Fe = new F(null, "t", "t", -1397832519), Ge = new F(null, "sh", "sh", -682444007), He = new F(null, "oi", "oi", 1398685434), Ie = new F(null, "U", "U", 1362002044), Je = new F(null, "ng", "ng", -1445199460), Ke = new F(null, "N", "N", -640629860), Le = new F(null, "K", "K", 711741), Me = new F(null, "p", "p", 151049309), Ne = new F(null, "i", "i", -1386841315), Oe = new F(null, "a", "a", -2123407586), Pe = new F(null, "u", "u", -1156634785);
-var Qe = Id([Wd, Xd, Yd, Zd, $d, be, ee, ge, he, ie, je, le, me, oe, pe, qe, re, se, te, new F(null, "jh", "jh", -1203464336), ue, ve, xe, ye, ze, Ae, Ce, De, Ee, Fe, Ge, Je, Ke, Me], "যড়ঘখরধষনমথডটঢ়সলচকঢভঝগঠজঞহছবদফতশঙণপ".split("")), Re = Id("TdnKsfepjGJatUikbryglNuAhImDo".split(""), [le, De, ge, Le, oe, Ee, ne, Me, xe, we, ke, Oe, Fe, Ie, Ne, re, Ce, $d, Wd, ue, pe, Ke, Pe, de, ze, ae, he, je, ce]), Se = Id([ae, ce, de, ne, Be, He, Ie, Ne, Oe, Pe], "ঈওআএঔঐঊইঅউ".split("")), Te = Id("Rh kh dh rh ch Dh gh Sh bh ng sh Ch Th th oi NG ou".split(" "), 
-[me, Zd, be, Xd, qe, se, Yd, ee, te, Je, Ge, Ae, ve, ie, He, ye, Be]), Ue = Id([ae, ce, de, ne, Be, He, Ie, Ne, Oe, Pe], "ী ো া ে ৌ ৈ ূ ি  ু".split(" "));
-function Ve(a) {
+he = new F(null, "m", "m", 1632677161), ie = new F(null, "th", "th", -545608566), je = new F(null, "D", "D", -8015893), ke = new F(null, "J", "J", 1394734828), le = new F(null, "T", "T", 175240877), me = new F(null, "Rh", "Rh", -2009561363), ne = new F(null, "anuswar", "anuswar", 283370445), oe = new F(null, "e", "e", 1381269198), pe = new F(null, "s", "s", 1705939918), qe = new F(null, "l", "l", 1395893423), re = new F(null, "ch", "ch", -554717905), se = new F(null, "k", "k", -2146297393), te = 
+new F(null, "Dh", "Dh", -1978234897), ue = new F(null, "bh", "bh", 1597530704), ve = new F(null, "g", "g", 1738089905), we = new F(null, "Th", "Th", 1409372402), xe = new F(null, "G", "G", -738544397), ye = new F(null, "j", "j", -1397974765), ze = new F(null, "NG", "NG", 1793600243), Ae = new F(null, "h", "h", 1109658740), Be = new F(null, "Ch", "Ch", -358160907), Ce = new F(null, "ou", "ou", 1767333654), De = new F(null, "b", "b", 1482224470), Z = new F(null, "unconverted", "unconverted", 1230657463), 
+Ee = new F(null, "d", "d", 1972142424), Fe = new F(null, "f", "f", -1597136552), Ge = new F(null, "t", "t", -1397832519), He = new F(null, "sh", "sh", -682444007), Ie = new F(null, "bisarga", "bisarga", -351626918), Je = new F(null, "oi", "oi", 1398685434), Ke = new F(null, "U", "U", 1362002044), Le = new F(null, "ng", "ng", -1445199460), Me = new F(null, "N", "N", -640629860), Ne = new F(null, "K", "K", 711741), Oe = new F(null, "p", "p", 151049309), Pe = new F(null, "i", "i", -1386841315), Qe = 
+new F(null, "a", "a", -2123407586), Re = new F(null, "cbindu", "cbindu", -607446721), Se = new F(null, "u", "u", -1156634785);
+var Te = Id([Wd, Xd, Yd, Zd, $d, be, ee, ge, he, ie, je, le, me, pe, qe, re, se, te, ue, new F(null, "jh", "jh", -1203464336), ve, we, ye, ze, Ae, Be, De, Ee, Fe, Ge, He, Le, Me, Oe], "যড়ঘখরধষনমথডটঢ়সলচকঢভঝগঠজঞহছবদফতশঙণপ".split("")), Ue = Id("TdnKsfepjGJatU:ikbry;glNuAhIm^Do".split(""), [le, Ee, ge, Ne, pe, Fe, oe, Oe, ye, xe, ke, Qe, Ge, Ke, Ie, Pe, se, De, $d, Wd, ne, ve, qe, Me, Se, de, Ae, ae, he, Re, je, ce]), Ve = Id([ae, ce, de, oe, Ce, Je, Ke, Pe, Qe, Se], "ঈওআএঔঐঊইঅউ".split("")), We = Id("ee Rh kh aa dh rh ch Dh oo gh Sh bh ng sh Ch Th th oi NG ou".split(" "), 
+[ae, me, Zd, de, be, Xd, re, te, Ke, Yd, ee, ue, Le, He, Be, we, ie, Je, ze, Ce]), Xe = Id([ae, ce, de, oe, Ce, Je, Ke, Pe, Qe, Se], "ী ো া ে ৌ ৈ ূ ি  ু".split(" "));
+function Ye(a) {
   return Q.b(a, "a") || Q.b(a, "A") || Q.b(a, "i") || Q.b(a, "I") || Q.b(a, "u") || Q.b(a, "U") || Q.b(a, "e") || Q.b(a, "o") || !1;
 }
-function We(a) {
+function Ze(a) {
   return Q.b(a, "^") || Q.b(a, ":") || Q.b(a, ";") || !1;
 }
-var Xe = new E(null, 3, "^ঁ:ঃ;ং".split(""), null);
-function Ye(a, b) {
+var $e = new E(null, 3, [Re, "ঁ", Ie, "ঃ", ne, "ং"], null);
+function af(a, b) {
   var c = null != b && (b.h & 64 || p === b.pa) ? Gc(Kd, b) : b, d = H.b(c, fe);
   c = H.b(c, Z);
   return new E(null, 2, [fe, [v.a(a), v.a(d)].join(""), Z, c], null);
 }
-function Ze(a, b, c) {
+function bf(a, b, c) {
   b = b.a ? b.a(a) : b.call(null, a);
   return function() {
     return function(b) {
@@ -5410,11 +5411,11 @@ function Ze(a, b, c) {
     };
   }(b)(b);
 }
-function $e(a) {
+function cf(a) {
   return function(b) {
     if (1 < U(b)) {
       var c = [v.a(L(b)), v.a(Ob(b, 1))].join("");
-      c = Te.a ? Te.a(c) : Te.call(null, c);
+      c = We.a ? We.a(c) : We.call(null, c);
       c = a.a ? a.a(c) : a.call(null, c);
       b = new E(null, 2, [fe, c, Z, N(N(b))], null);
     } else {
@@ -5423,23 +5424,23 @@ function $e(a) {
     return b;
   };
 }
-function af(a) {
+function df(a) {
   return function(b) {
-    b = Re.a ? Re.a(b) : Re.call(null, b);
+    b = Ue.a ? Ue.a(b) : Ue.call(null, b);
     return a.a ? a.a(b) : a.call(null, b);
   };
 }
-function bf(a) {
+function ef(a) {
   return function(b) {
-    return Ze(b, $e(a), af(a));
+    return bf(b, cf(a), df(a));
   };
 }
-function cf() {
+function ff() {
   return function(a) {
     a: {
       for (var b = new E(null, 2, [fe, "", Z, a], null);;) {
         a = L(b.a ? b.a(Z) : b.call(null, Z));
-        a = !Q.b(a, null) && Ba(Q.b(a, " ")) && Ba(Ve(a)) && Ba(We(a));
+        a = !Q.b(a, null) && Ba(Q.b(a, " ")) && Ba(Ye(a)) && Ba(Ze(a));
         if (Ba(a)) {
           a = b;
           b = null != a && (a.h & 64 || p === a.pa) ? Gc(Kd, a) : a;
@@ -5450,33 +5451,34 @@ function cf() {
         }
         a = b.a ? b.a(fe) : b.call(null, fe);
         b = b.a ? b.a(Z) : b.call(null, Z);
-        var c = bf(Qe);
+        var c = ef(Te);
         b = c.a ? c.a(b) : c.call(null, b);
-        b = Ye(a, b);
+        b = af(a, b);
       }
     }
     b = null != a && (a.h & 64 || p === a.pa) ? Gc(Kd, a) : a;
     a = H.b(b, fe);
     b = H.b(b, Z);
-    null == b || Ba(I(b)) ? a = new E(null, 2, [fe, a, Z, b], null) : q(Ve(L(b))) ? (c = bf(Ue), b = c.a ? c.a(b) : c.call(null, b), a = Ye(a, b)) : a = new E(null, 2, [fe, a, Z, b], null);
+    null == b || Ba(I(b)) ? a = new E(null, 2, [fe, a, Z, b], null) : q(Ye(L(b))) ? (c = ef(Xe), b = c.a ? c.a(b) : c.call(null, b), a = af(a, b)) : a = new E(null, 2, [fe, a, Z, b], null);
     return a;
   };
 }
-function df(a) {
+function gf(a) {
   return q(Q.b(a, " ")) ? function(a) {
     return new E(null, 2, [fe, "" + v.a(L(a)), Z, N(a)], null);
-  } : q(Ve(a)) ? bf(Se) : q(We(a)) ? function(a) {
+  } : q(Ye(a)) ? ef(Ve) : q(Ze(a)) ? function(a) {
     var b = "" + v.a(L(a));
-    b = Xe.a ? Xe.a(b) : Xe.call(null, b);
+    b = Ue.a ? Ue.a(b) : Ue.call(null, b);
+    b = $e.a ? $e.a(b) : $e.call(null, b);
     return new E(null, 2, [fe, b, Z, N(a)], null);
-  } : cf();
+  } : ff();
 }
-var ef = function ef(a) {
+var hf = function hf(a) {
   if (null == a || Ba(I(a))) {
     return "";
   }
   var c = function() {
-    var c = df(L(a));
+    var c = gf(L(a));
     return c.a ? c.a(a) : c.call(null, a);
   }();
   return function() {
@@ -5484,16 +5486,16 @@ var ef = function ef(a) {
       var c = null != a && (a.h & 64 || p === a.pa) ? Gc(Kd, a) : a;
       a = H.b(c, fe);
       c = H.b(c, Z);
-      return [v.a(a), v.a(ef.a ? ef.a(c) : ef.call(null, c))].join("");
+      return [v.a(a), v.a(hf.a ? hf.a(c) : hf.call(null, c))].join("");
     };
   }(c)(c);
 };
-ca("generate_bangla_utf8_cljs.converter.to_bangla_utf8", ef);
-function ff() {
-  return document.querySelector("#banglaOutput").innerHTML = ef(document.querySelector("#englishInput").value);
+ca("generate_bangla_utf8_cljs.converter.to_bangla_utf8", hf);
+function jf() {
+  return document.querySelector("#banglaOutput").innerHTML = hf(document.querySelector("#englishInput").value);
 }
 ca("generate_bangla_utf8_cljs.core.attach_events", function() {
-  return document.querySelector("#convertButton").addEventListener("click", ff);
+  return document.querySelector("#convertButton").addEventListener("click", jf);
 });
 
 })();
