@@ -7,3 +7,6 @@ menu:
 ---
 
 I am an amateur musician, professional programmer, as well as a husband and a father.
+
+<transliterate language="bangla">aami ekajan bAngAlI progrAmAr
+</transliterate>
