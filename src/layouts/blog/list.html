@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    {{ partial "meta_tags.html" . }}
+
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    <title>
+      {{ .Title }}
+    </title>
+    {{ partial "head_stylesheets.html" . }}
+  </head>
+  <body>
+    {{ partial "top_menu.html" . }}
+    <div class="my-page-container">
+      <div class="my-page-head">
+        {{ .Title }}
+      </div>
+      <div class="my-page-content">
+        {{ .Content }}
+
+        {{ range .Pages }}
+            <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+        {{ end }}
+      </div>
+    </div>
+
+    {{ partial "bottom.html" . }}
+  </body>
+
+</html>

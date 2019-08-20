@@ -1,6 +1,8 @@
 ---
 title: "RC Mini 5 - Day 1"
 date: 2018-08-13T09:13:23-04:00
+tags: RC
+catgeories: blog
 ---
 
 ### 9:15 am
