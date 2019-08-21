@@ -10,4 +10,10 @@ outputs:
 ---
 
 
-I used to maintain three different blogs at http://yetanothertechnicalblog.blogspot.com, http://isometimesblogat.blogspot.com and http://mysearchformelody.blogspot.com . Now I have moved here. I may migrate old content some day, I may not. Time is limited.
+I used to maintain three different blogs at
+
+* http://yetanothertechnicalblog.blogspot.com
+* http://isometimesblogat.blogspot.com
+* http://mysearchformelody.blogspot.com
+
+Now I have moved here. I may migrate old content some day, I may not. Time is limited.

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "meta_tags.html" . }}
+    <title>
+      {{ .Title }}
+    </title>
+    {{ partial "head_stylesheets.html" . }}
+    <script src="{{ .Site.BaseURL }}/js/onready.js"></script>
+    <script src="{{ .Site.BaseURL }}/js/transformtextnodes.js"></script>
+    <script src="{{ .Site.BaseURL }}/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+  </head>
+  <body>
+    {{ partial "top_menu.html" . }}
+    <div class="my-page-container">
+      <div class="my-page-head">
+        {{ .Title }}
+      </div>
+      <hr />
+      <div class="my-page-date">
+        {{ .Date.Format "January 2, 2006" }}
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        {{ range .Params.tags }}
+          {{ . }}
+        {{ end }}
+      </div>
+      <div class="my-page-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    {{ partial "bottom.html" . }}
+  </body>
+
+</html>

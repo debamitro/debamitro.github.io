@@ -1,9 +1,9 @@
 ---
-title: "RC August 2019"
+title: "RC for two days"
 date: 2019-08-20T17:27:43-04:00
 draft: true
-tags: RC
-categories: blog
+tags: [RC]
+categories: [blog]
 ---
 
 After a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from Boston.
@@ -35,3 +35,7 @@ I started writing a Swift script for using CLLocationManager to get the current 
 ### Evening of August 20
 
 I went to [Localhost IX](https://www.recurse.com/events/localhost-lightning-talks-august-2019) after dinner and managed to reach when it was nearly half over. I bumped into other two Recursers I happen to know and had a happy time!
+
+### Morning of August 21
+
+I spent most of the time reading [Higher-Order Perl](https://hop.perl.plover.com) and tweaking my blog's layout using Hugo templates.

@@ -1,8 +1,8 @@
 ---
 title: "RC Mini 5 - Day 2"
 date: 2018-08-14T07:56:15-04:00
-tags: RC
-categories: blog
+tags: [RC]
+categories: [blog]
 ---
 
 (*My notes from the second day of RC Mini 5 batch*)
