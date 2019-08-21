@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      RC for two days
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+
+    <script src="https://debamitro.github.io/js/onready.js"></script>
+    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+  </head>
+  <body>
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        RC for two days
+      </div>
+      <hr />
+      <div class="my-page-date">
+        August 20, 2019
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          RC
+        
+      </div>
+      <div class="my-page-content">
+        
+
+<p>After a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from Boston.</p>
+
+<h2 id="recap">Recap</h2>
+
+<p>In 2018 I did a mini batch at RC and simply loved it! I did not like staying away from my nine-month-old son for five days, though. So I decided against doing another batch for a year or two.</p>
+
+<h2 id="ngw-2019">NGW 2019</h2>
+
+<p>I attended Never Graduate Week with my wife (a senior Recurser) and son and loved the experience! I began toying with the idea of coming down to RC for two days whenever possible. I didn&rsquo;t want to have any planned project because I felt I wouldn&rsquo;t be doing justice to it. Also I didn&rsquo;t want to lose out on the conversations and the random good things that happen in RC which don&rsquo;t happen in your daily life. I was lucky to get a companion in this plan of mine (who also happens to be the father of a very young baby).</p>
+
+<h2 id="back-to-now">Back to now</h2>
+
+<p>Fast forward to August 20 and 21 2019, here&rsquo;s what I ended up doing. Nothing is a project - everything is a bit of programming that I did for fun.</p>
+
+<h3 id="on-the-train-evening-of-august-19">On the train (evening of August 19)</h3>
+
+<p>Tried to print Bengali letters as ASCII art in python. I could print two letters and it was one of the dumbest programs I have ever written. My companion taught me how to use the <strong>future</strong> package in python and also a bit of numpy - I count these two as useful parts of this exercise.</p>
+
+<h3 id="morning-of-august-20">Morning of August 20</h3>
+
+<p>Fished out the source to my hugo-powered blog, and tried to learn how to add tags and categories. I never got to the point of using the tags though. Next, I installed mitmproxy and after a few hiccups succeeded in using it for web traffic from my iPhone. I could watch the HTTP requests coming from my iPhone from various apps. I don&rsquo;t know why three Facebook apps (Facebook, Messenger and Instagram) didn&rsquo;t work with the proxy. WhatsApp was working fine. I must have needed to something more. I think what I got going is good enough to watch the traffic from any apps I am curious about.</p>
+
+<h3 id="afternoon-of-august-20">Afternoon of August 20</h3>
+
+<p>I started writing a Swift script for using CLLocationManager to get the current location on my laptop. It wasn&rsquo;t working for a while and I was almost about to give up. I thought I needed some kind of permissions from my Mac and needed to use XCode. The <a href="https://github.com/fulldecent/corelocationcli">example</a> I was following was done as a CLI project in XCode. Then I tried a slightly different location request (standard location service instead of significant-change location service) and it started working like a bang! I went ahead and use the CLGeocoder class to find out a name and address of the location, and sort of worked as well. Apple&rsquo;s developer documentation was very helpful and so was the <a href="https://www.swift.org">Swift site</a>. The result is at <a href="https://github.com/debamitro/small-examples/blob/master/location.swift">https://github.com/debamitro/small-examples/blob/master/location.swift</a> .</p>
+
+<h3 id="evening-of-august-20">Evening of August 20</h3>
+
+<p>I went to <a href="https://www.recurse.com/events/localhost-lightning-talks-august-2019">Localhost IX</a> after dinner and managed to reach when it was nearly half over. I bumped into other two Recursers I happen to know and had a happy time!</p>
+
+<h3 id="morning-of-august-21">Morning of August 21</h3>
+
+<p>I spent most of the time reading <a href="https://hop.perl.plover.com">Higher-Order Perl</a> and tweaking my blog&rsquo;s layout using Hugo templates. The book is particularly heavy in ideas and I needed time to go through them in order to grasp what was being described.</p>
+
+<h3 id="afternoon-of-august-21">Afternoon of August 21</h3>
+
+<p>I learnt from Zulip that two Recursers had done something cool around MIDI and music synthesis. Since there is a digital piano in Turing I started wondering if I could connect it to my mac and somehow read the notes being played on it. I got to know of the <a href="http://craffel.github.io/pretty-midi/">pretty-midi python library</a> but that didn&rsquo;t seem to be exactly what I wanted.</p>
+
+<p>Further searching lead me to <a href="http://portmedia.sourceforge.net">portmidi</a>, a C library which seemed to be capable of everything around MIDI. I downloaded it and tried to build it. The cmake-based build didn&rsquo;t work so I went about compiling the relevant C files manually. This wasn&rsquo;t hard because my goal was to compile it once in whatever hacky way. After this I went searching for a USB-to-USB-C converter. Fortunately another Recurser lent me one, I connected the piano to my mac and ran one of the test programs &hellip;. and it worked! Notes played on the piano were showing up on the terminal as MIDI events. Some sample notes emitted by the program went into the piano and it was playing. I was really excited and showed this to someone.</p>
+
+<p>After that I wrote a small program for myself which linked in the portmidi library and played a few notes on the piano. Since I forget stuff very fast I pushed it to <a href="https://github.com/debamitro/portmiditest">github</a>.</p>
+
+<h2 id="the-end">The end</h2>
+
+<p>I think I can safely conclude that spending two days at the Recurse Center is very much worth it. A lot can happen here because the space is very conducive towards tinkering and programming. I guess it helps not to have any fixed plan -  that way you try to do what works and leave what does not. The definition of &lsquo;works&rsquo; also stays flexible if you don&rsquo;t have a plan.</p>
+
+      </div>
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

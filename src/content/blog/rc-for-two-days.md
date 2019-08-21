@@ -1,7 +1,6 @@
 ---
 title: "RC for two days"
 date: 2019-08-20T17:27:43-04:00
-draft: true
 tags: [RC]
 categories: [blog]
 ---
@@ -38,4 +37,16 @@ I went to [Localhost IX](https://www.recurse.com/events/localhost-lightning-talk
 
 ### Morning of August 21
 
-I spent most of the time reading [Higher-Order Perl](https://hop.perl.plover.com) and tweaking my blog's layout using Hugo templates.
+I spent most of the time reading [Higher-Order Perl](https://hop.perl.plover.com) and tweaking my blog's layout using Hugo templates. The book is particularly heavy in ideas and I needed time to go through them in order to grasp what was being described.
+
+### Afternoon of August 21
+
+I learnt from Zulip that two Recursers had done something cool around MIDI and music synthesis. Since there is a digital piano in Turing I started wondering if I could connect it to my mac and somehow read the notes being played on it. I got to know of the [pretty-midi python library](http://craffel.github.io/pretty-midi/) but that didn't seem to be exactly what I wanted.
+
+Further searching lead me to [portmidi](http://portmedia.sourceforge.net), a C library which seemed to be capable of everything around MIDI. I downloaded it and tried to build it. The cmake-based build didn't work so I went about compiling the relevant C files manually. This wasn't hard because my goal was to compile it once in whatever hacky way. After this I went searching for a USB-to-USB-C converter. Fortunately another Recurser lent me one, I connected the piano to my mac and ran one of the test programs .... and it worked! Notes played on the piano were showing up on the terminal as MIDI events. Some sample notes emitted by the program went into the piano and it was playing. I was really excited and showed this to someone.
+
+After that I wrote a small program for myself which linked in the portmidi library and played a few notes on the piano. Since I forget stuff very fast I pushed it to [github](https://github.com/debamitro/portmiditest).
+
+## The end
+
+I think I can safely conclude that spending two days at the Recurse Center is very much worth it. A lot can happen here because the space is very conducive towards tinkering and programming. I guess it helps not to have any fixed plan -  that way you try to do what works and leave what does not. The definition of 'works' also stays flexible if you don't have a plan.
