@@ -2,7 +2,7 @@
 title: "RC Mini 5 - Day 0"
 date: 2018-08-12T13:11:41-04:00
 tags: RC
-catgeories: blog
+categories: blog
 ---
 
 ### 10:57 am
