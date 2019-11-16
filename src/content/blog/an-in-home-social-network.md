@@ -1,6 +1,7 @@
 ---
 title: "An in-home Social Network"
 date: 2019-11-07T21:48:50-05:00
+tags: ["javascript","nodejs","expressjs"]
 ---
 
 I was thinking about creating social networks for specific purposes, when one day I figured out it would be good to have a social network restricted to my home. I got this idea looking at my son and thinking what he would do on Facebook a few years from now. I have nothing against Facebook or any social network - I think they are all fabulous. I just think that an internet-based social network is like the world outside your home. You are not ready for it when you are very young.
