@@ -6,10 +6,39 @@
     <description>Recent content on Home page of Debamitro Chakraborti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2019 17:27:43 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2020 12:09:03 -0400</lastBuildDate>
     
 	<atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Making the Same Mistake for a Decade</title>
+      <link>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</link>
+      <pubDate>Thu, 11 Jun 2020 12:09:03 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</guid>
+      <description>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.
+I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash.</description>
+    </item>
+    
+    <item>
+      <title>How I Got Into Clojure</title>
+      <link>https://debamitro.github.io/blog/how-i-got-into-clojure/</link>
+      <pubDate>Thu, 14 Nov 2019 20:27:46 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/how-i-got-into-clojure/</guid>
+      <description>I had read wonderful things about Clojure many years ago in a blog post series. At that time it seemed very different from the type of programming I used to do at my day job. I had no idea that it could be used for creating any of the software programs I used.
+StrangeLoop and Alda I attended StrangeLoop for the first time in 2017 - and my mind was blown.</description>
+    </item>
+    
+    <item>
+      <title>An in-home Social Network</title>
+      <link>https://debamitro.github.io/blog/an-in-home-social-network/</link>
+      <pubDate>Thu, 07 Nov 2019 21:48:50 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/an-in-home-social-network/</guid>
+      <description>I was thinking about creating social networks for specific purposes, when one day I figured out it would be good to have a social network restricted to my home. I got this idea looking at my son and thinking what he would do on Facebook a few years from now. I have nothing against Facebook or any social network - I think they are all fabulous. I just think that an internet-based social network is like the world outside your home.</description>
+    </item>
     
     <item>
       <title>RC for two days</title>
@@ -89,7 +118,8 @@ NGW 2019 I attended Never Graduate Week with my wife (a senior Recurser) and son
       
       <guid>https://debamitro.github.io/about/</guid>
       <description>I am an amateur musician, professional programmer, as well as a husband and a father.
-aami ekajan bAngAlI progrAmAr</description>
+aami ekajan bAngAlI progrAmAr 
+ </description>
     </item>
     
     <item>

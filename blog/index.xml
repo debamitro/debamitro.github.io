@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Making the Same Mistake for a Decade</title>
+      <link>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</link>
+      <pubDate>Thu, 11 Jun 2020 12:09:03 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</guid>
+      <description>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.
+I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash.</description>
+    </item>
+    
+    <item>
       <title>How I Got Into Clojure</title>
       <link>https://debamitro.github.io/blog/how-i-got-into-clojure/</link>
       <pubDate>Thu, 14 Nov 2019 20:27:46 -0500</pubDate>
