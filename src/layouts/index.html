@@ -8,14 +8,20 @@
     {{ partial "head_stylesheets.html" . }}
   </head>
   <body>
-    {{ partial "top_menu.html" . }}
+    <!--  An empty menu bar for the Home page //-->
+    <div class="my-menu-bar">
+    </div>
     <div class="my-page-container">
       <div class="my-page-head">
-        Debamitro Chakraborti
+        Personal website of Debamitro Chakraborti
       </div>
 
       <div class="my-page-content">
-        Nothing of importance at the moment, please follow the links at the top
+        Hi visitor!<br />
+        <a href="blog/">Here is my blog</a><br />
+        <a href="projects/">Here are my projects</a><br />
+        <a href="music/">Here is what I listen to</a><br />
+        <a href="about/">And here is who I am</a>
       </div>
     </div>
     {{ partial "bottom.html" . }}

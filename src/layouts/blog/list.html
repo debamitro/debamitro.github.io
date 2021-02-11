@@ -23,6 +23,13 @@
 
         <h2>Recent posts</h2>
         {{ range .Pages }}
+          {{ if gt (int (.Date.Format "2006")) 2020 }}
+        {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+          {{ end }}
+        {{ end }}
+
+        <h2>Posts from 2020</h2>
+        {{ range .Pages }}
           {{ if eq (.Date.Format "2006") "2020" }}
         {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
           {{ end }}
@@ -41,6 +48,9 @@
         {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
           {{ end }}
         {{ end }}
+
+        <h1>Posts from my older tech blog</h1>
+        <a href="https://yetanothertechnicalblog.blogspot.com" target="_blank">YetAnotherTechnicalBlog</a>
       </div>
     </div>
 
