@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Joel Test for 2021
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+
+    <script src="https://debamitro.github.io/js/onready.js"></script>
+    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+  </head>
+  <body>
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/music/" class="my-menu-item-link">Music</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Joel Test for 2021
+      </div>
+      <hr />
+      <div class="my-page-date">
+        February 15, 2021
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          programming
+        
+          software quality
+        
+      </div>
+      <div class="my-page-content">
+        
+
+<p>The <a href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/">Joel Test</a> is quite famous and has inspired many programmers and organizations over the last two decades. I was highly impressed by it when I read it more than a decade ago. Nowadays I tend to think that it needs to be revised. I am not alone. If you search for &lsquo;joel test&rsquo; on your search engine you&rsquo;ll probably see a handful of posts which try to describe a modified version of the test as appropriate for a more recent year (the original test was published in 2000).</p>
+
+<h2 id="modifications-to-joel-s-version">Modifications to Joel&rsquo;s version</h2>
+
+<p>Here it goes. I am going to pick each of the old questions and then give my version.</p>
+
+<h3 id="1-do-you-use-source-control">1. Do you use source control?</h3>
+
+<p><a name="newq1"></a>
+In 2021 this question is probably redundant. Every software development organization is using some kind of version control system. The important question now is whether engineers know how to use version control effectively. Every system comes with some features and some shortcomings. Today&rsquo;s programmer needs to know the best way to use any given version control system.</p>
+
+<p><strong>New version: Do programmers know how to use your version control system effectively?</strong></p>
+
+<h3 id="2-can-you-make-a-build-in-one-step">2. Can you make a build in one step?</h3>
+
+<p>This is still relevant and I am keeping it as-is.</p>
+
+<h3 id="3-do-you-make-daily-builds">3. Do you make daily builds?</h3>
+
+<p><a name="newq3"></a>
+This is relevant as well, because most organizations do this but maybe not all do. The frequency doesn&rsquo;t need to be daily any more - it should multiple times in a day. It is ideal to build after every checkin, but I feel it is more important to use the automated builds properly. Figuring out the culprit checkin for a newly-introduced bug should be automated, and this should use automated buidls.</p>
+
+<p><strong>New version: Do you use automated builds for finding the root causes of defects?</strong></p>
+
+<h3 id="4-do-you-have-a-bug-database">4. Do you have a bug database?</h3>
+
+<p><a name="newq4"></a>
+This has become redundant as well. What is less common, I feel, is the ability to manage the bug database to bring down the number of bugs. Using a bug database to keep recording the bugs and solving a small fraction of them is not going to help anyone. If the majority of unsolved bugs are irrelevant then they should be deleted. A bug database should be like a to-do list - it should be manageable and help you reduce bugs.</p>
+
+<p><strong>New version: Are you using a bug database to keep the number of bugs low?</strong></p>
+
+<h3 id="5-do-you-fix-bugs-before-writing-new-code">5. Do you fix bugs before writing new code?</h3>
+
+<p><a name="newq5"></a>
+This is a tricky one and I feel it cannot be the same for all organizations all the time. In today&rsquo;s world a lot of software is not used for critical tasks. New features and changes need to roll out quickly and some errors are acceptable. Think of social media - if your timeline is not refreshing immediately it is a bit irritating but not dangerous. On the other hand, software is increasingly being used for critical tasks like performing surgery or driving vehicles. In such cases even a small error can take a human life. So this question needs to be a bit more flexible.</p>
+
+<p><strong>New version: Do you know when to prioritize fixing bugs over writing new code, and vice versa?</strong></p>
+
+<h3 id="6-do-you-have-an-up-to-date-schedule">6. Do you have an up-to-date schedule?</h3>
+
+<p>This question is still relevant. I am not modifying it at all.</p>
+
+<h3 id="7-do-you-have-a-spec">7. Do you have a spec?</h3>
+
+<p>This question is still relevant as well. The definition of spec should be flexible. For some tasks the spec can be a single line, for others it will be much longer.</p>
+
+<h3 id="8-do-programmers-have-quiet-working-conditions">8. Do programmers have quiet working conditions?</h3>
+
+<p>This is also pretty much relevant.</p>
+
+<h3 id="9-do-you-use-the-best-tools-money-can-buy">9. Do you use the best tools money can buy?</h3>
+
+<p>I am striking this question out from my list, because I no longer believe that the best tools produce the best craftsmen. As of 2021 we have quite a lot of good software development tools, but we don&rsquo;t always have the people who can use them and be productive.</p>
+
+<h3 id="10-do-you-have-testers">10. Do you have testers?</h3>
+
+<p><a name="newq9"></a>
+This is important, but needs to be slightly modified. In 2021 manual testing is incomplete, and automated testing is a must. At the same time the need for testers has not totally gone away. Somewhere a bunch of human beings need to create and maintain the automated tests so that meaningful testing is happening. It is also okay not to have dedicated testers - developers can play this role as well.</p>
+
+<p><strong>New version: Do you have testers who use automated testing?</strong></p>
+
+<h3 id="11-do-new-candidates-write-code-during-their-interview">11. Do new candidates write code during their interview?</h3>
+
+<p>This is still very important, perhaps even more than before. I am keeping this one</p>
+
+<h3 id="12-do-you-do-hallway-usability-testing">12. Do you do hallway usability testing?</h3>
+
+<p>I don&rsquo;t think this is very relevant for all kinds of programming or for all kinds of products.</p>
+
+<h2 id="new-questions-in-my-version">New questions in my version</h2>
+
+<h3 id="a-name-newq11-a-1-do-you-have-effective-developer-documentation"><a name="newq11"></a> 1. Do you have effective developer documentation?</h3>
+
+<p>In 2021, software development is like &lsquo;standing on the shoulders of giants&rsquo;. Every programming task I have seen involves using a ton of code which has already been written and used by others. Sometimes the existing code is present in the current project. At other times it is part of packages which you need to use. Unless you have good developer documentation programmers will do one of the following:</p>
+
+<ul>
+<li>Reinvent the wheel again and again</li>
+<li>Write code that needs increasing amounts of refactoring</li>
+<li>Debug or reverse engineer existing code</li>
+</ul>
+
+<p>This is wasteful in today&rsquo;s age when software updates are rolled out in a matter of hours or days. The absence of effective developer documentation also makes life difficult for new engineers on a team.</p>
+
+<h3 id="a-name-newq12-a-2-do-programmers-have-the-judgement-to-choose-the-right-tool-approach"><a name="newq12"></a> 2. Do programmers have the judgement to choose the right tool/approach?</h3>
+
+<p>Today a lot of programming tasks have multiple possible solutions. For example, you might have multiple APIs to choose from, or multiple software packages. A lot of software in today&rsquo;s world has multiple parts, and the same change can be performed in more than one place. Today&rsquo;s programmer needs to have excellent judgement to decide the course of action every day. At times you do need to come up with the best new algorithm, but mostly you need to choose an existing algorithm or an implementation of it from a bunch of candidates. Programmers need to be aware of the consequences of their choices before they act.</p>
+
+<h2 id="the-full-list">The full list</h2>
+
+<ol>
+<li><a href="#newq1">Do programmers know how to use your version control system effectively?</a></li>
+<li>Can you make a build in one step?</li>
+<li><a href="#newq3">Do you use automated builds for finding the root causes of defects?</a></li>
+<li><a href="#newq4">Are you using a bug database to keep the number of bugs low?</a></li>
+<li><a href="#newq5">Do you know when to prioritize fixing bugs over writing new code, and vice versa?</a></li>
+<li>Do you have an up-to-date schedule?</li>
+<li>Do you have a spec?</li>
+<li>Do programmers have quiet working conditions?</li>
+<li><a href="#newq9">Do you have testers who use automated testing?</a></li>
+<li>Do new candidates write code during their interview?</li>
+<li><a href="#newq11">Do you have effective developer documentation?</a></li>
+<li><a href="#newq12">Do programmers have the judgement to choose the right tool/approach?</a></li>
+</ol>
+
+      </div>
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>
