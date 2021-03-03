@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Thoughts on Debugging, over the years</title>
+      <link>https://debamitro.github.io/blog/thoughts-on-debugging/</link>
+      <pubDate>Wed, 03 Mar 2021 15:49:00 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/thoughts-on-debugging/</guid>
+      <description>I used to love debugging. The tougher the problem, the better I felt after finding out the answer. In my day job I happen to work in a product that has been continuously developed over the last 25 years or so. Anything that has seen so much change is bound to have complex internals, and this one is no exception. There was a time when I would spend days and nights chasing a very hard problem.</description>
+    </item>
+    
+    <item>
       <title>Joel Test for 2021</title>
       <link>https://debamitro.github.io/blog/joel-test-for-2021/</link>
       <pubDate>Mon, 15 Feb 2021 11:27:55 -0500</pubDate>
