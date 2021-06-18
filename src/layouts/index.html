@@ -6,6 +6,12 @@
       {{ .Title }}
     </title>
     {{ partial "head_stylesheets.html" . }}
+    <script src="{{ .Site.BaseURL }}/js/onready.js"></script>
+    <script src="{{ .Site.BaseURL }}/js/transformtextnodes.js"></script>
+    <script src="{{ .Site.BaseURL }}/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
   </head>
   <body>
     <!--  An empty menu bar for the Home page //-->
@@ -17,7 +23,8 @@
       </div>
 
       <div class="my-page-content">
-        Hi visitor!<br />
+        Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
+        <br />
         <a href="blog/">Here is my blog</a><br />
         <a href="projects/">Here are my projects</a><br />
         <a href="music/">Here is what I listen to</a><br />

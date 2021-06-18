@@ -10,6 +10,12 @@
         <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
 
+    <script src="https://debamitro.github.io/js/onready.js"></script>
+    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
   </head>
   <body>
     
@@ -21,7 +27,8 @@
       </div>
 
       <div class="my-page-content">
-        Hi visitor!<br />
+        Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
+        <br />
         <a href="blog/">Here is my blog</a><br />
         <a href="projects/">Here are my projects</a><br />
         <a href="music/">Here is what I listen to</a><br />
