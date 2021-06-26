@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Impressions of Rust 2020 - part I</title>
+      <link>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</link>
+      <pubDate>Sat, 26 Jun 2021 14:00:56 -0400</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</guid>
+      <description>Learning a new programming language is always a nice way to kick your brain into action. I first experienced this when I tried to learn Lisp by watching some video lectures. It took me months to digest the concepts and I never got around to writing any lisp. But the ideas stayed with me for years. Later on I did learn Clojure and spend some months writing a bit of Clojure and ClojureScript.</description>
+    </item>
+    
+    <item>
       <title>A year of working from home</title>
       <link>https://debamitro.github.io/blog/a_year_of_working_from_home/</link>
       <pubDate>Thu, 17 Jun 2021 14:25:06 -0400</pubDate>
