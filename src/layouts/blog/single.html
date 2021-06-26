@@ -25,9 +25,7 @@
       </div>
       <div class="my-page-tags">
         Tags:
-        {{ range .Params.tags }}
-          {{ . }}
-        {{ end }}
+        {{ delimit .Params.tags " | " }}
       </div>
       <div class="my-page-content">
         {{ .Content }}
