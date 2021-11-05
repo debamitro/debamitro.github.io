@@ -7,10 +7,19 @@ const App = {
         endX : 450,
         endY : 450,
 
+        /// Contains the set of points making up the path
+        /// which defines the region we want to shave
         capturedPoints : [],
 
+        /// An array of [xmin, xmax] entries
+        /// to define the x coordinates of the
+        /// region we want to shave. These are relative
+        /// coordinates, starting from startX.
+        /// The array has (endY - startY) entries,
+        /// so the indices are relative y coordinates.
         bounds : [],
 
+        /// Returns true if [x,y] is inside the Yak
         pointInsideYak : function (x, y) {
             if (x < this.startX)
             {
@@ -92,9 +101,10 @@ const App = {
                 }
             })
 
+            this.bounds = [];
             for (var i = 0; i < maxRelativeY+1; i++)
             {
-                this.bounds.push ([250,0])
+                this.bounds.push ([this.endX - this.startX,0])
             }
 
             this.capturedPoints.forEach ( (pair) => {
@@ -110,14 +120,13 @@ const App = {
                     this.bounds[relativeY][1] = relativeX;
                 }
             })
+            this.capturedPoints = [];
         }
     },
 
     setup : function () {
         const theCanvas = document.getElementById ("theCanvas")
         const context = theCanvas.getContext ("2d")
-
-        this.restoreImage (context)
 
         document.getElementById("theStartButton").addEventListener ("click", () => App.restoreImage (context))
 
@@ -161,6 +170,8 @@ const App = {
                 this.yak.capture (context, e.offsetX, e.offsetY)
             }
         })
+
+        this.restoreImage (context)
     },
 
     restoreImage : function (context)
