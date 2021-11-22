@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Home page of Debamitro Chakraborti</title>
@@ -6,10 +6,15 @@
     <description>Recent content in Blog on Home page of Debamitro Chakraborti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Aug 2018 13:25:11 -0400</lastBuildDate>
-    
-	<atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 12 Aug 2018 13:25:11 -0400</lastBuildDate><atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programmatic Access of C Structures</title>
+      <link>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</link>
+      <pubDate>Fri, 19 Nov 2021 15:26:42 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</guid>
+      <description>Background More than a year ago, I was looking for a project which would help me learn the Rust programming language. I like creating small projects from scratch, so I thought of solving a problem I had encountered occasionally at work. C (and C++ as well) doesn&amp;rsquo;t have a standard way of accessing its data structures programmatically. Some languages have type introspection capabilities, and C/C++ obviously don&amp;rsquo;t have that either. As a result, we often need to implement boilerplate utility code for dealing with C/C++ structures.</description>
+    </item>
     
     <item>
       <title>Waking Up Before Sunrise</title>
@@ -102,7 +107,7 @@ Interaction with Recursers This is going really well - again, by my own standard
       <pubDate>Wed, 29 Jul 2020 10:15:00 -0400</pubDate>
       
       <guid>https://debamitro.github.io/blog/planning-for-rc-mini6-2020/</guid>
-      <description>I am going to do my second ever batch at the Recurse Center - yay &amp;#x1F601; ! I will attend the Mini 6 2020 batch from August 10 to 14. I didn&amp;rsquo;t think this would ever happen, I am able to do this only because right now it is possible to attend remotely.
+      <description>I am going to do my second ever batch at the Recurse Center - yay 😁 ! I will attend the Mini 6 2020 batch from August 10 to 14. I didn&amp;rsquo;t think this would ever happen, I am able to do this only because right now it is possible to attend remotely.
 My first ever batch was Mini 5 2018, and I started this blog at that time (I had a few blogspot.</description>
     </item>
     
@@ -194,7 +199,7 @@ NGW 2019 I attended Never Graduate Week with my wife (a senior Recurser) and son
       <pubDate>Mon, 13 Aug 2018 09:13:23 -0400</pubDate>
       
       <guid>https://debamitro.github.io/blog/rc-mini5-day1/</guid>
-      <description>9:15 am I woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I don&amp;rsquo;t need alarms! I headed out after an hour in search of Dr Strange&amp;rsquo;s Sanctum Sanctorum. I went to 177A Bleecker St - there was no house with that address. I was helped by an &amp;#9730; in my search. I took a photo of the shop at 177. Now I am about to head to RC after a small breakfast.</description>
+      <description>9:15 am I woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I don&amp;rsquo;t need alarms! I headed out after an hour in search of Dr Strange&amp;rsquo;s Sanctum Sanctorum. I went to 177A Bleecker St - there was no house with that address. I was helped by an ☂ in my search. I took a photo of the shop at 177. Now I am about to head to RC after a small breakfast.</description>
     </item>
     
     <item>

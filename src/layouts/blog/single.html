@@ -25,7 +25,9 @@
       </div>
       <div class="my-page-tags">
         Tags:
-        {{ delimit .Params.tags " | " }}
+        {{ with .Params.tags }}
+          {{- delimit . " | " -}}
+        {{ end }}
       </div>
       <div class="my-page-content">
         {{ .Content }}
