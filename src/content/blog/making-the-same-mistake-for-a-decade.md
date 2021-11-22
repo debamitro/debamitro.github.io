@@ -10,7 +10,7 @@ I first saw it in 2006, barely a year after I started working as a software engi
 
 Then it dawned upon us that someone had forgotten to #include the header which had the function's prototype. Which means that a C compiler assumes that the function returns an int. And an int is 32 bits wide on most 64-bit operating systems. So while we wanted to write
 
-```
+```c
   // file: header.h
   A * some_function ();
 
@@ -24,7 +24,7 @@ Then it dawned upon us that someone had forgotten to #include the header which h
 
 we effectively wrote
 
-```
+```c
   // file: main.c
   // compiler assumes the following
   // int some_function ();
