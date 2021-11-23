@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "Home page of Debamitro Chakraborti"
 publishDir = "../"
 disableKinds = ["sitemap","taxonomy","taxonomyTerm"]
+
+[markup.goldmark.renderer]
+unsafe = true
