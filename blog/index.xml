@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 13:25:11 -0400</lastBuildDate><atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>(Almost) 6 weeks of Rust</title>
+      <link>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</link>
+      <pubDate>Fri, 10 Dec 2021 14:57:27 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</guid>
+      <description>I spent most of my working hours in the last six weeks learning about and using the Rust programming language. Here is an account of that. No, I am still nothing more than a beginner in Rust.
+The opportunity I could spend this time in this fashion by being in a remote batch at the Recurse Center (also known as RC). I learnt a lot by myself, but only because I had the opportunity to chat and pair with other programmers.</description>
+    </item>
+    
+    <item>
       <title>Programmatic Access of C Structures</title>
       <link>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</link>
       <pubDate>Fri, 19 Nov 2021 15:26:42 -0500</pubDate>
