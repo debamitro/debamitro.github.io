@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 13:25:11 -0400</lastBuildDate><atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Mystery of the Missing Audio Samples - I</title>
+      <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/</link>
+      <pubDate>Thu, 06 Jan 2022 10:00:00 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/</guid>
+      <description>It all started in the third week of my batch at the Recurse Center, when I got interested in Audio Signal Processing, and signed up for a Coursera course which some people were doing. My biggest goal for the batch was to get better at using Rust. So, I thought I should do the assignments in the course using Rust. Looking for a basic audio library, I found cpal.
+Playing with cpal A couple of years ago I had played briefly with portaudio, which is a very widely-used C library for audio applications.</description>
+    </item>
+    
+    <item>
       <title>(Almost) 6 weeks of Rust</title>
       <link>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</link>
       <pubDate>Fri, 10 Dec 2021 14:57:27 -0500</pubDate>
