@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Aug 2018 13:25:11 -0400</lastBuildDate><atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Mystery of the Missing Audio Samples - II</title>
+      <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/</link>
+      <pubDate>Tue, 11 Jan 2022 11:00:51 -0500</pubDate>
+      
+      <guid>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/</guid>
+      <description>(This is a continuation from my previous blog post.)
+Re-cap I was trying to read in audio samples from my microphone using Rust&amp;rsquo;s cpal library. Somehow I couldn&amp;rsquo;t get 44100 samples per second even though I had verified that the sampling rate was 44100 Hz. I tried various things and nothing seemed to work.
+More attempts to solve the mystery Attempt 4 Cpal uses coreaudio-rs on OSX, which is a &amp;ldquo;Rust-esque&amp;rdquo; interface over Apple&amp;rsquo;s CoreAudio framework.</description>
+    </item>
+    
+    <item>
       <title>The Mystery of the Missing Audio Samples - I</title>
       <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/</link>
       <pubDate>Thu, 06 Jan 2022 10:00:00 -0500</pubDate>

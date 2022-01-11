@@ -81,3 +81,5 @@ I thought I might try to do the same thing using portaudio in C. I compiled the 
 ## Intermission
 
 This blog post will be continued ...
+
+(Edit: the second part of this post is [here]({{< ref "/blog/mystery-of-missing-audio-samples-II" >}}))
