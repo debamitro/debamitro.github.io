@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Moustache Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    #theApp {
+        position: relative;
+    }
+    #theVideo {
+        width: auto;
+        height: auto;
+    }
+    #theCanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #moustacheIcon {
+        visibility: 'hidden';
+    }
+    #moustacheLabel {
+        font-family: Arial;
+        font-size: 1em;
+    }
+    .controls {
+        font-family: Times, Garamond;
+        font-size: 0.9em;
+    }
+    .spacer {
+        clear:both;
+    }
+    .footer {
+        border-top: 1px solid black;
+        margin-top: 5px;
+        padding-top: 5px;
+        font-family: Arial, Helvetica;
+        font-size: 0.7em;
+    }
+  </style>
+  <body>
+    <div id="theApp">
+      <video id="theVideo" playsinline>
+      </video>
+      <canvas id="theCanvas">
+      </canvas>
+      <div class="controls">
+        <img id="moustacheIcon" src="icons8-handlebar-mustache-30.png" />
+        <span id="moustacheLabel"><-- Press this to get moustaches</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="controls">
+          <button id="startButton" disabled>start camera</button>
+          <button id="stopButton" disabled>stop camera</button>
+          <button id="clearButton" disabled>clear moustaches</button>
+      </div>
+    </div>
+    <div class="footer">
+      Source code: <a target="_blank" href="https://github.com/debamitro/tfjs-moustache-maker">https://github.com/debamitro/tfjs-moustache-maker</a>
+      <br />
+      Built using the <a target="_blank" href="https://github.com/tensorflow/tfjs-models/tree/master/blazeface">Blazeface Tensorflow JS model</a>
+      <br/>
+      <a target="_blank" href="https://icons8.com/icon/i4Vc0zLLleDR/handlebar-mustache">Handlebar Mustache</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
