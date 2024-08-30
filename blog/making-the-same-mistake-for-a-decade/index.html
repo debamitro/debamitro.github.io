@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       Making the Same Mistake for a Decade
     </title>
-        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
 
-    <script src="https://debamitro.github.io/js/onready.js"></script>
-    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
-    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -64,23 +64,23 @@
         <p>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.</p>
 <p>I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash. I really don&rsquo;t remember who figured it out. I think we started putting print statements to see the value of the returned pointer and it looked odd. On 64-bit the addresses are pretty long, like 0xffeeddccbbaa00, and our pointer was compact, like 0x12345670. Now, it is possible that the print statement was omitting a whole bunch of zero&rsquo;s in the beginning. But we saw this happen every single time before the crash.</p>
 <p>Then it dawned upon us that someone had forgotten to #include the header which had the function&rsquo;s prototype. Which means that a C compiler assumes that the function returns an int. And an int is 32 bits wide on most 64-bit operating systems. So while we wanted to write</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">  <span style="color:#75715e">// file: header.h
-</span><span style="color:#75715e"></span>  A <span style="color:#f92672">*</span> <span style="color:#a6e22e">some_function</span> ();
-
-  <span style="color:#75715e">// file: main.c
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;header.h&#34;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-  ...
-
-    A <span style="color:#f92672">*</span> a <span style="color:#f92672">=</span> some_function ();
-</code></pre></div><p>we effectively wrote</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">  <span style="color:#75715e">// file: main.c
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">// compiler assumes the following
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">// int some_function ();
-</span><span style="color:#75715e"></span>
-    <span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> some_function ();
-    A <span style="color:#f92672">*</span> a <span style="color:#f92672">=</span> (A <span style="color:#f92672">*</span>)r;
-</code></pre></div><p>Adding the #include for the header fixed the problem. Afterwards we discovered that there was a warning in the build for the last few days complaining about an &lsquo;implicit declaration&rsquo; of the called function. So we were wiser and learnt to watch out for this warning.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// file: header.h
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  A <span style="color:#f92672">*</span> <span style="color:#a6e22e">some_function</span> ();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// file: main.c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;header.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    A <span style="color:#f92672">*</span> a <span style="color:#f92672">=</span> <span style="color:#a6e22e">some_function</span> ();
+</span></span></code></pre></div><p>we effectively wrote</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// file: main.c
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// compiler assumes the following
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// int some_function ();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> <span style="color:#a6e22e">some_function</span> ();
+</span></span><span style="display:flex;"><span>    A <span style="color:#f92672">*</span> a <span style="color:#f92672">=</span> (A <span style="color:#f92672">*</span>)r;
+</span></span></code></pre></div><p>Adding the #include for the header fixed the problem. Afterwards we discovered that there was a warning in the build for the last few days complaining about an &lsquo;implicit declaration&rsquo; of the called function. So we were wiser and learnt to watch out for this warning.</p>
 <p>After that incident, I think I made this mistake at least three times. The last two times happened to be in the last one month! So I decided to find a way to catch this earlier. Gcc does provide the -Werror switch which upgrades all warnings to errors. It is wonderful if you can use this in your build, because that will ensure you no longer need to worry about warnings slipping by. Unfortunately this is not always practical in very large software projects being worked upon from multiple continents. One loose warning can slow down the entire project, which has a far worse effect on the code.</p>
 <p>I discovered that gcc allows selective upgrading of warnings to errors. This is done by specifying the name of the warning as an argument to -Werror. In my case, all I needed was to add -Werror=implicit-function-declaration to every compilation command. I hope I&rsquo;ll be able to get this change added to our build soon. And then I&rsquo;ll hopefully not make this mistake again.</p>
 

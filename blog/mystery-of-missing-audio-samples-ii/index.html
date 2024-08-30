@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       The Mystery of the Missing Audio Samples - II
     </title>
-        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
 
-    <script src="https://debamitro.github.io/js/onready.js"></script>
-    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
-    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -61,7 +61,7 @@
         RC | Rust | cpal | audio
       </div>
       <div class="my-page-content">
-        <p>(This is a continuation from my previous <a href="https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/">blog post</a>.)</p>
+        <p>(This is a continuation from my previous <a href="http://localhost:1313/blog/mystery-of-missing-audio-samples-i/">blog post</a>.)</p>
 <h2 id="re-cap">Re-cap</h2>
 <p>I was trying to read in audio samples from my microphone using Rust&rsquo;s <a href="https://github.com/rustaudio/cpal">cpal</a> library. Somehow I couldn&rsquo;t get 44100 samples per second even though I had verified that the sampling rate was 44100 Hz. I tried various things and nothing seemed to work.</p>
 <h2 id="more-attempts-to-solve-the-mystery">More attempts to solve the mystery</h2>
@@ -69,27 +69,27 @@
 <p>Cpal uses <a href="https://crates.io/crates/coreaudio-rs">coreaudio-rs</a> on OSX, which is a &ldquo;Rust-esque&rdquo; interface over Apple&rsquo;s CoreAudio framework. From my comparisons of portaudio and cpal, I picked one difference which seemed important to me. When portaudio wants to &lsquo;stop&rsquo; an input stream, it calls a bunch of stuff including <a href="https://developer.apple.com/documentation/audiotoolbox/1439607-audiounitreset">AudioUnitReset</a> - and cpal was <em>not</em> doing this one particular call. What&rsquo;s more, coreaudio-rs doesn&rsquo;t even have a way to call the AudioUnitReset routine. I downloaded and built my own copies of cpal and coreaudio-rs and made the necessary changes. This taught me how to modify Cargo.toml to tweak where a dependent package got picked up from - the crate registry, a git repo, or a local directory. I didn&rsquo;t get the desired result yet - I was still receiving somewhere between 40000 and 43000 samples per second.</p>
 <h3 id="attempt-5">Attempt 5</h3>
 <p>Since nothing seemed to help, I decided to see what happened if I tried to record audio for more than 5 seconds. I added a delay of 500ms after the 5 seconds, like</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;start recording&#34;</span>);
-    stream.play();
-    std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
-    std::thread::sleep(std::time::Duration::from_millis(<span style="color:#ae81ff">500</span>);
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
-</code></pre></div><p>For the first time I got close to 44100 x 5 samples. I started experimenting with the additional delay, and I found out that if I added 600ms I got all 44100 x 5 samples.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;start recording&#34;</span>);
+</span></span><span style="display:flex;"><span>    stream.play();
+</span></span><span style="display:flex;"><span>    std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>    std::thread::sleep(std::time::Duration::from_millis(<span style="color:#ae81ff">500</span>);
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
+</span></span></code></pre></div><p>For the first time I got close to 44100 x 5 samples. I started experimenting with the additional delay, and I found out that if I added 600ms I got all 44100 x 5 samples.</p>
 <h2 id="the-aha-moment">The Aha! moment</h2>
 <p>This is when the solution finally occurred to me - all the samples arrive as expected, but they can take a while to arrive. I was not waiting long enough. And why? Because I was doing the equivalent of looking at my watch and expecting an 8-hour job to be done in 8 hours precisely. Instead, I should have stopped looking at my watch and simply waited for the job to finish. Coming to my particular problem, I knew I should have got 44100 x 5 samples - so I should have waited till I got all of them.</p>
 <h2 id="the-solution">The solution</h2>
 <p>Here is what I did - I added a variable delay based on the total number of samples received.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> max_samples: <span style="color:#66d9ef">usize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">44100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
-    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Ok(stream) <span style="color:#f92672">=</span> device.build_input_stream (<span style="color:#f92672">&amp;</span>custom_config,
-                                                       catch_data,
-                                                       catch_error) {
-        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;start recording&#34;</span>);
-        stream.play();
-        std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
-        <span style="color:#66d9ef">while</span> num_samples2.load(Ordering::Relaxed) <span style="color:#f92672">&lt;</span> max_samples {
-            std::thread::sleep(std::time::Duration::from_millis(<span style="color:#ae81ff">200</span>));
-        }
-</code></pre></div><p>And this worked again and again. It worked for both debug and release builds. What&rsquo;s more, I went back to the first thing I had done - adding a print statement in the callback function. And even then I did not miss a single sample.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> max_samples: <span style="color:#66d9ef">usize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">44100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Ok(stream) <span style="color:#f92672">=</span> device.build_input_stream (<span style="color:#f92672">&amp;</span>custom_config,
+</span></span><span style="display:flex;"><span>                                                       catch_data,
+</span></span><span style="display:flex;"><span>                                                       catch_error) {
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;start recording&#34;</span>);
+</span></span><span style="display:flex;"><span>        stream.play();
+</span></span><span style="display:flex;"><span>        std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> num_samples2.load(Ordering::Relaxed) <span style="color:#f92672">&lt;</span> max_samples {
+</span></span><span style="display:flex;"><span>            std::thread::sleep(std::time::Duration::from_millis(<span style="color:#ae81ff">200</span>));
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><p>And this worked again and again. It worked for both debug and release builds. What&rsquo;s more, I went back to the first thing I had done - adding a print statement in the callback function. And even then I did not miss a single sample.</p>
 <h2 id="reflection">Reflection</h2>
 <p>I realized that this solution was right in front of me all along. Because this is how portaudio works. The callback function supplied to the portaudio stream is supposed to return 0 when it knows it should receive more samples, and return 1 when it knows it got all the samples it needed. The portaudio &lsquo;paex_record.c&rsquo; example which I was running had this all along - in the 8 lines starting from <a href="https://github.com/PortAudio/portaudio/blob/52aee492edc64605dcc65afff13776c4dad81910/examples/paex_record.c#L112">here</a>. A lot of my debugging attempts were unnecessary to solve the problem. They did help me learn a lot of Rust concepts, so I am not complaining!</p>
 

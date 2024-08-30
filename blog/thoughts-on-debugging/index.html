@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       Thoughts on Debugging, over the years
     </title>
-        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
 
-    <script src="https://debamitro.github.io/js/onready.js"></script>
-    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
-    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -70,7 +70,7 @@
 <p>I noticed that most of the software tools that I use extensively - for example, emacs, the C and C++ programming languages, the gdb debugger have one thing in common. They have very good documentation - be it in the form of manuals, or helpful messages, or books, or internet blog posts. All of these tools and systems have shortcomings. For example, in some ways the C programming language leads to error-prone programming - because it allows way too much freedom. However &lsquo;The C Programming Language&rsquo; by Kernighan and Ritchie was such a great guide to the language it has been pretty easy to use for decades.</p>
 <h2 id="how-to-reduce-debugging">How to reduce debugging</h2>
 <p>So my new goal is to do less and less debugging of existing code. For example, last week I had to debug a pretty hard problem at work and I could do it in a day only because of a <a href="https://rr-project.org">reversible debugger</a> available to me. Even then it took time. After finding out the relatively simple solution I started thinking about how I can avoid doing such things.</p>
-<p>I think it is becoming more and more important to describe how existing code works. The more clearly we understand existing code the less we have to debug it. I think our understanding of existing code needs to be as good as our understanding of, let&rsquo;s say - newtonian mechanics. We should be able to describe every tiny detail and explain it from first principles. The next generation of programmers will need to deal with many decades of existing code. Now is the time to create new teachers who can explain code so well that the next programmers can easily take big leaps forward. I think this is an opportunity for people from all disciplines. There is a global &lsquo;learn to code&rsquo; movement going on, about which I have no comment. I wish there is a &lsquo;learn to explain code&rsquo; movement as well someday. That, I hope, will reduce the need to spend time debugging software.</p>
+<p>I think it is becoming more and more important to describe how existing code works. The more clearly we understand existing code the less we have to debug it. I think our understanding of existing code needs to be as good as our understanding of, let&rsquo;s say - newtonian mechanics. We should be able to describe every tiny detail and explain it from first principles. The next generation of programmers will need to deal with many decades of existing code. Now is the time to create new teachers who can explain code so well that the next programmers can easily take big leaps forward. I think this is an opportunity for people from all disciplines. There is a global &rsquo;learn to code&rsquo; movement going on, about which I have no comment. I wish there is a &rsquo;learn to explain code&rsquo; movement as well someday. That, I hope, will reduce the need to spend time debugging software.</p>
 
       </div>
     </div>

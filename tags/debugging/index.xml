@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debugging on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/debugging/</link>
+    <description>Recent content in Debugging on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Mar 2021 15:49:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Debugging, over the years</title>
+      <link>http://localhost:1313/blog/thoughts-on-debugging/</link>
+      <pubDate>Wed, 03 Mar 2021 15:49:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/thoughts-on-debugging/</guid>
+      <description>I used to love debugging. The tougher the problem, the better I felt after finding out the answer. In my day job I happen to work in a product that has been continuously developed over the last 25 years or so. Anything that has seen so much change is bound to have complex internals, and this one is no exception. There was a time when I would spend days and nights chasing a very hard problem.</description>
+    </item>
+  </channel>
+</rss>

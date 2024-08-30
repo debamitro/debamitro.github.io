@@ -1,138 +1,201 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home page of Debamitro Chakraborti</title>
-    <link>https://debamitro.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Home page of Debamitro Chakraborti</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 12:09:03 -0400</lastBuildDate>
-    
-	<atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Jan 2022 11:00:51 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Mystery of the Missing Audio Samples - II</title>
+      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</link>
+      <pubDate>Tue, 11 Jan 2022 11:00:51 -0500</pubDate>
+      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</guid>
+      <description>(This is a continuation from my previous blog post.)&#xA;Re-cap I was trying to read in audio samples from my microphone using Rust&amp;rsquo;s cpal library. Somehow I couldn&amp;rsquo;t get 44100 samples per second even though I had verified that the sampling rate was 44100 Hz. I tried various things and nothing seemed to work.&#xA;More attempts to solve the mystery Attempt 4 Cpal uses coreaudio-rs on OSX, which is a &amp;ldquo;Rust-esque&amp;rdquo; interface over Apple&amp;rsquo;s CoreAudio framework.</description>
+    </item>
+    <item>
+      <title>The Mystery of the Missing Audio Samples - I</title>
+      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</link>
+      <pubDate>Thu, 06 Jan 2022 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</guid>
+      <description>It all started in the third week of my batch at the Recurse Center, when I got interested in Audio Signal Processing, and signed up for a Coursera course which some people were doing. My biggest goal for the batch was to get better at using Rust. So, I thought I should do the assignments in the course using Rust. Looking for a basic audio library, I found cpal.&#xA;Playing with cpal A couple of years ago I had played briefly with portaudio, which is a very widely-used C library for audio applications.</description>
+    </item>
+    <item>
+      <title>(Almost) 6 weeks of Rust</title>
+      <link>http://localhost:1313/blog/almost-6-weeks-of-rust/</link>
+      <pubDate>Fri, 10 Dec 2021 14:57:27 -0500</pubDate>
+      <guid>http://localhost:1313/blog/almost-6-weeks-of-rust/</guid>
+      <description>I spent most of my working hours in the last six weeks learning about and using the Rust programming language. Here is an account of that. No, I am still nothing more than a beginner in Rust.&#xA;The opportunity I could spend this time in this fashion by being in a remote batch at the Recurse Center (also known as RC). I learnt a lot by myself, but only because I had the opportunity to chat and pair with other programmers.</description>
+    </item>
+    <item>
+      <title>Programmatic Access of C Structures</title>
+      <link>http://localhost:1313/blog/programmatic-access-of-c-structures/</link>
+      <pubDate>Fri, 19 Nov 2021 15:26:42 -0500</pubDate>
+      <guid>http://localhost:1313/blog/programmatic-access-of-c-structures/</guid>
+      <description>Background More than a year ago, I was looking for a project which would help me learn the Rust programming language. I like creating small projects from scratch, so I thought of solving a problem I had encountered occasionally at work. C (and C++ as well) doesn&amp;rsquo;t have a standard way of accessing its data structures programmatically. Some languages have type introspection capabilities, and C/C++ obviously don&amp;rsquo;t have that either. As a result, we often need to implement boilerplate utility code for dealing with C/C++ structures.</description>
+    </item>
+    <item>
+      <title>Waking Up Before Sunrise</title>
+      <link>http://localhost:1313/blog/waking-up-before-sunrise/</link>
+      <pubDate>Tue, 05 Oct 2021 13:50:19 -0400</pubDate>
+      <guid>http://localhost:1313/blog/waking-up-before-sunrise/</guid>
+      <description>Background I had been seeing videos on YouTube about highly successful people waking up at 4:00 am or 4:30 am or even earlier. About ten days ago I discovered that my neighbour wakes up at 4:00 am every day. That got me thinking - this is a real example in front of me. This can&amp;rsquo;t be some random stuff from the Internet. I had to dig deeper into this. So I decided to try out waking up before sunrise.</description>
+    </item>
+    <item>
+      <title>Impressions of Rust 2020 - part I</title>
+      <link>http://localhost:1313/blog/impressions-of-rust-2020-parti/</link>
+      <pubDate>Sat, 26 Jun 2021 14:00:56 -0400</pubDate>
+      <guid>http://localhost:1313/blog/impressions-of-rust-2020-parti/</guid>
+      <description>Learning a new programming language is always a nice way to kick your brain into action. I first experienced this when I tried to learn Lisp by watching some video lectures. It took me months to digest the concepts and I never got around to writing any lisp. But the ideas stayed with me for years. Later on I did learn Clojure and spend some months writing a bit of Clojure and ClojureScript.</description>
+    </item>
+    <item>
+      <title>A year of working from home</title>
+      <link>http://localhost:1313/blog/a_year_of_working_from_home/</link>
+      <pubDate>Thu, 17 Jun 2021 14:25:06 -0400</pubDate>
+      <guid>http://localhost:1313/blog/a_year_of_working_from_home/</guid>
+      <description>I just realized that I have been working from home for fifteen months now. Yes, this is due to the Covid-19 pandemic and most people around the world are doing the same thing. But I never thought I would do this. Or, get to do this.&#xA;Did I ever love going to office? When I first started working I used to think that office time was highly overrated. I wanted flexibility to work from anywhere and envied the people who got that.</description>
+    </item>
+    <item>
+      <title>Thoughts on Debugging, over the years</title>
+      <link>http://localhost:1313/blog/thoughts-on-debugging/</link>
+      <pubDate>Wed, 03 Mar 2021 15:49:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/thoughts-on-debugging/</guid>
+      <description>I used to love debugging. The tougher the problem, the better I felt after finding out the answer. In my day job I happen to work in a product that has been continuously developed over the last 25 years or so. Anything that has seen so much change is bound to have complex internals, and this one is no exception. There was a time when I would spend days and nights chasing a very hard problem.</description>
+    </item>
+    <item>
+      <title>Joel Test for 2021</title>
+      <link>http://localhost:1313/blog/joel-test-for-2021/</link>
+      <pubDate>Mon, 15 Feb 2021 11:27:55 -0500</pubDate>
+      <guid>http://localhost:1313/blog/joel-test-for-2021/</guid>
+      <description>The Joel Test is quite famous and has inspired many programmers and organizations over the last two decades. I was highly impressed by it when I read it more than a decade ago. Nowadays I tend to think that it needs to be revised. I am not alone. If you search for &amp;lsquo;joel test&amp;rsquo; on your search engine you&amp;rsquo;ll probably see a handful of posts which try to describe a modified version of the test as appropriate for a more recent year (the original test was published in 2000).</description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Thu, 11 Feb 2021 16:43:57 -0500</pubDate>
+      <guid>http://localhost:1313/music/</guid>
+      <description>This page is a work in progress. For now it is best to go to my music blog.</description>
+    </item>
+    <item>
+      <title>Developer Productivity - I</title>
+      <link>http://localhost:1313/blog/developer-productivity/</link>
+      <pubDate>Wed, 10 Feb 2021 16:37:27 -0500</pubDate>
+      <guid>http://localhost:1313/blog/developer-productivity/</guid>
+      <description>I used to be very passionate about developer productivity for years. I guess I still am. But my outlook and methods have changed a lot. I want to write all this down before I forget it. Yes, my memory is short.&#xA;Ten years ago I had just joined a medium-sized company from a tiny startup and I immediately began noticing how much my productivity had come down. And I found fault with the tools and the version control system being used.</description>
+    </item>
+    <item>
+      <title>Rc Mini 6 2020 Day4 and 5</title>
+      <link>http://localhost:1313/blog/rc-mini6-day4-and-5/</link>
+      <pubDate>Fri, 14 Aug 2020 12:50:29 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini6-day4-and-5/</guid>
+      <description>Today is the last day of my batch - that&amp;rsquo;s how fast a Mini batch flies by. Let me recap what happened in the last two days&#xA;Interaction with Recursers I had another great coffee chat where we talked about things like the birdsong recognition contest at Kaggle and how remote participation in RC can be more fun. I also got good questions about security in my homesocial project, which I hadn&amp;rsquo;t thought of before.</description>
+    </item>
+    <item>
+      <title>Rc Mini 6 2020 Day2 and 3</title>
+      <link>http://localhost:1313/blog/rc-mini6-day2-and-3/</link>
+      <pubDate>Wed, 12 Aug 2020 17:45:34 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini6-day2-and-3/</guid>
+      <description>So now I am at the end of day 3 of this batch - which means more than half is over! A lot has happened that I want to write about, although I have made very little progress on the side projects I planned to work on. Like the previous post, I am organizing this one by theme.&#xA;Interaction with Recursers This is going really well - again, by my own standards.</description>
+    </item>
+    <item>
+      <title>Rc Mini 6 2020 Day 1</title>
+      <link>http://localhost:1313/blog/rc-mini6-day1/</link>
+      <pubDate>Tue, 11 Aug 2020 12:38:27 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini6-day1/</guid>
+      <description>Yesterday was the first day of my second mini batch at the Recurse Center. This time I am attending a remote batch, which in itself is a new experience. I had the time to think and plan my time for this batch, since I didn&amp;rsquo;t have arrange transport or accommodation. I don&amp;rsquo;t know how much of the plan I am following, but I guess I am not too much off track.</description>
+    </item>
+    <item>
+      <title>Planning for Rc Mini6 2020</title>
+      <link>http://localhost:1313/blog/planning-for-rc-mini6-2020/</link>
+      <pubDate>Wed, 29 Jul 2020 10:15:00 -0400</pubDate>
+      <guid>http://localhost:1313/blog/planning-for-rc-mini6-2020/</guid>
+      <description>I am going to do my second ever batch at the Recurse Center - yay 😁 ! I will attend the Mini 6 2020 batch from August 10 to 14. I didn&amp;rsquo;t think this would ever happen, I am able to do this only because right now it is possible to attend remotely.&#xA;My first ever batch was Mini 5 2018, and I started this blog at that time (I had a few blogspot.</description>
+    </item>
     <item>
       <title>Making the Same Mistake for a Decade</title>
-      <link>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</link>
+      <link>http://localhost:1313/blog/making-the-same-mistake-for-a-decade/</link>
       <pubDate>Thu, 11 Jun 2020 12:09:03 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</guid>
-      <description>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.
-I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash.</description>
+      <guid>http://localhost:1313/blog/making-the-same-mistake-for-a-decade/</guid>
+      <description>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.&#xA;I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash.</description>
     </item>
-    
     <item>
       <title>How I Got Into Clojure</title>
-      <link>https://debamitro.github.io/blog/how-i-got-into-clojure/</link>
+      <link>http://localhost:1313/blog/how-i-got-into-clojure/</link>
       <pubDate>Thu, 14 Nov 2019 20:27:46 -0500</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/how-i-got-into-clojure/</guid>
-      <description>I had read wonderful things about Clojure many years ago in a blog post series. At that time it seemed very different from the type of programming I used to do at my day job. I had no idea that it could be used for creating any of the software programs I used.
-StrangeLoop and Alda I attended StrangeLoop for the first time in 2017 - and my mind was blown.</description>
+      <guid>http://localhost:1313/blog/how-i-got-into-clojure/</guid>
+      <description>I had read wonderful things about Clojure many years ago in a blog post series. At that time it seemed very different from the type of programming I used to do at my day job. I had no idea that it could be used for creating any of the software programs I used.&#xA;StrangeLoop and Alda I attended StrangeLoop for the first time in 2017 - and my mind was blown.</description>
     </item>
-    
     <item>
       <title>An in-home Social Network</title>
-      <link>https://debamitro.github.io/blog/an-in-home-social-network/</link>
+      <link>http://localhost:1313/blog/an-in-home-social-network/</link>
       <pubDate>Thu, 07 Nov 2019 21:48:50 -0500</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/an-in-home-social-network/</guid>
+      <guid>http://localhost:1313/blog/an-in-home-social-network/</guid>
       <description>I was thinking about creating social networks for specific purposes, when one day I figured out it would be good to have a social network restricted to my home. I got this idea looking at my son and thinking what he would do on Facebook a few years from now. I have nothing against Facebook or any social network - I think they are all fabulous. I just think that an internet-based social network is like the world outside your home.</description>
     </item>
-    
     <item>
       <title>RC for two days</title>
-      <link>https://debamitro.github.io/blog/rc-for-two-days/</link>
+      <link>http://localhost:1313/blog/rc-for-two-days/</link>
       <pubDate>Tue, 20 Aug 2019 17:27:43 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-for-two-days/</guid>
-      <description>After a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from Boston.
-Recap In 2018 I did a mini batch at RC and simply loved it! I did not like staying away from my nine-month-old son for five days, though. So I decided against doing another batch for a year or two.
-NGW 2019 I attended Never Graduate Week with my wife (a senior Recurser) and son and loved the experience!</description>
+      <guid>http://localhost:1313/blog/rc-for-two-days/</guid>
+      <description>After a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from Boston.&#xA;Recap In 2018 I did a mini batch at RC and simply loved it! I did not like staying away from my nine-month-old son for five days, though. So I decided against doing another batch for a year or two.&#xA;NGW 2019 I attended Never Graduate Week with my wife (a senior Recurser) and son and loved the experience!</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 5</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day5/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day5/</link>
       <pubDate>Fri, 17 Aug 2018 08:37:20 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day5/</guid>
-      <description>(My notes from the final day of RC Mini 5 batch)
-8:39 am Today is the last day of my batch. I plan to spend the day exploring some codebases. I don&amp;rsquo;t want to spend a lot of time writing code today. I might write some fun code, though.
-11:08 am I tried to read the alda codebase to find out where they specify frequencies of notes. Alda was my first exposure to Clojure, and I had wanted to experiment with the frequencies of the notes to see if I could play accurate Indian classical music.</description>
+      <guid>http://localhost:1313/blog/rc-mini5-day5/</guid>
+      <description>(My notes from the final day of RC Mini 5 batch)&#xA;8:39 am Today is the last day of my batch. I plan to spend the day exploring some codebases. I don&amp;rsquo;t want to spend a lot of time writing code today. I might write some fun code, though.&#xA;11:08 am I tried to read the alda codebase to find out where they specify frequencies of notes. Alda was my first exposure to Clojure, and I had wanted to experiment with the frequencies of the notes to see if I could play accurate Indian classical music.</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 4</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day4/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day4/</link>
       <pubDate>Thu, 16 Aug 2018 09:37:15 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day4/</guid>
-      <description>(My notes from the fourth day of RC Mini 5 batch)
-9:47 am I started a bit late today, and got delayed by having to skip one subway train because it was soooo crowded. I am beginning to feel that although I have completed most of my work in Clojure, I haven&amp;rsquo;t done functional programming yet. I have not used any global state, and accomplished everything by calling a series of functions from other functions.</description>
+      <guid>http://localhost:1313/blog/rc-mini5-day4/</guid>
+      <description>(My notes from the fourth day of RC Mini 5 batch)&#xA;9:47 am I started a bit late today, and got delayed by having to skip one subway train because it was soooo crowded. I am beginning to feel that although I have completed most of my work in Clojure, I haven&amp;rsquo;t done functional programming yet. I have not used any global state, and accomplished everything by calling a series of functions from other functions.</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 3</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day3/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day3/</link>
       <pubDate>Wed, 15 Aug 2018 08:15:43 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day3/</guid>
-      <description>(My notes from the third day of RC Mini 5 batch)
-8:19 am I have been reading The Joy of Clojure everyday. I need to find ways to improve my Clojure code. So far I have succeeded in avoiding loops by using recursion. I haven&amp;rsquo;t been able to operate on lists as a whole yet, and neither have I been able to use things like the continuation-passing-style. I can&amp;rsquo;t use something &amp;lsquo;foo&amp;rsquo; unless the code stares at me in the face and says &amp;ldquo;this is the place to try out foo&amp;rdquo;.</description>
+      <guid>http://localhost:1313/blog/rc-mini5-day3/</guid>
+      <description>(My notes from the third day of RC Mini 5 batch)&#xA;8:19 am I have been reading The Joy of Clojure everyday. I need to find ways to improve my Clojure code. So far I have succeeded in avoiding loops by using recursion. I haven&amp;rsquo;t been able to operate on lists as a whole yet, and neither have I been able to use things like the continuation-passing-style. I can&amp;rsquo;t use something &amp;lsquo;foo&amp;rsquo; unless the code stares at me in the face and says &amp;ldquo;this is the place to try out foo&amp;rdquo;.</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 2</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day2/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day2/</link>
       <pubDate>Tue, 14 Aug 2018 07:56:15 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day2/</guid>
-      <description>(My notes from the second day of RC Mini 5 batch)
-7:58 am I have been up since 6:30am. Can&amp;rsquo;t wait to get started with today at RC. I have been thinking about how to process a variable number of characters from a string in Clojure. I keep getting stuck because I still have the C++ while loop code in my head!
-10:10 am I was the first person in RC today.</description>
+      <guid>http://localhost:1313/blog/rc-mini5-day2/</guid>
+      <description>(My notes from the second day of RC Mini 5 batch)&#xA;7:58 am I have been up since 6:30am. Can&amp;rsquo;t wait to get started with today at RC. I have been thinking about how to process a variable number of characters from a string in Clojure. I keep getting stuck because I still have the C++ while loop code in my head!&#xA;10:10 am I was the first person in RC today.</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 1</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day1/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day1/</link>
       <pubDate>Mon, 13 Aug 2018 09:13:23 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day1/</guid>
-      <description>9:15 am I woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I don&amp;rsquo;t need alarms! I headed out after an hour in search of Dr Strange&amp;rsquo;s Sanctum Sanctorum. I went to 177A Bleecker St - there was no house with that address. I was helped by an &amp;#9730; in my search. I took a photo of the shop at 177. Now I am about to head to RC after a small breakfast.</description>
+      <guid>http://localhost:1313/blog/rc-mini5-day1/</guid>
+      <description>9:15 am I woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I don&amp;rsquo;t need alarms! I headed out after an hour in search of Dr Strange&amp;rsquo;s Sanctum Sanctorum. I went to 177A Bleecker St - there was no house with that address. I was helped by an ☂ in my search. I took a photo of the shop at 177. Now I am about to head to RC after a small breakfast.</description>
     </item>
-    
     <item>
       <title>RC Mini 5 - Day 0</title>
-      <link>https://debamitro.github.io/blog/rc-mini5-day0/</link>
+      <link>http://localhost:1313/blog/rc-mini5-day0/</link>
       <pubDate>Sun, 12 Aug 2018 13:11:41 -0400</pubDate>
-      
-      <guid>https://debamitro.github.io/blog/rc-mini5-day0/</guid>
+      <guid>http://localhost:1313/blog/rc-mini5-day0/</guid>
       <description>10:57 am I am going to the Recurse Center. Can&amp;rsquo;t believe it yet. Right now I am sitting in the bus and heading towards Boston&amp;rsquo;s South Station. Two years ago my wife did a full batch at RC and that changed her life. It changed my life as well - I became convinced that RC was a &amp;ldquo;must-do&amp;rdquo;. It would not have been possible for me to do a full batch unless I quit my job, so my only hope was a half batch which lasts six weeks.</description>
     </item>
-    
     <item>
       <title>About</title>
-      <link>https://debamitro.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 13 Mar 2018 14:39:40 +0000</pubDate>
-      
-      <guid>https://debamitro.github.io/about/</guid>
-      <description>I am an amateur musician, professional programmer, as well as a husband and a father.
-aami ekajan bAngAlI progrAmAr 
- </description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>I am an amateur musician, professional programmer, as well as a husband and a father. I am interested in applying computer science to solve problems in real life.&#xA;aami ekajan bAngAlI progrAmAr The HTML code for the above line is&#xA;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr &amp;lt;/transliterate&amp;gt; Some day I&amp;rsquo;ll write about the link between this tag and my English-to-Bangla transliterator&#xA;I attended the Recurse Center Social networks I am on StackOverflow Quora Twitter </description>
     </item>
-    
     <item>
       <title>Projects</title>
-      <link>https://debamitro.github.io/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Sun, 11 Mar 2018 14:20:57 +0000</pubDate>
-      
-      <guid>https://debamitro.github.io/projects/</guid>
-      <description>Does every programmer need to have projects on the side? That&amp;rsquo;s what the world wants to believe.
-Here are some very tiny and simple things I have tried.
- TicTacToe using reagent Generating MIDI files using C++11  Here are some not-so-tiny things I have done.
- Bangla transliterator from Roman letters to Unicode ClojureScript version of the above  </description>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>Does every programmer need to have projects on the side? That&amp;rsquo;s what the world wants to believe. Although I don&amp;rsquo;t understand how a professional programmer can do real side projects without affecting his/her dayjob. Or his/her sanity.&#xA;Some tiny and simple things I have tried to do TicTacToe using reagent Generating MIDI files using C++11 An OSX web browser which doesn&amp;rsquo;t do anything A very minimal JavaScript library for printing a collapsible tree Some not-so-tiny things I have done Bangla transliterator from Roman letters to Unicode ClojureScript version of the above A search engine for recent YouTube videos (source) Here are some of my ongoing projects Homesocial - an in-home social network Make-analyze - a GNU Make fork with some additional analysis features </description>
     </item>
-    
   </channel>
 </rss>

@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       Rc Mini 6 2020 Day2 and 3
     </title>
-        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
 
-    <script src="https://debamitro.github.io/js/onready.js"></script>
-    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
-    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -68,8 +68,8 @@
 <p>The project I am working on is <a href="https://github.com/debamitro/homesocial">homesocial</a>, as I mentioned before. I started this nearly a year ago and hadn&rsquo;t touched it beyond an initial proof-of-concept.</p>
 <p>I spent Tuesday (day 2) simplifying the way the browser-based client finds the server. Instead of making the user specify the server&rsquo;s IP address during logging in, I used the URL from the request made to the client.</p>
 <p>Today I added a timestamp to each post, and sorted the feed based on them. This took some time, because I was sending an integer from the client, and the server was finally writing a floating point number to the database. I finally found out that JavaScript&rsquo;s <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now">Date.now()</a> method returns a value in <em>milliseconds</em> which was going beyond 64 bits. Sqlite <a href="https://www.sqlite.org/datatype3.html#type_affinity">stores an integer as a floating point number if it cannot fit into 64 bits</a>. The simple solution was to send this to the database</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">Math.<span style="color:#a6e22e">round</span>(Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>)
-</code></pre></div><h2 id="other-work">Other work</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Math.<span style="color:#a6e22e">round</span>(Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><h2 id="other-work">Other work</h2>
 <h3 id="building-that-rust-project">Building that Rust project</h3>
 <p>I finally succeeded in building <a href="https://github.com/fabianschuiki/moore">this Rust project</a>. The errors were due to a git submodule whose files weren&rsquo;t copied to my local repo. I didn&rsquo;t even know that something called a submodule existed - thankfuly the Git book <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">explained pretty well</a>.</p>
 <h3 id="pushing-out-a-project-to-heroku">Pushing out a project to Heroku</h3>

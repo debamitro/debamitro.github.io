@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       Programmatic Access of C Structures
     </title>
-        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
 
-    <script src="https://debamitro.github.io/js/onready.js"></script>
-    <script src="https://debamitro.github.io/js/transformtextnodes.js"></script>
-    <script src="https://debamitro.github.io/generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io" class="my-menu-item-link">Home</a>
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="https://debamitro.github.io/pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io/images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -75,35 +75,35 @@ It also comes with a nice string library, which is the first thing one needs for
 <p>I saw projects using the <a href="https://crates.io/crates/nom">nom</a> library, and I probably could have been more productive using it. I chose to write things from scratch, without any dependencies other than the standard library. This was a purely personal preference, as I wanted to learn Rust.</p>
 <h1 id="overview-of-my-project">Overview of my project</h1>
 <p>I called it <a href="http://github.com/debamitro/c-introspect-rs">c-introspect-rs</a> as my idea was close enough to type introspection. It is not actually introspection though. I guess I&rsquo;ll have to live with the name. As of now it provides an Iterator over C/C++ structs</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> c_introspect_rs::c_parser::parse_c_file;
-...
-<span style="color:#75715e">// Sample usage
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Some(itr) <span style="color:#f92672">=</span> parse_c_file(filename) {
-        <span style="color:#66d9ef">for</span> c_struct <span style="color:#66d9ef">in</span> itr {
-            <span style="color:#75715e">// For every struct, loop over the fields
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> field <span style="color:#66d9ef">in</span> c_struct.fields.iter() {
-            }
-        }
-    }
-</code></pre></div><p>Here are the Rust data structures provided by the Iterator</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_Declaration</span> {
-    <span style="color:#66d9ef">pub</span> typename: String,
-    <span style="color:#66d9ef">pub</span> name: String,
-}
-
-<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_Struct</span> {
-    <span style="color:#66d9ef">pub</span> name: String,
-    <span style="color:#66d9ef">pub</span> fields: Vec<span style="color:#f92672">&lt;</span>C_Declaration<span style="color:#f92672">&gt;</span>,
-}
-</code></pre></div><h1 id="internal-architecture">Internal architecture</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> c_introspect_rs::c_parser::parse_c_file;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">..</span>.
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Sample usage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Some(itr) <span style="color:#f92672">=</span> parse_c_file(filename) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> c_struct <span style="color:#66d9ef">in</span> itr {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// For every struct, loop over the fields
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> field <span style="color:#66d9ef">in</span> c_struct.fields.iter() {
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Here are the Rust data structures provided by the Iterator</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_Declaration</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> typename: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> name: String,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_Struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> name: String,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> fields: Vec<span style="color:#f92672">&lt;</span>C_Declaration<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="internal-architecture">Internal architecture</h1>
 <p>Here is the <code>parse_c_file</code> routine, which is the only functionality exported by my library.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_StructIter</span> {
-    finished: <span style="color:#66d9ef">bool</span>,
-    buf_reader: <span style="color:#a6e22e">BufReader</span><span style="color:#f92672">&lt;</span>File<span style="color:#f92672">&gt;</span>,
-}
-
-<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse_c_file</span>(filename: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Option<span style="color:#f92672">&lt;</span>C_StructIter<span style="color:#f92672">&gt;</span> {}
-</code></pre></div><p>The <code>parse_c_file</code> routine returns a lazy iterator of type <code>C_StructIter</code>. Whenever <code>C_StructIter::next()</code> is called, the parsing mechanism starts off from wherever it stopped earlier. At the lowest level is a tokenizer which is also a lazy iterator of type <code>c_parser::c_tokenizer::TokenItr</code>. Whenever the parser calls <code>TokenItr::next()</code>, the tokenizer reads the next characters from the file and returns a token. The parser is probably a top-down parser with backtracking, which I feel is the easiest way to hand-code a parser. I wrote &lsquo;probably&rsquo; because I didn&rsquo;t start from a definite parsing strategy. I looked at the syntax of C and C++ structs and asked myself &lsquo;hey, how can my program recognize this&rsquo;. So far it seems to be working for a number of structs. I still need to work on handling more datatypes for the fields of the struct, and for handling recursive structures.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">C_StructIter</span> {
+</span></span><span style="display:flex;"><span>    finished: <span style="color:#66d9ef">bool</span>,
+</span></span><span style="display:flex;"><span>    buf_reader: <span style="color:#a6e22e">BufReader</span><span style="color:#f92672">&lt;</span>File<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse_c_file</span>(filename: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Option<span style="color:#f92672">&lt;</span>C_StructIter<span style="color:#f92672">&gt;</span> {}
+</span></span></code></pre></div><p>The <code>parse_c_file</code> routine returns a lazy iterator of type <code>C_StructIter</code>. Whenever <code>C_StructIter::next()</code> is called, the parsing mechanism starts off from wherever it stopped earlier. At the lowest level is a tokenizer which is also a lazy iterator of type <code>c_parser::c_tokenizer::TokenItr</code>. Whenever the parser calls <code>TokenItr::next()</code>, the tokenizer reads the next characters from the file and returns a token. The parser is probably a top-down parser with backtracking, which I feel is the easiest way to hand-code a parser. I wrote &lsquo;probably&rsquo; because I didn&rsquo;t start from a definite parsing strategy. I looked at the syntax of C and C++ structs and asked myself &lsquo;hey, how can my program recognize this&rsquo;. So far it seems to be working for a number of structs. I still need to work on handling more datatypes for the fields of the struct, and for handling recursive structures.</p>
 <h1 id="testing">Testing</h1>
 <p>I started out with a tiny hand-written file with one struct. Then, I added one more. Next I tried to parse stdlib.h - one of the established Unix system headers. Once I was able to do that I went ahead and parsed all files with a &lsquo;.h&rsquo; suffix under /usr/include. There were arond 1700 headers in all. That was fun! In fact this is the point where I managed to make my program panic. Some of the headers had Unicode characters inside comments, and I was going through the multi-byte characters incorrectly.</p>
 <h1 id="effort-it-took-and-learnings">Effort it took, and learnings</h1>
@@ -111,7 +111,7 @@ It also comes with a nice string library, which is the first thing one needs for
 <p>What did I learn?</p>
 <ul>
 <li>The biggest thing I learnt while doing this is the ownership of objects in Rust. Rust keeps a strict check on who owns an object and who can have access to it. Following the Rust compiler&rsquo;s preferences helped me organize my data logically, keeping things where they fit in logically.</li>
-<li>I also learnt how cargo allows you to run examples for a library. This is very useful, because it is very easy to illustrate how a library should be used, if you can run some example code. All you need to do is to put your examples inside an &lsquo;example&rsquo; directory at the same place where your Cargo.toml is.</li>
+<li>I also learnt how cargo allows you to run examples for a library. This is very useful, because it is very easy to illustrate how a library should be used, if you can run some example code. All you need to do is to put your examples inside an &rsquo;example&rsquo; directory at the same place where your Cargo.toml is.</li>
 </ul>
 
       </div>

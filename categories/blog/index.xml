@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/categories/blog/</link>
+    <description>Recent content in Blog on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2019 17:27:43 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RC for two days</title>
+      <link>http://localhost:1313/blog/rc-for-two-days/</link>
+      <pubDate>Tue, 20 Aug 2019 17:27:43 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-for-two-days/</guid>
+      <description>After a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from Boston.&#xA;Recap In 2018 I did a mini batch at RC and simply loved it! I did not like staying away from my nine-month-old son for five days, though. So I decided against doing another batch for a year or two.&#xA;NGW 2019 I attended Never Graduate Week with my wife (a senior Recurser) and son and loved the experience!</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 5</title>
+      <link>http://localhost:1313/blog/rc-mini5-day5/</link>
+      <pubDate>Fri, 17 Aug 2018 08:37:20 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day5/</guid>
+      <description>(My notes from the final day of RC Mini 5 batch)&#xA;8:39 am Today is the last day of my batch. I plan to spend the day exploring some codebases. I don&amp;rsquo;t want to spend a lot of time writing code today. I might write some fun code, though.&#xA;11:08 am I tried to read the alda codebase to find out where they specify frequencies of notes. Alda was my first exposure to Clojure, and I had wanted to experiment with the frequencies of the notes to see if I could play accurate Indian classical music.</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 4</title>
+      <link>http://localhost:1313/blog/rc-mini5-day4/</link>
+      <pubDate>Thu, 16 Aug 2018 09:37:15 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day4/</guid>
+      <description>(My notes from the fourth day of RC Mini 5 batch)&#xA;9:47 am I started a bit late today, and got delayed by having to skip one subway train because it was soooo crowded. I am beginning to feel that although I have completed most of my work in Clojure, I haven&amp;rsquo;t done functional programming yet. I have not used any global state, and accomplished everything by calling a series of functions from other functions.</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 3</title>
+      <link>http://localhost:1313/blog/rc-mini5-day3/</link>
+      <pubDate>Wed, 15 Aug 2018 08:15:43 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day3/</guid>
+      <description>(My notes from the third day of RC Mini 5 batch)&#xA;8:19 am I have been reading The Joy of Clojure everyday. I need to find ways to improve my Clojure code. So far I have succeeded in avoiding loops by using recursion. I haven&amp;rsquo;t been able to operate on lists as a whole yet, and neither have I been able to use things like the continuation-passing-style. I can&amp;rsquo;t use something &amp;lsquo;foo&amp;rsquo; unless the code stares at me in the face and says &amp;ldquo;this is the place to try out foo&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 2</title>
+      <link>http://localhost:1313/blog/rc-mini5-day2/</link>
+      <pubDate>Tue, 14 Aug 2018 07:56:15 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day2/</guid>
+      <description>(My notes from the second day of RC Mini 5 batch)&#xA;7:58 am I have been up since 6:30am. Can&amp;rsquo;t wait to get started with today at RC. I have been thinking about how to process a variable number of characters from a string in Clojure. I keep getting stuck because I still have the C++ while loop code in my head!&#xA;10:10 am I was the first person in RC today.</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 1</title>
+      <link>http://localhost:1313/blog/rc-mini5-day1/</link>
+      <pubDate>Mon, 13 Aug 2018 09:13:23 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day1/</guid>
+      <description>9:15 am I woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I don&amp;rsquo;t need alarms! I headed out after an hour in search of Dr Strange&amp;rsquo;s Sanctum Sanctorum. I went to 177A Bleecker St - there was no house with that address. I was helped by an ☂ in my search. I took a photo of the shop at 177. Now I am about to head to RC after a small breakfast.</description>
+    </item>
+    <item>
+      <title>RC Mini 5 - Day 0</title>
+      <link>http://localhost:1313/blog/rc-mini5-day0/</link>
+      <pubDate>Sun, 12 Aug 2018 13:11:41 -0400</pubDate>
+      <guid>http://localhost:1313/blog/rc-mini5-day0/</guid>
+      <description>10:57 am I am going to the Recurse Center. Can&amp;rsquo;t believe it yet. Right now I am sitting in the bus and heading towards Boston&amp;rsquo;s South Station. Two years ago my wife did a full batch at RC and that changed her life. It changed my life as well - I became convinced that RC was a &amp;ldquo;must-do&amp;rdquo;. It would not have been possible for me to do a full batch unless I quit my job, so my only hope was a half batch which lasts six weeks.</description>
+    </item>
+  </channel>
+</rss>

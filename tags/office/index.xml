@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/office/</link>
+    <description>Recent content in Office on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jun 2021 14:25:06 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A year of working from home</title>
+      <link>http://localhost:1313/blog/a_year_of_working_from_home/</link>
+      <pubDate>Thu, 17 Jun 2021 14:25:06 -0400</pubDate>
+      <guid>http://localhost:1313/blog/a_year_of_working_from_home/</guid>
+      <description>I just realized that I have been working from home for fifteen months now. Yes, this is due to the Covid-19 pandemic and most people around the world are doing the same thing. But I never thought I would do this. Or, get to do this.&#xA;Did I ever love going to office? When I first started working I used to think that office time was highly overrated. I wanted flexibility to work from anywhere and envied the people who got that.</description>
+    </item>
+  </channel>
+</rss>

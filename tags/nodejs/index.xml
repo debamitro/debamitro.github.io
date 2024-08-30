@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodejs on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/nodejs/</link>
+    <description>Recent content in Nodejs on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Nov 2019 21:48:50 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An in-home Social Network</title>
+      <link>http://localhost:1313/blog/an-in-home-social-network/</link>
+      <pubDate>Thu, 07 Nov 2019 21:48:50 -0500</pubDate>
+      <guid>http://localhost:1313/blog/an-in-home-social-network/</guid>
+      <description>I was thinking about creating social networks for specific purposes, when one day I figured out it would be good to have a social network restricted to my home. I got this idea looking at my son and thinking what he would do on Facebook a few years from now. I have nothing against Facebook or any social network - I think they are all fabulous. I just think that an internet-based social network is like the world outside your home.</description>
+    </item>
+  </channel>
+</rss>

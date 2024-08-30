@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clojure on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/clojure/</link>
+    <description>Recent content in Clojure on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2019 20:27:46 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Got Into Clojure</title>
+      <link>http://localhost:1313/blog/how-i-got-into-clojure/</link>
+      <pubDate>Thu, 14 Nov 2019 20:27:46 -0500</pubDate>
+      <guid>http://localhost:1313/blog/how-i-got-into-clojure/</guid>
+      <description>I had read wonderful things about Clojure many years ago in a blog post series. At that time it seemed very different from the type of programming I used to do at my day job. I had no idea that it could be used for creating any of the software programs I used.&#xA;StrangeLoop and Alda I attended StrangeLoop for the first time in 2017 - and my mind was blown.</description>
+    </item>
+  </channel>
+</rss>

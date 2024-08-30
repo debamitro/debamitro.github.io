@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cpal on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/cpal/</link>
+    <description>Recent content in Cpal on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jan 2022 11:00:51 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cpal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Mystery of the Missing Audio Samples - II</title>
+      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</link>
+      <pubDate>Tue, 11 Jan 2022 11:00:51 -0500</pubDate>
+      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</guid>
+      <description>(This is a continuation from my previous blog post.)&#xA;Re-cap I was trying to read in audio samples from my microphone using Rust&amp;rsquo;s cpal library. Somehow I couldn&amp;rsquo;t get 44100 samples per second even though I had verified that the sampling rate was 44100 Hz. I tried various things and nothing seemed to work.&#xA;More attempts to solve the mystery Attempt 4 Cpal uses coreaudio-rs on OSX, which is a &amp;ldquo;Rust-esque&amp;rdquo; interface over Apple&amp;rsquo;s CoreAudio framework.</description>
+    </item>
+    <item>
+      <title>The Mystery of the Missing Audio Samples - I</title>
+      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</link>
+      <pubDate>Thu, 06 Jan 2022 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</guid>
+      <description>It all started in the third week of my batch at the Recurse Center, when I got interested in Audio Signal Processing, and signed up for a Coursera course which some people were doing. My biggest goal for the batch was to get better at using Rust. So, I thought I should do the assignments in the course using Rust. Looking for a basic audio library, I found cpal.&#xA;Playing with cpal A couple of years ago I had played briefly with portaudio, which is a very widely-used C library for audio applications.</description>
+    </item>
+  </channel>
+</rss>
