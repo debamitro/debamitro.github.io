@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       The Mystery of the Missing Audio Samples - I
     </title>
-        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
 
-    <script src="http://localhost:1313//js/onready.js"></script>
-    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
-    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
     <script>
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
@@ -20,7 +20,7 @@
     <div class="my-menu-bar">
   <ul class="my-menu">
     <li class="my-menu-item">
-      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
     </li>
     
     <li class="my-menu-item">
@@ -40,10 +40,10 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="http://localhost:1313//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
+      <a href="https://debamitro.github.io//pdf/debamitro_resume.pdf" class="my-menu-item-link">Resume</a>
     </li>
     <li class="my-menu-item">
-      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="http://localhost:1313//images/GitHub-Mark-32px.png" /></a>
+      <a href="https://github.com/debamitro" class="my-menu-item-link"><img src="https://debamitro.github.io//images/GitHub-Mark-32px.png" /></a>
     </li>
   </ul>
 </div>
@@ -113,7 +113,7 @@
 <p>I thought I might try to do the same thing using portaudio in C. I compiled the <a href="https://github.com/PortAudio/portaudio/blob/master/examples/paex_record.c">paex_record.c</a> example with a few additional print statements. I got 44100 samples per second, without fail, every single time. I asked around about this difference between the two libraries, and even filed an <a href="https://github.com/RustAudio/cpal/issues/619">issue</a> on the cpal bug-tracker. I asked questions on the cpal forum and then on the portaudio forum. I read the source code of cpal as well as portaudio. All of my experiments were on my MacBook Pro. I found out that both of these libraries use Apple&rsquo;s CoreAudio framework for getting work done. Cpal&rsquo;s code looked much simpler and more reasonable, while portaudio had a lot of special mechanisms. I started to think that I had hit a CoreAudio bug which portaudio had managed to specially take care of.</p>
 <h2 id="intermission">Intermission</h2>
 <p>This blog post will be continued &hellip;</p>
-<p>(Edit: the second part of this post is <a href="http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/">here</a>)</p>
+<p>(Edit: the second part of this post is <a href="https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/">here</a>)</p>
 
       </div>
     </div>

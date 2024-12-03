@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on Home page of Debamitro Chakraborti</title>
-    <link>http://localhost:1313/tags/productivity/</link>
+    <link>https://debamitro.github.io/tags/productivity/</link>
     <description>Recent content in Productivity on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Feb 2021 16:37:27 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developer Productivity - I</title>
-      <link>http://localhost:1313/blog/developer-productivity/</link>
+      <link>https://debamitro.github.io/blog/developer-productivity/</link>
       <pubDate>Wed, 10 Feb 2021 16:37:27 -0500</pubDate>
-      <guid>http://localhost:1313/blog/developer-productivity/</guid>
+      <guid>https://debamitro.github.io/blog/developer-productivity/</guid>
       <description>I used to be very passionate about developer productivity for years. I guess I still am. But my outlook and methods have changed a lot. I want to write all this down before I forget it. Yes, my memory is short.&#xA;Ten years ago I had just joined a medium-sized company from a tiny startup and I immediately began noticing how much my productivity had come down. And I found fault with the tools and the version control system being used.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Home page of Debamitro Chakraborti</title>
-    <link>http://localhost:1313/tags/programming/</link>
+    <link>https://debamitro.github.io/tags/programming/</link>
     <description>Recent content in Programming on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Feb 2021 11:27:55 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Joel Test for 2021</title>
-      <link>http://localhost:1313/blog/joel-test-for-2021/</link>
+      <link>https://debamitro.github.io/blog/joel-test-for-2021/</link>
       <pubDate>Mon, 15 Feb 2021 11:27:55 -0500</pubDate>
-      <guid>http://localhost:1313/blog/joel-test-for-2021/</guid>
+      <guid>https://debamitro.github.io/blog/joel-test-for-2021/</guid>
       <description>The Joel Test is quite famous and has inspired many programmers and organizations over the last two decades. I was highly impressed by it when I read it more than a decade ago. Nowadays I tend to think that it needs to be revised. I am not alone. If you search for &amp;lsquo;joel test&amp;rsquo; on your search engine you&amp;rsquo;ll probably see a handful of posts which try to describe a modified version of the test as appropriate for a more recent year (the original test was published in 2000).</description>
     </item>
   </channel>

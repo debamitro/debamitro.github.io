@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Home page of Debamitro Chakraborti</title>
-    <link>http://localhost:1313/tags/rust/</link>
+    <link>https://debamitro.github.io/tags/rust/</link>
     <description>Recent content in Rust on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jan 2022 11:00:51 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Mystery of the Missing Audio Samples - II</title>
-      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</link>
+      <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/</link>
       <pubDate>Tue, 11 Jan 2022 11:00:51 -0500</pubDate>
-      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-ii/</guid>
+      <guid>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/</guid>
       <description>(This is a continuation from my previous blog post.)&#xA;Re-cap I was trying to read in audio samples from my microphone using Rust&amp;rsquo;s cpal library. Somehow I couldn&amp;rsquo;t get 44100 samples per second even though I had verified that the sampling rate was 44100 Hz. I tried various things and nothing seemed to work.&#xA;More attempts to solve the mystery Attempt 4 Cpal uses coreaudio-rs on OSX, which is a &amp;ldquo;Rust-esque&amp;rdquo; interface over Apple&amp;rsquo;s CoreAudio framework.</description>
     </item>
     <item>
       <title>The Mystery of the Missing Audio Samples - I</title>
-      <link>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</link>
+      <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/</link>
       <pubDate>Thu, 06 Jan 2022 10:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/mystery-of-missing-audio-samples-i/</guid>
+      <guid>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/</guid>
       <description>It all started in the third week of my batch at the Recurse Center, when I got interested in Audio Signal Processing, and signed up for a Coursera course which some people were doing. My biggest goal for the batch was to get better at using Rust. So, I thought I should do the assignments in the course using Rust. Looking for a basic audio library, I found cpal.&#xA;Playing with cpal A couple of years ago I had played briefly with portaudio, which is a very widely-used C library for audio applications.</description>
     </item>
     <item>
       <title>(Almost) 6 weeks of Rust</title>
-      <link>http://localhost:1313/blog/almost-6-weeks-of-rust/</link>
+      <link>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</link>
       <pubDate>Fri, 10 Dec 2021 14:57:27 -0500</pubDate>
-      <guid>http://localhost:1313/blog/almost-6-weeks-of-rust/</guid>
+      <guid>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</guid>
       <description>I spent most of my working hours in the last six weeks learning about and using the Rust programming language. Here is an account of that. No, I am still nothing more than a beginner in Rust.&#xA;The opportunity I could spend this time in this fashion by being in a remote batch at the Recurse Center (also known as RC). I learnt a lot by myself, but only because I had the opportunity to chat and pair with other programmers.</description>
     </item>
     <item>
       <title>Programmatic Access of C Structures</title>
-      <link>http://localhost:1313/blog/programmatic-access-of-c-structures/</link>
+      <link>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</link>
       <pubDate>Fri, 19 Nov 2021 15:26:42 -0500</pubDate>
-      <guid>http://localhost:1313/blog/programmatic-access-of-c-structures/</guid>
+      <guid>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</guid>
       <description>Background More than a year ago, I was looking for a project which would help me learn the Rust programming language. I like creating small projects from scratch, so I thought of solving a problem I had encountered occasionally at work. C (and C++ as well) doesn&amp;rsquo;t have a standard way of accessing its data structures programmatically. Some languages have type introspection capabilities, and C/C++ obviously don&amp;rsquo;t have that either. As a result, we often need to implement boilerplate utility code for dealing with C/C++ structures.</description>
     </item>
     <item>
       <title>Impressions of Rust 2020 - part I</title>
-      <link>http://localhost:1313/blog/impressions-of-rust-2020-parti/</link>
+      <link>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</link>
       <pubDate>Sat, 26 Jun 2021 14:00:56 -0400</pubDate>
-      <guid>http://localhost:1313/blog/impressions-of-rust-2020-parti/</guid>
+      <guid>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</guid>
       <description>Learning a new programming language is always a nice way to kick your brain into action. I first experienced this when I tried to learn Lisp by watching some video lectures. It took me months to digest the concepts and I never got around to writing any lisp. But the ideas stayed with me for years. Later on I did learn Clojure and spend some months writing a bit of Clojure and ClojureScript.</description>
     </item>
   </channel>
