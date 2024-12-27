@@ -25,8 +25,10 @@ Some day I'll write about the link between this tag and [my English-to-Bangla tr
 <script async defer src="https://www.recurse-scout.com/loader.js?t=8869b8fec4c9e0b04bd6c32d01776c91"></script>
 
 <h2>Social networks</h2>
-I am on <ul>
-<li><a href="https://stackoverflow.com/users/887332/debamitro" target="_blank">StackOverflow</a></li>
-<li><a href="https://www.quora.com/profile/Debamitro-Chakraborti" target="_blank">Quora</a></li>
-<li><a href="https://twitter.com/debamitro" target="_blank">Twitter</a></li>
-</ul>
+I am on
+
+* <a href="https://stackoverflow.com/users/887332/debamitro" target="_blank">StackOverflow</a>
+* <a href="https://www.quora.com/profile/Debamitro-Chakraborti" target="_blank">Quora</a>
+* <a href="https://twitter.com/debamitro" target="_blank">Twitter</a>
+* <a href="https://www.youtube.com/@Programmingisdead" target="_blank">YouTube</a>
+* <a href="https://www.linkedin.com/in/debamitro" target="_blank">LinkedIn</a>
