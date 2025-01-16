@@ -20,36 +20,72 @@
         {{ .Title }}
       </div>
       <div class="my-page-content">
-        {{ .Content }}
+        <div class="blog-container">
+          <div class="blog-main-content">
+            {{ .Content }}
 
-        <h2>Recent posts</h2>
-        {{ range .Pages }}
-          {{ if gt (int (.Date.Format "2006")) 2022 }}
-        {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
-          {{ end }}
-        {{ end }}
+            <h2>Recent posts</h2>
+            {{ range .Pages }}
+              {{ if gt (int (.Date.Format "2006")) 2022 }}
+            {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+              {{ end }}
+            {{ end }}
 
-	
-        <h2>Posts from 2022</h2>
-        {{ range .Pages }}
-          {{ if eq (int (.Date.Format "2006")) 2022 }}
-        {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
-          {{ end }}
-        {{ end }}
+            <h2>Posts from 2022</h2>
+            {{ range .Pages }}
+              {{ if eq (int (.Date.Format "2006")) 2022 }}
+            {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+              {{ end }}
+            {{ end }}
 
-        <h2>Posts from 2021</h2>
-        {{ range .Pages }}
-          {{ if eq (.Date.Format "2006") "2021" }}
-        {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
-          {{ end }}
-        {{ end }}
+            <h2>Posts from 2021</h2>
+            {{ range .Pages }}
+              {{ if eq (.Date.Format "2006") "2021" }}
+            {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+              {{ end }}
+            {{ end }}
 
-        <h2>Posts from 2020</h2>
-        {{ range .Pages }}
-          {{ if eq (.Date.Format "2006") "2020" }}
-        {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
-          {{ end }}
-        {{ end }}
+            <h2>Posts from 2020</h2>
+            {{ range .Pages }}
+              {{ if eq (.Date.Format "2006") "2020" }}
+            {{ .Date.Format "Jan 02" }} <a href="{{.Permalink}}">{{ .Title }}</a> <br />
+              {{ end }}
+            {{ end }}
+          </div>
+
+          <div class="tag-cloud-sidebar">
+            {{ $tagCount := dict }}
+            {{ range .Site.Pages }}
+              {{ if eq .Type "blog" }}
+                {{ range .Params.tags }}
+                  {{ $loweredTag := lower . }}
+                  {{ $tagCount = merge $tagCount (dict $loweredTag (add (default 0 (index $tagCount $loweredTag)) 1)) }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            
+            {{ $maxCount := 1 }}
+            {{ range $tag, $count := $tagCount }}
+              {{ if gt $count $maxCount }}
+                {{ $maxCount = $count }}
+              {{ end }}
+            {{ end }}
+    
+            {{ $sortedTags := slice }}
+            {{ range $tag, $count := $tagCount }}
+              {{ $sortedTags = $sortedTags | append (dict "tag" $tag "count" $count) }}
+            {{ end }}
+    
+            {{ range $entry := sort $sortedTags "tag" }}
+              {{ $size := add 0.8 (mul 1.2 (div (float $entry.count) (float $maxCount))) }}
+              <a href="{{ "/tags/" | relLangURL }}{{ $entry.tag | urlize }}" 
+                 class="tag-link" 
+                 style="font-size: {{ $size }}rem;">
+                {{ $entry.tag }} ({{ $entry.count }})
+              </a>
+            {{ end }}
+          </div>
+        </div>
 
         <h2>Posts from 2019</h2>
         {{ range .Pages }}
@@ -68,7 +104,6 @@
         <h1>Posts from my older tech blog</h1>
         <a href="https://yetanothertechnicalblog.blogspot.com" target="_blank">YetAnotherTechnicalBlog</a>
       </div>
-    </div>
 
     {{ partial "bottom.html" . }}
   </body>
