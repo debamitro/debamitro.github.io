@@ -99,6 +99,27 @@ h3 {
     padding-bottom: 10px;
 }
 
+/* Blog post content spacing */
+.my-page-content h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.my-page-content p {
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+.my-page-content ul, 
+.my-page-content ol {
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+}
+
+.my-page-content li {
+    margin-bottom: 0.5em;
+}
+
 .my-page-head {
     font-family: Garamond, Georgia, serif;
     font-size: 3em;
