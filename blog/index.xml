@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2022 11:00:51 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2025 12:17:32 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Started Writing Code for Me</title>
+      <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
+      <pubDate>Fri, 17 Jan 2025 12:17:32 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</guid>
+      <description>I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&#xA;First look The first time I saw AI-assisted software development was a demo of a project called all hands . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too.</description>
+    </item>
     <item>
       <title>The Mystery of the Missing Audio Samples - II</title>
       <link>https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/</link>

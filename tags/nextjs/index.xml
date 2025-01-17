@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nextjs on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/nextjs/</link>
+    <description>Recent content in Nextjs on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2025 12:17:32 -0500</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Started Writing Code for Me</title>
+      <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
+      <pubDate>Fri, 17 Jan 2025 12:17:32 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</guid>
+      <description>I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&#xA;First look The first time I saw AI-assisted software development was a demo of a project called all hands . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too.</description>
+    </item>
+  </channel>
+</rss>
