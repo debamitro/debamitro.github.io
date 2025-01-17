@@ -25,6 +25,12 @@
       gtag('config', 'G-TT65MZJG4S');
     </script>
 
+    
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
   </head>
   <body>
     <div class="my-menu-bar">
@@ -64,7 +70,12 @@
       </div>
       <div class="my-page-tags">
         Tags:
-        C | Warnings | gcc
+        
+          
+            <a href="/tags/c" class="tag-link">C</a>, 
+            <a href="/tags/warnings" class="tag-link">Warnings</a>, 
+            <a href="/tags/gcc" class="tag-link">gcc</a>
+        
       </div>
       <div class="my-page-content">
         <p>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.</p>
@@ -90,6 +101,17 @@
 <p>After that incident, I think I made this mistake at least three times. The last two times happened to be in the last one month! So I decided to find a way to catch this earlier. Gcc does provide the -Werror switch which upgrades all warnings to errors. It is wonderful if you can use this in your build, because that will ensure you no longer need to worry about warnings slipping by. Unfortunately this is not always practical in very large software projects being worked upon from multiple continents. One loose warning can slow down the entire project, which has a far worse effect on the code.</p>
 <p>I discovered that gcc allows selective upgrading of warnings to errors. This is done by specifying the name of the warning as an argument to -Werror. In my case, all I needed was to add -Werror=implicit-function-declaration to every compilation command. I hope I&rsquo;ll be able to get this change added to our build soon. And then I&rsquo;ll hopefully not make this mistake again.</p>
 
+      </div>
+      
+      <div class="tweet-button-container">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Making the Same Mistake for a Decade" 
+           data-via="debamitro" 
+           data-hashtags="C,Warnings,gcc" 
+           data-show-count="false">
+          Tweet
+        </a>
       </div>
     </div>
 

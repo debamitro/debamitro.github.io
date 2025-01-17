@@ -13,6 +13,12 @@
       ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
     </script>
     {{ partial "gtag.html" . }}
+    
+    <!-- Twitter share widget script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <!-- External links script -->
+    <script src="{{ .Site.BaseURL }}/js/external-links.js"></script>
   </head>
   <body>
     {{ partial "top_menu.html" . }}
@@ -27,11 +33,25 @@
       <div class="my-page-tags">
         Tags:
         {{ with .Params.tags }}
-          {{- delimit . " | " -}}
+          {{ range $index, $tag := . }}
+            {{- if $index }}, {{ end }}
+            <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" class="tag-link">{{ $tag }}</a>
+          {{- end }}
         {{ end }}
       </div>
       <div class="my-page-content">
         {{ .Content }}
+      </div>
+      
+      <div class="tweet-button-container">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="{{ .Title }}" 
+           data-via="debamitro" 
+           data-hashtags="{{ delimit .Params.tags "," }}" 
+           data-show-count="false">
+          Tweet
+        </a>
       </div>
     </div>
 

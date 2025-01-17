@@ -25,6 +25,12 @@
       gtag('config', 'G-TT65MZJG4S');
     </script>
 
+    
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
   </head>
   <body>
     <div class="my-menu-bar">
@@ -64,7 +70,13 @@
       </div>
       <div class="my-page-tags">
         Tags:
-        RC | Rust | cpal | audio
+        
+          
+            <a href="/tags/rc" class="tag-link">RC</a>, 
+            <a href="/tags/rust" class="tag-link">Rust</a>, 
+            <a href="/tags/cpal" class="tag-link">cpal</a>, 
+            <a href="/tags/audio" class="tag-link">audio</a>
+        
       </div>
       <div class="my-page-content">
         <p>(This is a continuation from my previous <a href="https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/">blog post</a>.)</p>
@@ -99,6 +111,17 @@
 <h2 id="reflection">Reflection</h2>
 <p>I realized that this solution was right in front of me all along. Because this is how portaudio works. The callback function supplied to the portaudio stream is supposed to return 0 when it knows it should receive more samples, and return 1 when it knows it got all the samples it needed. The portaudio &lsquo;paex_record.c&rsquo; example which I was running had this all along - in the 8 lines starting from <a href="https://github.com/PortAudio/portaudio/blob/52aee492edc64605dcc65afff13776c4dad81910/examples/paex_record.c#L112">here</a>. A lot of my debugging attempts were unnecessary to solve the problem. They did help me learn a lot of Rust concepts, so I am not complaining!</p>
 
+      </div>
+      
+      <div class="tweet-button-container">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="The Mystery of the Missing Audio Samples - II" 
+           data-via="debamitro" 
+           data-hashtags="RC,Rust,cpal,audio" 
+           data-show-count="false">
+          Tweet
+        </a>
       </div>
     </div>
 
