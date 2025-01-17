@@ -72,13 +72,6 @@
       <description>The Joel Test is quite famous and has inspired many programmers and organizations over the last two decades. I was highly impressed by it when I read it more than a decade ago. Nowadays I tend to think that it needs to be revised. I am not alone. If you search for &amp;lsquo;joel test&amp;rsquo; on your search engine you&amp;rsquo;ll probably see a handful of posts which try to describe a modified version of the test as appropriate for a more recent year (the original test was published in 2000).</description>
     </item>
     <item>
-      <title>Music</title>
-      <link>https://debamitro.github.io/music/</link>
-      <pubDate>Thu, 11 Feb 2021 16:43:57 -0500</pubDate>
-      <guid>https://debamitro.github.io/music/</guid>
-      <description>This page is a work in progress. For now it is best to go to my music blog.</description>
-    </item>
-    <item>
       <title>Developer Productivity - I</title>
       <link>https://debamitro.github.io/blog/developer-productivity/</link>
       <pubDate>Wed, 10 Feb 2021 16:37:27 -0500</pubDate>
@@ -188,14 +181,14 @@
       <link>https://debamitro.github.io/about/</link>
       <pubDate>Tue, 13 Mar 2018 14:39:40 +0000</pubDate>
       <guid>https://debamitro.github.io/about/</guid>
-      <description>I am an amateur musician, professional programmer, as well as a husband and a father. I am interested in applying computer science to solve problems in real life.&#xA;aami ekajan bAngAlI progrAmAr The HTML code for the above line is&#xA;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr &amp;lt;/transliterate&amp;gt; Some day I&amp;rsquo;ll write about the link between this tag and my English-to-Bangla transliterator&#xA;I attended the Recurse Center Social networks I am on StackOverflow Quora Twitter YouTube LinkedIn </description>
+      <description>I am an amateur musician, ex-programmer, as well as a husband and a father. I am interested in applying computer science to solve problems in real life.&#xA;aami ekajan bAngAlI progrAmAr The HTML code for the above line is&#xA;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr &amp;lt;/transliterate&amp;gt; Some day I&amp;rsquo;ll write about the link between this tag and my English-to-Bangla transliterator&#xA;I attended the Recurse Center Social networks I am on StackOverflow Quora Twitter YouTube LinkedIn </description>
     </item>
     <item>
       <title>Projects</title>
       <link>https://debamitro.github.io/projects/</link>
       <pubDate>Sun, 11 Mar 2018 14:20:57 +0000</pubDate>
       <guid>https://debamitro.github.io/projects/</guid>
-      <description>Does every programmer need to have projects on the side? That&amp;rsquo;s what the world wants to believe. Although I don&amp;rsquo;t understand how a professional programmer can do real side projects without affecting his/her dayjob. Or his/her sanity.&#xA;Some tiny and simple things I have tried to do TicTacToe using reagent Generating MIDI files using C++11 An OSX web browser which doesn&amp;rsquo;t do anything A very minimal JavaScript library for printing a collapsible tree Some not-so-tiny things I have done Bangla transliterator from Roman letters to Unicode ClojureScript version of the above A search engine for recent YouTube videos (source) Here are some of my ongoing projects Homesocial - an in-home social network Make-analyze - a GNU Make fork with some additional analysis features </description>
+      <description>This list is old and unmaintained. My current projects are all on github.&#xA;Some tiny and simple things I have tried to do TicTacToe using reagent Generating MIDI files using C++11 An OSX web browser which doesn&amp;rsquo;t do anything A very minimal JavaScript library for printing a collapsible tree Some not-so-tiny things I have done Bangla transliterator from Roman letters to Unicode ClojureScript version of the above A search engine for recent YouTube videos (source) Homesocial - an in-home social network Make-analyze - a GNU Make fork with some additional analysis features </description>
     </item>
   </channel>
 </rss>

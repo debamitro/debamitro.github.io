@@ -6,7 +6,7 @@ menu:
     weight: 6
 ---
 
-I am an amateur musician, professional programmer, as well as a husband and a father.
+I am an amateur musician, ex-programmer, as well as a husband and a father.
 I am interested in applying computer science to solve problems in real life.
 
 <transliterate language="bangla">aami ekajan bAngAlI progrAmAr
