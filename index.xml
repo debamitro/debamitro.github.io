@@ -188,14 +188,14 @@
       <link>https://debamitro.github.io/about/</link>
       <pubDate>Tue, 13 Mar 2018 14:39:40 +0000</pubDate>
       <guid>https://debamitro.github.io/about/</guid>
-      <description>I am an amateur musician, ex-programmer, as well as a husband and a father. I am interested in applying computer science to solve problems in real life.&#xA;aami ekajan bAngAlI progrAmAr The HTML code for the above line is&#xA;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr &amp;lt;/transliterate&amp;gt; Some day I&amp;rsquo;ll write about the link between this tag and my English-to-Bangla transliterator&#xA;I attended the Recurse Center Social networks I am on StackOverflow Quora Twitter YouTube LinkedIn </description>
+      <description>I am an amateur musician, ex-programmer, as well as a husband and a father. I am interested in applying computer science to solve problems in real life.&#xA;aami ekajan bAngAlI progrAmAr The HTML code for the above line is&#xA;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr &amp;lt;/transliterate&amp;gt; Some day I&amp;rsquo;ll write about the link between this tag and my English-to-Bangla transliterator&#xA;I attended the Recurse Center I started making YouTube shorts Here is my channel, which focuses on using AI for programming.</description>
     </item>
     <item>
       <title>Projects</title>
       <link>https://debamitro.github.io/projects/</link>
       <pubDate>Sun, 11 Mar 2018 14:20:57 +0000</pubDate>
       <guid>https://debamitro.github.io/projects/</guid>
-      <description>This list is old and unmaintained. My current projects are all on github.&#xA;Some tiny and simple things I have tried to do TicTacToe using reagent Generating MIDI files using C++11 An OSX web browser which doesn&amp;rsquo;t do anything A very minimal JavaScript library for printing a collapsible tree Some not-so-tiny things I have done Bangla transliterator from Roman letters to Unicode ClojureScript version of the above A search engine for recent YouTube videos (source) Homesocial - an in-home social network Make-analyze - a GNU Make fork with some additional analysis features </description>
+      <description>Current www.codepromptfu.com Past Not-so-tiny things What are you looking for in life Homesocial - an in-home social network Make-analyze - a GNU Make fork with some additional analysis features A search engine for recent YouTube videos Bangla transliterator from Roman letters to Unicode ClojureScript version of the above Tiny things TicTacToe using reagent Generating MIDI files using C++11 An OSX web browser which doesn&amp;rsquo;t do anything A very minimal JavaScript library for printing a collapsible tree </description>
     </item>
   </channel>
 </rss>
