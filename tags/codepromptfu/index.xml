@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ai on Home page of Debamitro Chakraborti</title>
-    <link>https://debamitro.github.io/tags/ai/</link>
-    <description>Recent content in Ai on Home page of Debamitro Chakraborti</description>
+    <title>Codepromptfu on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/codepromptfu/</link>
+    <description>Recent content in Codepromptfu on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Jan 2025 11:40:54 -0500</lastBuildDate>
-    <atom:link href="https://debamitro.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/codepromptfu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Collection of Coding Prompts</title>
       <link>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</link>
       <pubDate>Fri, 24 Jan 2025 11:40:54 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</guid>
       <description>Quick intro Here&amp;rsquo;s an idea that ocurred to me almost a month ago, and something that I have been working on since then. As I have written in an earlier post, I started using AI for programming and haven&amp;rsquo;t stopped doing that yet. Which means, I am chatting with a tool in English, and the tool is doing everything that constitutes programming&#xA;Writing some code Fixing errors Improving the code Understanding code - this is very useful for things which I don&amp;rsquo;t always have in my short-term memory (think CSS, JavaScript framework quirks etc) Trying out new approaches Debugging deployment and production issues The list above is real - I have actually done all of them and more.</description>
-    </item>
-    <item>
-      <title>How AI Started Writing Code for Me</title>
-      <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
-      <pubDate>Fri, 17 Jan 2025 12:17:32 -0500</pubDate>
-      <guid>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</guid>
-      <description>I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&#xA;First look The first time I saw AI-assisted software development was a demo of a project called all hands . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too.</description>
     </item>
   </channel>
 </rss>
