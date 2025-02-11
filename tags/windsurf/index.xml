@@ -6,8 +6,15 @@
     <description>Recent content in Windsurf on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jan 2025 12:17:32 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2025 14:36:22 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/windsurf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two Cases of Prompts Which Don&#39;t Work</title>
+      <link>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</link>
+      <pubDate>Tue, 11 Feb 2025 14:36:22 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</guid>
+      <description>After a couple of months of coding using AI prompts, I found two cases where a particular prompt doesn&amp;rsquo;t work. Maybe they&amp;rsquo;ll start working sometime soon. Or, it is possible that they work with a different AI coding tool or LLM other than the ones I tried.&#xA;Case I I have started to use Clerk for user authentication. It is really easy to use, but I have bumped into one small problem everytime I asked Windsurf to add Clerk authentication in a project.</description>
+    </item>
     <item>
       <title>How AI Started Writing Code for Me</title>
       <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
