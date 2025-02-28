@@ -257,3 +257,7 @@ html {
     outline: 2px solid var(--secondary-color);
     outline-offset: 2px;
 }
+
+blockquote {
+    font-style: italic;
+}
