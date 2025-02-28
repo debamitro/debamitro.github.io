@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/workflow/</link>
+    <description>Recent content in Workflow on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2025 14:18:28 -0500</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My LLM Workflow as of Feb 2025</title>
+      <link>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</link>
+      <pubDate>Fri, 28 Feb 2025 14:18:28 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</guid>
+      <description>Inspired by Harper Reed&amp;rsquo;s blog post I want to document the way I am using AI. Specifically, large language models or LLMs.&#xA;What I do I have to confess this first. I am unemployed at the moment, on a planned career break. So, I have all the time in the world to use any AI tool I want. I can afford to devote additional time to get familiar with any LLM-based tool.</description>
+    </item>
+  </channel>
+</rss>
