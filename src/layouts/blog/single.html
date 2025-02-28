@@ -14,13 +14,16 @@
     </script>
     {{ partial "gtag.html" . }}
     
-    <!-- Twitter share widget script -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
     <!-- External links script -->
     <script src="{{ .Site.BaseURL }}/js/external-links.js"></script>
   </head>
   <body>
+    <!-- Twitter share widget script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
     {{ partial "top_menu.html" . }}
     <div class="my-page-container">
       <div class="my-page-head">
@@ -50,9 +53,17 @@
            data-via="debamitro" 
            data-hashtags="{{ delimit .Params.tags "," }}" 
            data-show-count="false">
-          Tweet
+          Share on X
         </a>
+        <div class="fb-share-button" data-href="{{ .Permalink }}" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlize }}&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
       </div>
+
     </div>
 
     {{ partial "bottom.html" . }}

@@ -9,8 +9,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
 }
 
 body {
@@ -224,7 +224,7 @@ h3 {
     display: flex;
     justify-content: flex-start;
     margin-top: 30px;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 /* Responsive design */

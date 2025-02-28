@@ -10,6 +10,7 @@ menu:
 
 * [www.codepromptfu.com](https://www.codepromptfu.com) - a community-driven website for finding the best AI prompts for coding.
   * [Here is a presentation about it](/presentations/codepromptfu-020225)
+  * [Here is a blog you can follow for more information](https://blog.codepromptfu.com)
 
 ## Past
 
