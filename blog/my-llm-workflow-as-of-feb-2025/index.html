@@ -29,6 +29,28 @@
       gtag('config', 'G-TT65MZJG4S');
     </script>
 
+
+<script>
+  async function getPageViews() {
+    const pageViewsArea = document.querySelector('#pageViews');
+    if (pageViewsArea) {
+      try {
+        const path = '\/blog\/my-llm-workflow-as-of-feb-2025';
+        const finalPath = path.endsWith('/') ? path : path + '/';
+        const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+        const data = await response.json();
+        if (data.success) {
+          pageViewsArea.textContent = data.data[0].sessions + ' views';
+        }
+      } catch (error) {
+        console.error('Error fetching page views:', error);
+      }
+    }
+  }
+  
+ window.addEventListener('load', getPageViews);
+</script>
+
     
     
     <script src="https://debamitro.github.io//js/external-links.js"></script>
@@ -74,6 +96,12 @@
       <hr />
       <div class="my-page-date">
         February 28, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
       </div>
       <div class="my-page-tags">
         Tags:

@@ -33,6 +33,12 @@
       <div class="my-page-date">
         {{ .Date.Format "January 2, 2006" }}
       </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
       <div class="my-page-tags">
         Tags:
         {{ with .Params.tags }}
