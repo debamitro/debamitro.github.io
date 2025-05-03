@@ -6,14 +6,21 @@
     <description>Recent content in Llm on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 14:18:28 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 11:32:57 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding report as of April 2025</title>
+      <link>https://debamitro.github.io/blog/vibe-coding-apps-april-2025/</link>
+      <pubDate>Fri, 02 May 2025 11:32:57 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/vibe-coding-apps-april-2025/</guid>
+      <description>&lt;p&gt;I had been thinking of writing a completely different blog post, but just a while ago I got sidetracked by &lt;a href=&#34;https://karpathy.ai&#34;&gt;Andrej Karpathy&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://karpathy.bearblog.dev/vibe-coding-menugen/&#34;&gt;post on vibe coding at a hackathon&lt;/a&gt;. It is a great time to be alive when LLMs are changing technology forever, and one of the most famous researchers in AI is trying it out like the rest of us developers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-vibe-coding-experience&#34;&gt;My vibe coding experience&lt;/h2&gt;&#xA;&lt;p&gt;Even before the term was &lt;a href=&#34;https://blog.codepromptfu.com/posts/what-are-ai-prompts-for-coding/&#34;&gt;invented in a tweet&lt;/a&gt; I had almost stopped writing code by hand. I let LLMs write at least 90% of any code I commit, and use LLM advice for the writing the rest. Here is a graphical representation of all the vibe coding I did in the last few months (thanks to &lt;a href=&#34;https://windsurf.com&#34;&gt;Windsurf&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My LLM Workflow as of Feb 2025</title>
       <link>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</link>
       <pubDate>Fri, 28 Feb 2025 14:18:28 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</guid>
-      <description>Inspired by Harper Reed&amp;rsquo;s blog post I want to document the way I am using AI. Specifically, large language models or LLMs.&#xA;What I do I have to confess this first. I am unemployed at the moment, on a planned career break. So, I have all the time in the world to use any AI tool I want. I can afford to devote additional time to get familiar with any LLM-based tool.</description>
+      <description>&lt;p&gt;Inspired by &lt;a href=&#34;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&#34;&gt;Harper Reed&amp;rsquo;s blog post&lt;/a&gt; I want to document the way I am using AI. Specifically, large language models or LLMs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I do&lt;/h2&gt;&#xA;&lt;p&gt;I have to confess this first. I am unemployed at the moment, on a planned career break.&#xA;So, I have all the time in the world to use any AI tool I want. I can afford to devote additional time&#xA;to get familiar with any LLM-based tool. And I am very privileged to be located only 15 miles away from Cambridge, Massachusetts - which is one of the biggest AI hubs in the world.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

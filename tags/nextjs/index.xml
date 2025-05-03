@@ -13,7 +13,7 @@
       <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
       <pubDate>Fri, 17 Jan 2025 12:17:32 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</guid>
-      <description>I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&#xA;First look The first time I saw AI-assisted software development was a demo of a project called all hands . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too.</description>
+      <description>&lt;p&gt;I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&lt;/p&gt;&#xA;&lt;h3 id=&#34;first-look&#34;&gt;First look&lt;/h3&gt;&#xA;&lt;p&gt;The first time I saw AI-assisted software development was a demo of a project called &lt;a href=&#34;https://www.all-hands.dev&#34;&gt;all hands&lt;/a&gt; . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too. It looked so voodoo to me. Soon I found out that this was becoming commonplace with most of the popular LLMs.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

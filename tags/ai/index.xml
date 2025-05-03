@@ -6,35 +6,42 @@
     <description>Recent content in Ai on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 14:18:28 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 11:32:57 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding report as of April 2025</title>
+      <link>https://debamitro.github.io/blog/vibe-coding-apps-april-2025/</link>
+      <pubDate>Fri, 02 May 2025 11:32:57 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/vibe-coding-apps-april-2025/</guid>
+      <description>&lt;p&gt;I had been thinking of writing a completely different blog post, but just a while ago I got sidetracked by &lt;a href=&#34;https://karpathy.ai&#34;&gt;Andrej Karpathy&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://karpathy.bearblog.dev/vibe-coding-menugen/&#34;&gt;post on vibe coding at a hackathon&lt;/a&gt;. It is a great time to be alive when LLMs are changing technology forever, and one of the most famous researchers in AI is trying it out like the rest of us developers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-vibe-coding-experience&#34;&gt;My vibe coding experience&lt;/h2&gt;&#xA;&lt;p&gt;Even before the term was &lt;a href=&#34;https://blog.codepromptfu.com/posts/what-are-ai-prompts-for-coding/&#34;&gt;invented in a tweet&lt;/a&gt; I had almost stopped writing code by hand. I let LLMs write at least 90% of any code I commit, and use LLM advice for the writing the rest. Here is a graphical representation of all the vibe coding I did in the last few months (thanks to &lt;a href=&#34;https://windsurf.com&#34;&gt;Windsurf&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My LLM Workflow as of Feb 2025</title>
       <link>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</link>
       <pubDate>Fri, 28 Feb 2025 14:18:28 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/</guid>
-      <description>Inspired by Harper Reed&amp;rsquo;s blog post I want to document the way I am using AI. Specifically, large language models or LLMs.&#xA;What I do I have to confess this first. I am unemployed at the moment, on a planned career break. So, I have all the time in the world to use any AI tool I want. I can afford to devote additional time to get familiar with any LLM-based tool.</description>
+      <description>&lt;p&gt;Inspired by &lt;a href=&#34;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&#34;&gt;Harper Reed&amp;rsquo;s blog post&lt;/a&gt; I want to document the way I am using AI. Specifically, large language models or LLMs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I do&lt;/h2&gt;&#xA;&lt;p&gt;I have to confess this first. I am unemployed at the moment, on a planned career break.&#xA;So, I have all the time in the world to use any AI tool I want. I can afford to devote additional time&#xA;to get familiar with any LLM-based tool. And I am very privileged to be located only 15 miles away from Cambridge, Massachusetts - which is one of the biggest AI hubs in the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Two Cases of Prompts Which Don&#39;t Work</title>
       <link>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</link>
       <pubDate>Tue, 11 Feb 2025 14:36:22 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</guid>
-      <description>After a couple of months of coding using AI prompts, I found two cases where a particular prompt doesn&amp;rsquo;t work. Maybe they&amp;rsquo;ll start working sometime soon. Or, it is possible that they work with a different AI coding tool or LLM other than the ones I tried.&#xA;Case I I have started to use Clerk for user authentication. It is really easy to use, but I have bumped into one small problem everytime I asked Windsurf to add Clerk authentication in a project.</description>
+      <description>&lt;p&gt;After a couple of months of coding using AI prompts, I found two cases where a particular prompt doesn&amp;rsquo;t work. Maybe they&amp;rsquo;ll start working sometime soon. Or, it is possible that they work with a different AI coding tool or LLM other than the ones I tried.&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-i&#34;&gt;Case I&lt;/h2&gt;&#xA;&lt;p&gt;I have started to use &lt;a href=&#34;https://clerk.com&#34;&gt;Clerk&lt;/a&gt; for user authentication. It is really easy to use, but I have bumped into one small problem everytime I asked &lt;a href=&#34;https://codeium.com/windsurf&#34;&gt;Windsurf&lt;/a&gt; to add Clerk authentication in a project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building a Collection of Coding Prompts</title>
       <link>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</link>
       <pubDate>Fri, 24 Jan 2025 11:40:54 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</guid>
-      <description>Quick intro Here&amp;rsquo;s an idea that ocurred to me almost a month ago, and something that I have been working on since then. As I have written in an earlier post, I started using AI for programming and haven&amp;rsquo;t stopped doing that yet. Which means, I am chatting with a tool in English, and the tool is doing everything that constitutes programming&#xA;Writing some code Fixing errors Improving the code Understanding code - this is very useful for things which I don&amp;rsquo;t always have in my short-term memory (think CSS, JavaScript framework quirks etc) Trying out new approaches Debugging deployment and production issues The list above is real - I have actually done all of them and more.</description>
+      <description>&lt;h2 id=&#34;quick-intro&#34;&gt;Quick intro&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an idea that ocurred to me almost a month ago, and something that I have been working on since then. As I have written in &lt;a href=&#34;https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/&#34;&gt;an earlier post&lt;/a&gt;, I started using AI for programming and haven&amp;rsquo;t stopped doing that yet. Which means, I am chatting with a tool in English, and the tool is doing everything that constitutes programming&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Writing some code&lt;/li&gt;&#xA;&lt;li&gt;Fixing errors&lt;/li&gt;&#xA;&lt;li&gt;Improving the code&lt;/li&gt;&#xA;&lt;li&gt;Understanding code - this is very useful for things which I don&amp;rsquo;t always have in my short-term memory (think CSS, JavaScript framework quirks etc)&lt;/li&gt;&#xA;&lt;li&gt;Trying out new approaches&lt;/li&gt;&#xA;&lt;li&gt;Debugging deployment and production issues&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The list above is real - I have actually done all of them and more.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Started Writing Code for Me</title>
       <link>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</link>
       <pubDate>Fri, 17 Jan 2025 12:17:32 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/</guid>
-      <description>I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&#xA;First look The first time I saw AI-assisted software development was a demo of a project called all hands . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too.</description>
+      <description>&lt;p&gt;I just realized that I haven&amp;rsquo;t blogged in four years, so it will be a while before my blog catches up with me. I feel like I am a different person now&amp;hellip; Okay, I&amp;rsquo;ll get to the topic I was excited to write about.&lt;/p&gt;&#xA;&lt;h3 id=&#34;first-look&#34;&gt;First look&lt;/h3&gt;&#xA;&lt;p&gt;The first time I saw AI-assisted software development was a demo of a project called &lt;a href=&#34;https://www.all-hands.dev&#34;&gt;all hands&lt;/a&gt; . I was amazed that LLMs (large language models) could read bug reports from screenshots, fix and test code, and then deploy the changes too. It looked so voodoo to me. Soon I found out that this was becoming commonplace with most of the popular LLMs.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

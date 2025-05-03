@@ -13,14 +13,14 @@
       <link>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</link>
       <pubDate>Fri, 10 Dec 2021 14:57:27 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/almost-6-weeks-of-rust/</guid>
-      <description>I spent most of my working hours in the last six weeks learning about and using the Rust programming language. Here is an account of that. No, I am still nothing more than a beginner in Rust.&#xA;The opportunity I could spend this time in this fashion by being in a remote batch at the Recurse Center (also known as RC). I learnt a lot by myself, but only because I had the opportunity to chat and pair with other programmers.</description>
+      <description>&lt;p&gt;I spent most of my working hours in the last six weeks learning about and using the &lt;a href=&#34;https://www.rust-lang.org&#34;&gt;Rust programming language&lt;/a&gt;. Here is an account of that. No, I am still nothing more than a beginner in Rust.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-opportunity&#34;&gt;The opportunity&lt;/h2&gt;&#xA;&lt;p&gt;I could spend this time in this fashion by being in a remote batch at the &lt;a href=&#34;https://www.recurse.com&#34;&gt;Recurse Center&lt;/a&gt; (also known as RC). I learnt a lot by myself, but only because I had the opportunity to chat and pair with other programmers. As I have proably written before, RC is a great ecosystem for learning anything related to programming.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressions of Rust 2020 - part I</title>
       <link>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</link>
       <pubDate>Sat, 26 Jun 2021 14:00:56 -0400</pubDate>
       <guid>https://debamitro.github.io/blog/impressions-of-rust-2020-parti/</guid>
-      <description>Learning a new programming language is always a nice way to kick your brain into action. I first experienced this when I tried to learn Lisp by watching some video lectures. It took me months to digest the concepts and I never got around to writing any lisp. But the ideas stayed with me for years. Later on I did learn Clojure and spend some months writing a bit of Clojure and ClojureScript.</description>
+      <description>&lt;p&gt;Learning a new programming language is always a nice way to kick your brain into action. I first experienced this when I tried to learn Lisp by watching some video lectures. It took me months to digest the concepts and I never got around to writing any lisp. But the ideas stayed with me for years. Later on &lt;a href=&#34;https://debamitro.github.io/blog/how-i-got-into-clojure&#34;&gt;I did learn Clojure&lt;/a&gt; and spend some months writing a bit of Clojure and ClojureScript. All this while I had been hearing about Rust and silently ignoring it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

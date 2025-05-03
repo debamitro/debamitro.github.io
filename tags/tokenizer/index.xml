@@ -13,7 +13,7 @@
       <link>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</link>
       <pubDate>Fri, 19 Nov 2021 15:26:42 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/programmatic-access-of-c-structures/</guid>
-      <description>Background More than a year ago, I was looking for a project which would help me learn the Rust programming language. I like creating small projects from scratch, so I thought of solving a problem I had encountered occasionally at work. C (and C++ as well) doesn&amp;rsquo;t have a standard way of accessing its data structures programmatically. Some languages have type introspection capabilities, and C/C++ obviously don&amp;rsquo;t have that either. As a result, we often need to implement boilerplate utility code for dealing with C/C++ structures.</description>
+      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;More than a year ago, I was looking for a project which would help me learn the &lt;a href=&#34;https://www.rust-lang.org&#34;&gt;Rust programming language&lt;/a&gt;. I like creating small projects from scratch, so I thought of solving a problem I had encountered occasionally at work. C (and C++ as well) doesn&amp;rsquo;t have a standard way of accessing its data structures programmatically. Some languages have type introspection capabilities, and C/C++ obviously don&amp;rsquo;t have that either. As a result, we often need to implement boilerplate utility code for dealing with C/C++ structures. Some examples are:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

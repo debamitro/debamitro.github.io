@@ -13,7 +13,7 @@
       <link>https://debamitro.github.io/blog/thoughts-on-debugging/</link>
       <pubDate>Wed, 03 Mar 2021 15:49:00 -0500</pubDate>
       <guid>https://debamitro.github.io/blog/thoughts-on-debugging/</guid>
-      <description>I used to love debugging. The tougher the problem, the better I felt after finding out the answer. In my day job I happen to work in a product that has been continuously developed over the last 25 years or so. Anything that has seen so much change is bound to have complex internals, and this one is no exception. There was a time when I would spend days and nights chasing a very hard problem.</description>
+      <description>&lt;p&gt;I used to &lt;em&gt;love&lt;/em&gt; debugging. The tougher the problem, the better I felt after finding out the answer. In my day job I happen to work in a product that has been continuously developed over the last 25 years or so. Anything that has seen so much change is bound to have complex internals, and this one is no exception. There was a time when I would spend days and nights chasing a very hard problem. I would invent all kinds of tricks to find out what I needed. Just like solving a good mystery there is no formula for debugging. Every case is unique in its own way. I felt I was lucky to keep getting such cases regularly for years. Whenever I found out the reason behind and the solution to a bug I would have an &amp;lsquo;Eureka!!!&amp;rsquo; moment that would motivate me to keep debugging the next unsolved problem.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</link>
       <pubDate>Thu, 11 Jun 2020 12:09:03 -0400</pubDate>
       <guid>https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/</guid>
-      <description>Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.&#xA;I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash.</description>
+      <description>&lt;p&gt;Today I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in C.&lt;/p&gt;&#xA;&lt;p&gt;I first saw it in 2006, barely a year after I started working as a software engineer. Someone was having a crash only with a 64-bit build. Two people were looking into it and I somehow got involved. A function was returning a pointer to a structure and dereferencing this pointer was causing a crash. I really don&amp;rsquo;t remember who figured it out. I think we started putting print statements to see the value of the returned pointer and it looked odd. On 64-bit the addresses are pretty long, like 0xffeeddccbbaa00, and our pointer was compact, like 0x12345670. Now, it is possible that the print statement was omitting a whole bunch of zero&amp;rsquo;s in the beginning. But we saw this happen every single time before the crash.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
