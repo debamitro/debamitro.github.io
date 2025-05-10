@@ -6,8 +6,15 @@
     <description>Recent content in Ai on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 May 2025 11:32:57 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 May 2025 11:05:34 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attempting to Vibe Code in Rust</title>
+      <link>https://debamitro.github.io/blog/attempting-to-vibe-code-rust/</link>
+      <pubDate>Fri, 09 May 2025 11:05:34 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/attempting-to-vibe-code-rust/</guid>
+      <description>&lt;p&gt;It all started with a post on X I made, more than a month ago&lt;/p&gt;&#xA;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;is anybody doing vibe coding in rust?&lt;/p&gt;&amp;mdash; DebamitroChakraborti (@debamitro) &lt;a href=&#34;https://twitter.com/debamitro/status/1905308219477545266?ref_src=twsrc%5Etfw&#34;&gt;March 27, 2025&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&#xA;&lt;p&gt;Based on the responses, I knew I had to try it out. So I started looking for a project to do.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-project&#34;&gt;The project&lt;/h2&gt;&#xA;&lt;p&gt;A few months ago, I had vibe coded a tiny &lt;a href=&#34;https://github.com/debamitro/gmail-size-classifier&#34;&gt;python project which classified Gmail messages by size&lt;/a&gt;.&#xA;I decided to create a Rust version of it. I thought if I succeeded, it would be easier to distribute as a desktop application.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Vibe Coding report as of April 2025</title>
       <link>https://debamitro.github.io/blog/vibe-coding-apps-april-2025/</link>

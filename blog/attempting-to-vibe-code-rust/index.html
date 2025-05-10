@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/attempting-to-vibe-code-rust/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Attempting to Vibe Code in Rust" />
+<meta property="og:description"   content="Attempting to Vibe Code in Rust" />
+
+    <title>
+      Attempting to Vibe Code in Rust
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+
+
+<script>
+  async function getPageViews() {
+    const pageViewsArea = document.querySelector('#pageViews');
+    if (pageViewsArea) {
+      try {
+        const path = '\/blog\/attempting-to-vibe-code-rust';
+        const finalPath = path.endsWith('/') ? path : path + '/';
+        const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+        const data = await response.json();
+        if (data.success) {
+          pageViewsArea.textContent = data.data[0].sessions + ' views';
+        }
+      } catch (error) {
+        console.error('Error fetching page views:', error);
+      }
+    }
+  }
+  
+ window.addEventListener('load', getPageViews);
+</script>
+
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Attempting to Vibe Code in Rust
+      </div>
+      <hr />
+      <div class="my-page-date">
+        May 9, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/rust" class="tag-link">rust</a>, 
+            <a href="/tags/gmail-cleaner" class="tag-link">gmail cleaner</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/llm" class="tag-link">llm</a>, 
+            <a href="/tags/windsurf" class="tag-link">windsurf</a>, 
+            <a href="/tags/gpui" class="tag-link">gpui</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>It all started with a post on X I made, more than a month ago</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">is anybody doing vibe coding in rust?</p>&mdash; DebamitroChakraborti (@debamitro) <a href="https://twitter.com/debamitro/status/1905308219477545266?ref_src=twsrc%5Etfw">March 27, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Based on the responses, I knew I had to try it out. So I started looking for a project to do.</p>
+<h2 id="the-project">The project</h2>
+<p>A few months ago, I had vibe coded a tiny <a href="https://github.com/debamitro/gmail-size-classifier">python project which classified Gmail messages by size</a>.
+I decided to create a Rust version of it. I thought if I succeeded, it would be easier to distribute as a desktop application.</p>
+<h2 id="choice-of-ui-framework">Choice of UI framework</h2>
+<p>I tried out <a href="https://iced.rs">iced</a> which both Cursor and Windsurf seemed to understand.
+I was actually surprised to see Rust vibe coding working out, even though I used a counter increment/decrement app for
+the test drive. But after that I started some digging, and wanted to try out <a href="https://www.gpui.rs">gpui</a>.
+I think I was inspired by <a href="https://zed.dev">Zed</a> where this framework was born. And I liked its simplicity.</p>
+<h2 id="adventures-with-gpui">Adventures with gpui</h2>
+<p>My first attempts to generate working gpui code using both Cursor and Windsurf were quite rough.
+Nothing was compiling, and I had to correct almost all of the code in order to get going. Once the build succeeded, I didn&rsquo;t want to stop.
+My UI needs were simple enough, and all I needed was a window with a button. Everything else was going to be done by a local http server.</p>
+<p>The great thing about gpui is that if you know html and <a href="http://tailwindcss.com/">tailwindcss</a> you can create gpui UIs.
+There is only one building block, and it is called &lsquo;div()&rsquo; for obvious reasons. Everything else is done by adding style classes.</p>
+<h2 id="the-server">The server</h2>
+<p>This was the guts of the project. I am glad that I chose <a href="https://rocket.rs">rocket</a> for this part.
+Windsurf glided through this part with minimum issues.</p>
+<h2 id="and-weeks-passed">And weeks passed</h2>
+<p>I kept going on with the project, falling into the rabbit hole of Rust aided by AI coding tools.
+I should say that I was mostly finding out what code to write, and using AI help to fix build errors.
+There were some things like <a href="https://tokio.rs">tokio</a> and <a href="https://rocket.rs">rocket</a> that I didn&rsquo;t need to think about - AI coding tools know them well.</p>
+<h2 id="current-state-of-the-project">Current state of the project</h2>
+<p>Last week I managed to upload <a href="https://github.com/debamitro/gmail-size-classifier-rs/releases/tag/v0.1.0-beta">a MacOS .dmg file</a> with the app to the <a href="https://github.com/debamitro/gmail-size-classifier-rs">github repo</a>.
+It is open source, although I plan to upload pre-built Windows and Linux binaries as well, for ease of use.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>A few years ago I actively spent <a href="/blog/almost-6-weeks-of-rust">6 weeks learning Rust</a>. At that time I could compile a few lines of code after spending an entire day!
+I used to tell people that if you want to become a philosopher go learn Rust. Fast forward to today, I am at least 3x more productive. I didn&rsquo;t learn any more Rust in these years - I didn&rsquo;t even touch it.
+But I have the power of AI a.k.a. &lsquo;vibe coding&rsquo;. And even though it is not an expert in Rust yet, it knows more than what I had learned in those 6 weeks.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Attempting to Vibe Code in Rust" 
+           data-via="debamitro" 
+           data-hashtags="rust,gmail cleaner,ai,llm,windsurf,gpui" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/attempting-to-vibe-code-rust/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fattempting-to-vibe-code-rust%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>
