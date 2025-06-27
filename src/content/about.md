@@ -9,6 +9,8 @@ menu:
 I am an amateur musician, ex-programmer, as well as a husband and a father.
 I am interested in applying computer science to solve problems in real life.
 
+In December 2024 I quit my job in order to start my entrepreneurial journey.
+
 <transliterate language="bangla">aami ekajan bAngAlI progrAmAr
 </transliterate>
 
@@ -24,9 +26,13 @@ Some day I'll write about the link between this tag and [my English-to-Bangla tr
 <h2>I attended the Recurse Center</h2>
 <script async defer src="https://www.recurse-scout.com/loader.js?t=8869b8fec4c9e0b04bd6c32d01776c91"></script>
 
-<h2>I started making YouTube shorts</h2>
+<h2>I make YouTube shorts</h2>
 
 <a href="https://www.youtube.com/@Programmingisdead" target="_blank">Here is my channel</a>, which focuses on using AI for programming.
+
+<h2>Business</h2>
+
+I own [East Coast Software LLC](https://www.eastcoastsoft.com), which aims to develop apps.
 
 <h2>Social networks</h2>
 I am on
