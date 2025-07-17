@@ -23,6 +23,10 @@ The HTML code for the above line is
 
 Some day I'll write about the link between this tag and [my English-to-Bangla transliterator](http://debamitro.github.io/generate-bangla-utf8-cljs-demo/)
 
+<h2>Resume</h2>
+
+📋 [Here is my resume](https://github.com/debamitro/resume/blob/master/debamitro_resume.pdf)
+
 <h2>I attended the Recurse Center</h2>
 <script async defer src="https://www.recurse-scout.com/loader.js?t=8869b8fec4c9e0b04bd6c32d01776c91"></script>
 

@@ -8,19 +8,21 @@ menu:
 
 ## Current
 
-* [www.codepromptfu.com](https://www.codepromptfu.com) - a community-driven website for finding the best AI prompts for coding.
-  * [Here is a presentation about it](/presentations/codepromptfu-020225)
-  * [Here is a blog you can follow for more information](https://blog.codepromptfu.com)
+* [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner) - a tool to clean up your Gmail inbox
 
 ## Past
 
 ### Not-so-tiny things
 
+* [www.codepromptfu.com](https://www.codepromptfu.com) - a community-driven website for finding the best AI prompts for coding.
+  * [Here is a presentation about it](/presentations/codepromptfu-020225)
+  * [Here is a blog you can follow for more information](https://blog.codepromptfu.com)
 * [What are you looking for in life](https://lookingforin.life) - an 'useless' website for wasting time
+  * [Here is the ProductHunt page for it](https://www.producthunt.com/products/what-are-you-looking-for-in-life)
 * [Homesocial - an in-home social network](https://github.com/debamitro/homesocial) - I never finished this
 * [Make-analyze - a GNU Make fork with some additional analysis features](https://github.com/debamitro/make-analyze)
 * [Bangla transliterator from Roman letters to Unicode](https://github.com/debamitro/generate-bangla-utf8)
-* [ClojureScript version of the above](https://debamitro.github.io/generate-bangla-utf8-cljs-demo/) - you can use this for typing in Bangla
+  * [ClojureScript version of the above](https://debamitro.github.io/generate-bangla-utf8-cljs-demo/) - you can use this for typing in Bangla
 
 ### Tiny things
 
