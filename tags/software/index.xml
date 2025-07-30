@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Prompt on Home page of Debamitro Chakraborti</title>
-    <link>https://debamitro.github.io/tags/prompt/</link>
-    <description>Recent content in Prompt on Home page of Debamitro Chakraborti</description>
+    <title>Software on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/software/</link>
+    <description>Recent content in Software on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Jul 2025 16:50:35 -0400</lastBuildDate>
-    <atom:link href="https://debamitro.github.io/tags/prompt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Karpathian Classification of Software</title>
       <link>https://debamitro.github.io/blog/karpathian-classification-of-software/</link>
       <pubDate>Tue, 29 Jul 2025 16:50:35 -0400</pubDate>
       <guid>https://debamitro.github.io/blog/karpathian-classification-of-software/</guid>
       <description>&lt;p&gt;In a &lt;a href=&#34;https://youtu.be/LCEmiRjPEtQ?si=NAu70uEImlH4BZsj&#34;&gt;recent speech&lt;/a&gt;, &lt;a href=&#34;https://karpathy.ai&#34;&gt;Andrej Karpathy&lt;/a&gt; has classified software into three broad categories. I have been thinking a lot about them. Here are my reflections on this topic.&lt;/p&gt;&#xA;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Software 1.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 2.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 3.0&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Needs a step-by-step algorithm, where it is told exactly what to do&lt;/td&gt;&#xA;          &lt;td&gt;Can be trained to do tasks which don&amp;rsquo;t have an exact definition&lt;/td&gt;&#xA;          &lt;td&gt;Can learn on the fly and perform tasks based on prompts&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;examples-of-the-three-categories&#34;&gt;Examples of the three categories&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Software 1.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 2.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 3.0&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Can draw geometric shapes&lt;/td&gt;&#xA;          &lt;td&gt;Can draw a cat&lt;/td&gt;&#xA;          &lt;td&gt;Can draw an imaginary animal based on a description&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;As you can see, software 1.0 has been around since the mid-20th century, software 2.0 was impossible for a very long time. Tremendous advances in hardware, and multiple theoretical breakthroughs in machine learning made neural networks commonplace - which is what software 2.0 is. Software 3.0 is the most recent category. It is a way to provide a &amp;lsquo;prompt&amp;rsquo; to a certain kind of software 2.0 which can &amp;rsquo;learn&amp;rsquo;, &amp;rsquo;think&amp;rsquo;, and behave in a possibly new way.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Two Cases of Prompts Which Don&#39;t Work</title>
-      <link>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</link>
-      <pubDate>Tue, 11 Feb 2025 14:36:22 -0500</pubDate>
-      <guid>https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/</guid>
-      <description>&lt;p&gt;After a couple of months of coding using AI prompts, I found two cases where a particular prompt doesn&amp;rsquo;t work. Maybe they&amp;rsquo;ll start working sometime soon. Or, it is possible that they work with a different AI coding tool or LLM other than the ones I tried.&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-i&#34;&gt;Case I&lt;/h2&gt;&#xA;&lt;p&gt;I have started to use &lt;a href=&#34;https://clerk.com&#34;&gt;Clerk&lt;/a&gt; for user authentication. It is really easy to use, but I have bumped into one small problem everytime I asked &lt;a href=&#34;https://codeium.com/windsurf&#34;&gt;Windsurf&lt;/a&gt; to add Clerk authentication in a project.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building a Collection of Coding Prompts</title>
-      <link>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</link>
-      <pubDate>Fri, 24 Jan 2025 11:40:54 -0500</pubDate>
-      <guid>https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/</guid>
-      <description>&lt;h2 id=&#34;quick-intro&#34;&gt;Quick intro&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an idea that ocurred to me almost a month ago, and something that I have been working on since then. As I have written in &lt;a href=&#34;https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/&#34;&gt;an earlier post&lt;/a&gt;, I started using AI for programming and haven&amp;rsquo;t stopped doing that yet. Which means, I am chatting with a tool in English, and the tool is doing everything that constitutes programming&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Writing some code&lt;/li&gt;&#xA;&lt;li&gt;Fixing errors&lt;/li&gt;&#xA;&lt;li&gt;Improving the code&lt;/li&gt;&#xA;&lt;li&gt;Understanding code - this is very useful for things which I don&amp;rsquo;t always have in my short-term memory (think CSS, JavaScript framework quirks etc)&lt;/li&gt;&#xA;&lt;li&gt;Trying out new approaches&lt;/li&gt;&#xA;&lt;li&gt;Debugging deployment and production issues&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The list above is real - I have actually done all of them and more.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

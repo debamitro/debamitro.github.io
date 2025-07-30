@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 May 2025 11:05:34 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 16:50:35 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Karpathian Classification of Software</title>
+      <link>https://debamitro.github.io/blog/karpathian-classification-of-software/</link>
+      <pubDate>Tue, 29 Jul 2025 16:50:35 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/karpathian-classification-of-software/</guid>
+      <description>&lt;p&gt;In a &lt;a href=&#34;https://youtu.be/LCEmiRjPEtQ?si=NAu70uEImlH4BZsj&#34;&gt;recent speech&lt;/a&gt;, &lt;a href=&#34;https://karpathy.ai&#34;&gt;Andrej Karpathy&lt;/a&gt; has classified software into three broad categories. I have been thinking a lot about them. Here are my reflections on this topic.&lt;/p&gt;&#xA;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Software 1.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 2.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 3.0&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Needs a step-by-step algorithm, where it is told exactly what to do&lt;/td&gt;&#xA;          &lt;td&gt;Can be trained to do tasks which don&amp;rsquo;t have an exact definition&lt;/td&gt;&#xA;          &lt;td&gt;Can learn on the fly and perform tasks based on prompts&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;examples-of-the-three-categories&#34;&gt;Examples of the three categories&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Software 1.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 2.0&lt;/th&gt;&#xA;          &lt;th&gt;Software 3.0&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Can draw geometric shapes&lt;/td&gt;&#xA;          &lt;td&gt;Can draw a cat&lt;/td&gt;&#xA;          &lt;td&gt;Can draw an imaginary animal based on a description&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;As you can see, software 1.0 has been around since the mid-20th century, software 2.0 was impossible for a very long time. Tremendous advances in hardware, and multiple theoretical breakthroughs in machine learning made neural networks commonplace - which is what software 2.0 is. Software 3.0 is the most recent category. It is a way to provide a &amp;lsquo;prompt&amp;rsquo; to a certain kind of software 2.0 which can &amp;rsquo;learn&amp;rsquo;, &amp;rsquo;think&amp;rsquo;, and behave in a possibly new way.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Attempting to Vibe Code in Rust</title>
       <link>https://debamitro.github.io/blog/attempting-to-vibe-code-rust/</link>
