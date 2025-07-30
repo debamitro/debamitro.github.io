@@ -125,6 +125,12 @@ h3 {
     font-size: 3em;
 }
 
+.my-page-head-profile img {
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .my-page-date {
     font-style: italic;
     font-size: 0.9em;
@@ -275,4 +281,16 @@ html {
 
 blockquote {
     font-style: italic;
+}
+
+th {
+    background-color: #e0e0e0;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #c0c0c0;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #c0c0c0;
 }
