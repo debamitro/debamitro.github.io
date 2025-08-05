@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/web/</link>
+    <description>Recent content in Web on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Aug 2025 13:30:20 -0400</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Videos With MediaRecorder</title>
+      <link>https://debamitro.github.io/blog/making-videos-with-media-recorder/</link>
+      <pubDate>Mon, 04 Aug 2025 13:30:20 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/making-videos-with-media-recorder/</guid>
+      <description>&lt;p&gt;This story started on a Sunday, at the &lt;a href=&#34;https://sundai.club/&#34;&gt;SundAI Club&lt;/a&gt;. Which reminds me, I should post about the fun AI hacks I have been part of at this club since the end of December 2024. Another day!&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-project&#34;&gt;The project&lt;/h2&gt;&#xA;&lt;p&gt;I wanted to create &lt;a href=&#34;https://fireship.io&#34;&gt;Fireship&lt;/a&gt;-styled videos of my friend Andrew&amp;rsquo;s &lt;a href=&#34;https://velab.dev/news&#34;&gt;AI newsletter&lt;/a&gt;. I quickly found out that AI video generation was slighly expensive, and I didn&amp;rsquo;t want to lose much money on this one-day hack.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
