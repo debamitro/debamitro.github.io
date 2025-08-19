@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/lets-rewrite-in-the-age-of-ai/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="&#39;Let&#39;s Rewrite It&#39; in the Age of AI" />
+<meta property="og:description"   content="&#39;Let&#39;s Rewrite It&#39; in the Age of AI" />
+
+    <title>
+      &#39;Let&#39;s Rewrite It&#39; in the Age of AI
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+
+
+<script>
+  async function getPageViews() {
+    const pageViewsArea = document.querySelector('#pageViews');
+    if (pageViewsArea) {
+      try {
+        const path = '\/blog\/lets-rewrite-in-the-age-of-ai';
+        const finalPath = path.endsWith('/') ? path : path + '/';
+        const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+        const data = await response.json();
+        if (data.success) {
+          pageViewsArea.textContent = data.data[0].sessions + ' views';
+        }
+      } catch (error) {
+        console.error('Error fetching page views:', error);
+      }
+    }
+  }
+  
+ window.addEventListener('load', getPageViews);
+</script>
+
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        &#39;Let&#39;s Rewrite It&#39; in the Age of AI
+      </div>
+      <hr />
+      <div class="my-page-date">
+        August 18, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/rewrite" class="tag-link">rewrite</a>, 
+            <a href="/tags/engineering" class="tag-link">engineering</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>I feel everybody who has been a software engineer for more than five years has hit a point where a bunch of people on the team feel that the entire codebase has become unmaintainable. I have always seen this happen on projects which are successful. That&rsquo;s right - the cleanest code I have ever worked on was a product which had zero customers!</p>
+<p>This cry of &rsquo;let&rsquo;s rewrite it from scratch&rsquo; keeps coming up again and again. I have seen this in action twice in my engineering career. Both times it was a disaster. The new codebase was never complete, and in the end it got abandoned. This is not surprising, because experts and giants in the industry have warned against it. The most famous article is probably <a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">the one by Joel Spolsky</a>.</p>
+<h2 id="enter-ai-assisted-coding">Enter AI-assisted coding</h2>
+<p>As readers of this blog know, I have mostly been using AI for coding in the year 2025. Like many people I am suprised at how big a force multiplier this is. Yes, the code is not perfect, but you don&rsquo;t need to write all of it. You only tweak it, or throw it away and ask your AI coding tool to try harder. Or, move to a different AI coding tool.</p>
+<h2 id="lets-rewrite-with-ai">Let&rsquo;s rewrite with AI</h2>
+<p>So, is it possible to drastically rewrite entire codebases using AI coding tools? It sounds possible, but maybe I am wrong. In case this is possible, one of the use cases I can imagine is that of technical leaders and architects who sometimes have a sweeping vision of a new version of the entire codebase. Perhaps someone like that might come up with one or two new versions of a product just as a proof-of-concept. Without AI this would have taken several man years, and potentially many millions of dollars.</p>
+<h2 id="refactoring">Refactoring</h2>
+<p>A minuscule version of a rewrite is refactoring.
+The best definition of refactoring is from <a href="https://martinfowler.com/books/refactoring.html">Martin Fowler</a>:</p>
+<blockquote>
+<p>Refactoring is a controlled technique for improving the design of an existing code
+base. Its essence is applying a series of small behavior-preserving transformations,
+each of which “too small to be worth doing”. However the cumulative effect of each of
+these transformations is quite significant. By doing them in small steps you reduce the
+risk of introducing errors. You also avoid having the system broken while you are carrying
+out the restructuring - which allows you to gradually refactor a system over an extended
+period of time.</p></blockquote>
+<p>This is a very practical way of improving an existing codebase. It has been around for some time, and has been done in successful software products. The problem with refactoring is that it is much more tricky than it sounds. I have personally seen uncontrolled refactoring wreck software products and make them more unmaintainable than they ever were.</p>
+<h2 id="ai-assisted-refactoring">AI-assisted refactoring</h2>
+<p>Safe and successful refactoring is a very boring and tedious task. Every step is a set of &rsquo;no-brainer&rsquo; changes, usually done in a lot of places. Some of these could be changing a code snippet which has been almost identically copied around in many places. Others could be changes in the names of functions or classes. These changes are hard to review - they mostly look &lsquo;all right&rsquo; and maybe one small bug might creep in.</p>
+<p>Recently I saw one refactoring change done by an AI coding tool. It involved the replacement of a suffix present in a function name with another one. The &lsquo;Find and Replace&rsquo; in your editor cannot do this, because you only want function names changed. An old-school refactoring tool would parse the entire codebase, make the changes and then print out the new version - which would be terrible to review as a diff with the old version. AI doesn&rsquo;t need to parse the code, it can understand code structure and patterns like human eyes and brains do. I was impressed by how cleanly and surgically the change was done.</p>
+<p>So, does this show a path for rapid refactoring of codebases using AI? Seems very much possible to me. Imagine the amount of time a big company with <a href="https://en.wikipedia.org/wiki/Technical_debt">technical debt</a> in their codebase can save by doing AI-assisted refactoring.</p>
+<h2 id="the-future">The future</h2>
+<p>We should check what happens a year from now. Ideally AI should enable drastic improvements in existing software, and also make software maintenance much easier.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="&#39;Let&#39;s Rewrite It&#39; in the Age of AI" 
+           data-via="debamitro" 
+           data-hashtags="ai,rewrite,engineering" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/lets-rewrite-in-the-age-of-ai/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2flets-rewrite-in-the-age-of-ai%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

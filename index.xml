@@ -6,8 +6,15 @@
     <description>Recent content on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Aug 2025 13:30:20 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 19:23:37 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;Let&#39;s Rewrite It&#39; in the Age of AI</title>
+      <link>https://debamitro.github.io/blog/lets-rewrite-in-the-age-of-ai/</link>
+      <pubDate>Mon, 18 Aug 2025 19:23:37 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/lets-rewrite-in-the-age-of-ai/</guid>
+      <description>&lt;p&gt;I feel everybody who has been a software engineer for more than five years has hit a point where a bunch of people on the team feel that the entire codebase has become unmaintainable. I have always seen this happen on projects which are successful. That&amp;rsquo;s right - the cleanest code I have ever worked on was a product which had zero customers!&lt;/p&gt;&#xA;&lt;p&gt;This cry of &amp;rsquo;let&amp;rsquo;s rewrite it from scratch&amp;rsquo; keeps coming up again and again. I have seen this in action twice in my engineering career. Both times it was a disaster. The new codebase was never complete, and in the end it got abandoned. This is not surprising, because experts and giants in the industry have warned against it. The most famous article is probably &lt;a href=&#34;https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/&#34;&gt;the one by Joel Spolsky&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Making Videos With MediaRecorder</title>
       <link>https://debamitro.github.io/blog/making-videos-with-media-recorder/</link>
