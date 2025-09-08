@@ -294,3 +294,20 @@ td {
     padding: 5px;
     border: 1px solid #c0c0c0;
 }
+
+.button {
+    display: inline-block;
+    background-color: #f9f9f9;
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd; 
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
+    
+    

@@ -27,11 +27,55 @@
       </div>
 
       <div class="my-page-content">
-        Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
+        👋 Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
         <br />
-        <a href="blog/">Here is my blog</a><br />
-        <a href="projects/">Here are my projects</a><br />
-        <a href="about/">And here is who I am</a>
+        <div class="flex flex-row">
+        <a href="blog/" class="button"> 📝 Here is my blog</a>
+        <a href="projects/" class="button"> 💻⚙️ Here are my projects</a>
+        <a href="about/" class="button"> 🙋🏻‍♂️ And here is who I am</a>
+        </div>
+        
+        <!-- Random blog post section -->
+        {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+        {{ if $blogPosts }}
+          <div id="random-blog-post" style="margin-top: 2em; padding: 1em; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+            <h3 style="margin-top: 0; color: #333;">From my blog</h3>
+            <div id="random-post-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </div>
+          
+          <script>
+            // Blog posts data
+            const blogPosts = [
+              {{ range $blogPosts }}
+              {
+                title: {{ .Title }},
+                url: {{ .Permalink }},
+                summary: {{ .Summary | truncate 100 }}
+              },
+              {{ end }}
+            ];
+            
+            // Function to display random blog post
+            function displayRandomPost() {
+              if (blogPosts.length === 0) return;
+              
+              const randomIndex = Math.floor(Math.random() * blogPosts.length);
+              const post = blogPosts[randomIndex];
+              
+              const html = `
+                <h4><a href="${post.url}" style="text-decoration: none; color: #0066cc;">${post.title}</a></h4>
+                <p>${post.summary}</p>
+              `;
+              
+              document.getElementById('random-post-content').innerHTML = html;
+            }
+            
+            // Display random post when page loads
+            ready(displayRandomPost);
+          </script>
+        {{ end }}
       </div>
     </div>
     {{ partial "bottom.html" . }}

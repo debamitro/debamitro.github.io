@@ -69,15 +69,15 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="/projects/" class="my-menu-item-link">Projects</a>
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
     </li>
     
     <li class="my-menu-item">
-      <a href="/blog/" class="my-menu-item-link">Blog</a>
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
     </li>
     
     <li class="my-menu-item">
-      <a href="/about/" class="my-menu-item-link">About</a>
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
     </li>
     
     <li class="my-menu-item">
@@ -122,11 +122,11 @@
 <p>Cpal uses <a href="https://crates.io/crates/coreaudio-rs">coreaudio-rs</a> on OSX, which is a &ldquo;Rust-esque&rdquo; interface over Apple&rsquo;s CoreAudio framework. From my comparisons of portaudio and cpal, I picked one difference which seemed important to me. When portaudio wants to &lsquo;stop&rsquo; an input stream, it calls a bunch of stuff including <a href="https://developer.apple.com/documentation/audiotoolbox/1439607-audiounitreset">AudioUnitReset</a> - and cpal was <em>not</em> doing this one particular call. What&rsquo;s more, coreaudio-rs doesn&rsquo;t even have a way to call the AudioUnitReset routine. I downloaded and built my own copies of cpal and coreaudio-rs and made the necessary changes. This taught me how to modify Cargo.toml to tweak where a dependent package got picked up from - the crate registry, a git repo, or a local directory. I didn&rsquo;t get the desired result yet - I was still receiving somewhere between 40000 and 43000 samples per second.</p>
 <h3 id="attempt-5">Attempt 5</h3>
 <p>Since nothing seemed to help, I decided to see what happened if I tried to record audio for more than 5 seconds. I added a delay of 500ms after the 5 seconds, like</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;start recording&#34;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;start recording&#34;</span>);
 </span></span><span style="display:flex;"><span>    stream.play();
 </span></span><span style="display:flex;"><span>    std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
 </span></span><span style="display:flex;"><span>    std::thread::sleep(std::time::Duration::from_millis(<span style="color:#ae81ff">500</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
 </span></span></code></pre></div><p>For the first time I got close to 44100 x 5 samples. I started experimenting with the additional delay, and I found out that if I added 600ms I got all 44100 x 5 samples.</p>
 <h2 id="the-aha-moment">The Aha! moment</h2>
 <p>This is when the solution finally occurred to me - all the samples arrive as expected, but they can take a while to arrive. I was not waiting long enough. And why? Because I was doing the equivalent of looking at my watch and expecting an 8-hour job to be done in 8 hours precisely. Instead, I should have stopped looking at my watch and simply waited for the job to finish. Coming to my particular problem, I knew I should have got 44100 x 5 samples - so I should have waited till I got all of them.</p>
@@ -136,7 +136,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Ok(stream) <span style="color:#f92672">=</span> device.build_input_stream (<span style="color:#f92672">&amp;</span>custom_config,
 </span></span><span style="display:flex;"><span>                                                       catch_data,
 </span></span><span style="display:flex;"><span>                                                       catch_error) {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;start recording&#34;</span>);
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;start recording&#34;</span>);
 </span></span><span style="display:flex;"><span>        stream.play();
 </span></span><span style="display:flex;"><span>        std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> num_samples2.load(Ordering::Relaxed) <span style="color:#f92672">&lt;</span> max_samples {

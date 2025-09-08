@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "💻⚙️ Projects"
 date: 2018-03-11T14:20:57Z
 menu:
   main:
@@ -8,6 +8,7 @@ menu:
 
 ## Current
 
+* [Patch Explorer](https://www.patchexplorer.com) - a tool for comparing multiple diffs for the same change
 * [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner) - a tool to clean up your Gmail inbox
 
 ## Past

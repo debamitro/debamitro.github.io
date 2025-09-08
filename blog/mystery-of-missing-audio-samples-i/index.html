@@ -69,15 +69,15 @@
     </li>
     
     <li class="my-menu-item">
-      <a href="/projects/" class="my-menu-item-link">Projects</a>
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
     </li>
     
     <li class="my-menu-item">
-      <a href="/blog/" class="my-menu-item-link">Blog</a>
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
     </li>
     
     <li class="my-menu-item">
-      <a href="/about/" class="my-menu-item-link">About</a>
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
     </li>
     
     <li class="my-menu-item">
@@ -119,17 +119,17 @@
 <p>A couple of years ago I had played briefly with <a href="https://github.com/PortAudio/portaudio">portaudio</a>, which is a very widely-used C library for audio applications. Cpal seemed better-designed, and used Rust idioms. The documentation was good. I kept referring to the <a href="https://github.com/RustAudio/cpal/blob/master/examples/record_wav.rs">record_wav.rs</a> example and started writing some code which could read audio data from my microphone. I had to learn some concepts like what <a href="https://doc.rust-lang.org/stable/std/ops/trait.FnMut.html">FnMut</a> meant, and whether I could use a function where the example used a closure. The most important lines in the first working version looked like</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#75715e">// Our callback function
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> catch_data <span style="color:#f92672">=</span> <span style="color:#f92672">|</span>data: <span style="color:#66d9ef">&amp;</span>[<span style="color:#66d9ef">f32</span>], info: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">InputCallbackInfo</span><span style="color:#f92672">|</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;got </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> samples&#34;</span>,data.len());
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;got </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> samples&#34;</span>,data.len());
 </span></span><span style="display:flex;"><span>    };
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The real stuff
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Ok(stream) <span style="color:#f92672">=</span> device.build_input_stream (<span style="color:#f92672">&amp;</span>config,
 </span></span><span style="display:flex;"><span>                                                  catch_data,
 </span></span><span style="display:flex;"><span>                                                  catch_error) {
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;start recording&#34;</span>);
+</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;start recording&#34;</span>);
 </span></span><span style="display:flex;"><span>            stream.play();
 </span></span><span style="display:flex;"><span>            std::thread::sleep(std::time::Duration::from_secs(<span style="color:#ae81ff">5</span>);
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">println!</span>(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
+</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;stop recording&#34;</span>);
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>As one can see, the way to capture audio is to call the <a href="https://docs.rs/cpal/latest/cpal/traits/trait.DeviceTrait.html#method.build_input_stream">cpal::Device::build_input_stream</a> function, and pass a closure as its second argument. I think I initially didn&rsquo;t even use a closure - I just used a &lsquo;catch_data&rsquo; function. This function (or closure) gets called whenever some audio samples arrive.</p>
 <h2 id="the-mystery">The mystery</h2>

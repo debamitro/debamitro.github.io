@@ -66,11 +66,247 @@
       </div>
 
       <div class="my-page-content">
-        Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
+        👋 Hi visitor! <transliterate language="bangla">namaskAr</transliterate>!
         <br />
-        <a href="blog/">Here is my blog</a><br />
-        <a href="projects/">Here are my projects</a><br />
-        <a href="about/">And here is who I am</a>
+        <div class="flex flex-row">
+        <a href="blog/" class="button"> 📝 Here is my blog</a>
+        <a href="projects/" class="button"> 💻⚙️ Here are my projects</a>
+        <a href="about/" class="button"> 🙋🏻‍♂️ And here is who I am</a>
+        </div>
+        
+        
+        
+        
+          <div id="random-blog-post" style="margin-top: 2em; padding: 1em; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+            <h3 style="margin-top: 0; color: #333;">From my blog</h3>
+            <div id="random-post-content">
+              
+            </div>
+          </div>
+          
+          <script>
+            
+            const blogPosts = [
+              
+              {
+                title: "'Let's Rewrite It' in the Age of AI",
+                url: "https://debamitro.github.io/blog/lets-rewrite-in-the-age-of-ai/",
+                summary: "\u003cp\u003eI feel everybody who has been a software engineer for more than five years has hit a point where a …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Making Videos With MediaRecorder",
+                url: "https://debamitro.github.io/blog/making-videos-with-media-recorder/",
+                summary: "\u003cp\u003eThis story started on a Sunday, at the \u003ca href=\"https://sundai.club/\"\u003eSundAI Club\u003c/a\u003e. Which reminds me, I should post about the fun AI …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Karpathian Classification of Software",
+                url: "https://debamitro.github.io/blog/karpathian-classification-of-software/",
+                summary: "\u003cp\u003eIn a \u003ca href=\"https://youtu.be/LCEmiRjPEtQ?si=NAu70uEImlH4BZsj\"\u003erecent speech\u003c/a\u003e, \u003ca href=\"https://karpathy.ai\"\u003eAndrej Karpathy\u003c/a\u003e has classified software into three broad categories. I have been …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Attempting to Vibe Code in Rust",
+                url: "https://debamitro.github.io/blog/attempting-to-vibe-code-rust/",
+                summary: "\u003cp\u003eIt all started with a post on X I made, more than a month ago\u003c/p\u003e\n\u003cblockquote class=\"twitter-tweet\"\u003e\u003cp lang=\"en\" dir=\"ltr\"\u003eis anybody doing vibe coding in rust? …\u003c/p\u003e\u003c/blockquote\u003e"
+              },
+              
+              {
+                title: "Vibe Coding report as of April 2025",
+                url: "https://debamitro.github.io/blog/vibe-coding-apps-april-2025/",
+                summary: "\u003cp\u003eI had been thinking of writing a completely different blog post, but just a while ago I got …\u003c/p\u003e"
+              },
+              
+              {
+                title: "My LLM Workflow as of Feb 2025",
+                url: "https://debamitro.github.io/blog/my-llm-workflow-as-of-feb-2025/",
+                summary: "\u003cp\u003eInspired by \u003ca href=\"https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/\"\u003eHarper Reed\u0026rsquo;s blog post\u003c/a\u003e I want to document the way I am using AI. Specifically, …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Two Cases of Prompts Which Don't Work",
+                url: "https://debamitro.github.io/blog/two-cases-of-prompts-which-donot-work/",
+                summary: "\u003cp\u003eAfter a couple of months of coding using AI prompts, I found two cases where a particular prompt …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Building a Collection of Coding Prompts",
+                url: "https://debamitro.github.io/blog/building-a-collection-of-coding-prompts/",
+                summary: "\u003ch2 id=\"quick-intro\"\u003eQuick intro\u003c/h2\u003e\n\u003cp\u003eHere\u0026rsquo;s an idea that ocurred to me almost a month ago, and something that I have …\u003c/p\u003e"
+              },
+              
+              {
+                title: "How AI Started Writing Code for Me",
+                url: "https://debamitro.github.io/blog/how-ai-started-writing-code-for-me/",
+                summary: "\u003cp\u003eI just realized that I haven\u0026rsquo;t blogged in four years, so it will be a while before my blog …\u003c/p\u003e"
+              },
+              
+              {
+                title: "The Mystery of the Missing Audio Samples - II",
+                url: "https://debamitro.github.io/blog/mystery-of-missing-audio-samples-ii/",
+                summary: "\u003cp\u003e(This is a continuation from my previous \u003ca href=\"https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/\"\u003eblog post\u003c/a\u003e.)\u003c/p\u003e\n\u003ch2 id=\"re-cap\"\u003eRe-cap\u003c/h2\u003e\n\u003cp\u003eI was trying to read in audio samples …\u003c/p\u003e"
+              },
+              
+              {
+                title: "The Mystery of the Missing Audio Samples - I",
+                url: "https://debamitro.github.io/blog/mystery-of-missing-audio-samples-i/",
+                summary: "\u003cp\u003eIt all started in the third week of my batch at the Recurse Center, when I got interested in Audio …\u003c/p\u003e"
+              },
+              
+              {
+                title: "(Almost) 6 weeks of Rust",
+                url: "https://debamitro.github.io/blog/almost-6-weeks-of-rust/",
+                summary: "\u003cp\u003eI spent most of my working hours in the last six weeks learning about and using the \u003ca href=\"https://www.rust-lang.org\"\u003eRust programming …\u003c/a\u003e\u003c/p\u003e"
+              },
+              
+              {
+                title: "Programmatic Access of C Structures",
+                url: "https://debamitro.github.io/blog/programmatic-access-of-c-structures/",
+                summary: "\u003ch1 id=\"background\"\u003eBackground\u003c/h1\u003e\n\u003cp\u003eMore than a year ago, I was looking for a project which would help me learn the \u003ca href=\"https://www.rust-lang.org\"\u003eRust …\u003c/a\u003e\u003c/p\u003e"
+              },
+              
+              {
+                title: "Waking Up Before Sunrise",
+                url: "https://debamitro.github.io/blog/waking-up-before-sunrise/",
+                summary: "\u003ch1 id=\"background\"\u003eBackground\u003c/h1\u003e\n\u003cp\u003eI had been seeing videos on YouTube about highly successful people waking up at 4:00 am …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Impressions of Rust 2020 - part I",
+                url: "https://debamitro.github.io/blog/impressions-of-rust-2020-parti/",
+                summary: "\u003cp\u003eLearning a new programming language is always a nice way to kick your brain into action. I first …\u003c/p\u003e"
+              },
+              
+              {
+                title: "A year of working from home",
+                url: "https://debamitro.github.io/blog/a_year_of_working_from_home/",
+                summary: "\u003cp\u003eI just realized that I have been working from home for fifteen months now. Yes, this is due to the …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Thoughts on Debugging, over the years",
+                url: "https://debamitro.github.io/blog/thoughts-on-debugging/",
+                summary: "\u003cp\u003eI used to \u003cem\u003elove\u003c/em\u003e debugging. The tougher the problem, the better I felt after finding out the answer. …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Joel Test for 2021",
+                url: "https://debamitro.github.io/blog/joel-test-for-2021/",
+                summary: "\u003cp\u003eThe \u003ca href=\"https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/\"\u003eJoel Test\u003c/a\u003e is quite famous and has inspired many programmers and organizations over the last two …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Developer Productivity - I",
+                url: "https://debamitro.github.io/blog/developer-productivity/",
+                summary: "\u003cp\u003eI used to be very passionate about developer productivity for years. I guess I still am. But my …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Rc Mini 6 2020 Day4 and 5",
+                url: "https://debamitro.github.io/blog/rc-mini6-day4-and-5/",
+                summary: "\u003cp\u003eToday is the last day of my batch - that\u0026rsquo;s how fast a Mini batch flies by. Let me recap what …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Rc Mini 6 2020 Day2 and 3",
+                url: "https://debamitro.github.io/blog/rc-mini6-day2-and-3/",
+                summary: "\u003cp\u003eSo now I am at the end of day 3 of this batch - which means more than half is over! A lot has …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Rc Mini 6 2020 Day 1",
+                url: "https://debamitro.github.io/blog/rc-mini6-day1/",
+                summary: "\u003cp\u003eYesterday was the first day of my second mini batch at the \u003ca href=\"https://www.recurse.com\"\u003eRecurse Center\u003c/a\u003e. This time I am attending …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Planning for Rc Mini6 2020",
+                url: "https://debamitro.github.io/blog/planning-for-rc-mini6-2020/",
+                summary: "\u003cp\u003eI am going to do my second ever batch at the \u003ca href=\"https://www.recurse.com\"\u003eRecurse Center\u003c/a\u003e - yay 😁 !\nI will attend the Mini 6 2020 …\u003c/p\u003e"
+              },
+              
+              {
+                title: "Making the Same Mistake for a Decade",
+                url: "https://debamitro.github.io/blog/making-the-same-mistake-for-a-decade/",
+                summary: "\u003cp\u003eToday I saw I had made the same mistake twice in a month. It is a rather harmless-looking mistake in …\u003c/p\u003e"
+              },
+              
+              {
+                title: "How I Got Into Clojure",
+                url: "https://debamitro.github.io/blog/how-i-got-into-clojure/",
+                summary: "\u003cp\u003eI had read wonderful things about Clojure many years ago in a \u003ca href=\"https://swaroopch.com/2013/08/24/ghoseb-clojure-course-day-1/\"\u003eblog post series\u003c/a\u003e. At that time it …\u003c/p\u003e"
+              },
+              
+              {
+                title: "An in-home Social Network",
+                url: "https://debamitro.github.io/blog/an-in-home-social-network/",
+                summary: "\u003cp\u003eI was thinking about creating social networks for specific purposes, when one day I figured out it …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC for two days",
+                url: "https://debamitro.github.io/blog/rc-for-two-days/",
+                summary: "\u003cp\u003eAfter a lot of thought and planning I came down to RC for two days, alongwith a fellow Recurser from …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 5",
+                url: "https://debamitro.github.io/blog/rc-mini5-day5/",
+                summary: "\u003cp\u003e(\u003cem\u003eMy notes from the final day of RC Mini 5 batch\u003c/em\u003e)\u003c/p\u003e\n\u003ch3 id=\"839-am\"\u003e8:39 am\u003c/h3\u003e\n\u003cp\u003eToday is the last day of my batch. I plan …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 4",
+                url: "https://debamitro.github.io/blog/rc-mini5-day4/",
+                summary: "\u003cp\u003e(\u003cem\u003eMy notes from the fourth day of RC Mini 5 batch\u003c/em\u003e)\u003c/p\u003e\n\u003ch3 id=\"947-am\"\u003e9:47 am\u003c/h3\u003e\n\u003cp\u003eI started a bit late today, and got …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 3",
+                url: "https://debamitro.github.io/blog/rc-mini5-day3/",
+                summary: "\u003cp\u003e(\u003cem\u003eMy notes from the third day of RC Mini 5 batch\u003c/em\u003e)\u003c/p\u003e\n\u003ch3 id=\"819-am\"\u003e8:19 am\u003c/h3\u003e\n\u003cp\u003eI have been reading The Joy of Clojure …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 2",
+                url: "https://debamitro.github.io/blog/rc-mini5-day2/",
+                summary: "\u003cp\u003e(\u003cem\u003eMy notes from the second day of RC Mini 5 batch\u003c/em\u003e)\u003c/p\u003e\n\u003ch3 id=\"758-am\"\u003e7:58 am\u003c/h3\u003e\n\u003cp\u003eI have been up since 6:30am. Can\u0026rsquo;t …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 1",
+                url: "https://debamitro.github.io/blog/rc-mini5-day1/",
+                summary: "\u003ch3 id=\"915-am\"\u003e9:15 am\u003c/h3\u003e\n\u003cp\u003eI woke up at my usual time of somewhere-between-6:30-and-7:00. Thanks to my son I …\u003c/p\u003e"
+              },
+              
+              {
+                title: "RC Mini 5 - Day 0",
+                url: "https://debamitro.github.io/blog/rc-mini5-day0/",
+                summary: "\u003ch3 id=\"1057-am\"\u003e10:57 am\u003c/h3\u003e\n\u003cp\u003eI am going to the Recurse Center. Can\u0026rsquo;t believe it yet. Right now I am sitting in the …\u003c/p\u003e"
+              },
+              
+            ];
+            
+            
+            function displayRandomPost() {
+              if (blogPosts.length === 0) return;
+              
+              const randomIndex = Math.floor(Math.random() * blogPosts.length);
+              const post = blogPosts[randomIndex];
+              
+              const html = `
+                <h4><a href="${post.url}" style="text-decoration: none; color: #0066cc;">${post.title}</a></h4>
+                <p>${post.summary}</p>
+              `;
+              
+              document.getElementById('random-post-content').innerHTML = html;
+            }
+            
+            
+            ready(displayRandomPost);
+          </script>
+        
       </div>
     </div>
     <div class="my-bottom-bar">
