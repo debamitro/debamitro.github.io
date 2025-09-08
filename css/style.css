@@ -295,6 +295,19 @@ td {
     border: 1px solid #c0c0c0;
 }
 
+.flex {
+    display: flex;
+    flex: 1;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.gap-1 {
+    gap: 1em;
+
+}
 .button {
     display: inline-block;
     background-color: #f9f9f9;
