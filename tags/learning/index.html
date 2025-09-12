@@ -25,28 +25,6 @@
       gtag('config', 'G-TT65MZJG4S');
     </script>
 
-
-<script>
-  async function getPageViews() {
-    const pageViewsArea = document.querySelector('#pageViews');
-    if (pageViewsArea) {
-      try {
-        const path = '\/tags\/learning';
-        const finalPath = path.endsWith('/') ? path : path + '/';
-        const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
-        const data = await response.json();
-        if (data.success) {
-          pageViewsArea.textContent = data.data[0].sessions + ' views';
-        }
-      } catch (error) {
-        console.error('Error fetching page views:', error);
-      }
-    }
-  }
-  
- window.addEventListener('load', getPageViews);
-</script>
-
   </head>
   <body>
     <div class="my-menu-bar">

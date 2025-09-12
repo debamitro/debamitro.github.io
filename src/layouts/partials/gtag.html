@@ -7,25 +7,3 @@
       
       gtag('config', 'G-TT65MZJG4S');
     </script>
-
-<!-- Google Analytics counter -->
-<script>
-  async function getPageViews() {
-    const pageViewsArea = document.querySelector('#pageViews');
-    if (pageViewsArea) {
-      try {
-        const path = '{{ .Path }}';
-        const finalPath = path.endsWith('/') ? path : path + '/';
-        const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
-        const data = await response.json();
-        if (data.success) {
-          pageViewsArea.textContent = data.data[0].sessions + ' views';
-        }
-      } catch (error) {
-        console.error('Error fetching page views:', error);
-      }
-    }
-  }
-  // Call when the page loads
- window.addEventListener('load', getPageViews);
-</script>
