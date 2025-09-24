@@ -8,6 +8,7 @@ menu:
 
 ## Current
 
+* [Durga Puja Map of USA](https://apps.apple.com/us/app/durga-puja-map-of-usa/id6752311800) - an iOS app for the US edition of a major Indian cultural festival
 * [Patch Explorer](https://www.patchexplorer.com) - a tool for comparing multiple diffs for the same change
 * [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner) - a tool to clean up your Gmail inbox
 
