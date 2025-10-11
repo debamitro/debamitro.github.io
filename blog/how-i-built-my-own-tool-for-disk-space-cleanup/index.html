@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/how-i-built-my-own-tool-for-disk-space-cleanup/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="How I Built My Own Tool for Disk Space Cleanup" />
+<meta property="og:description"   content="How I Built My Own Tool for Disk Space Cleanup" />
+
+    <title>
+      How I Built My Own Tool for Disk Space Cleanup
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/how-i-built-my-own-tool-for-disk-space-cleanup';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        How I Built My Own Tool for Disk Space Cleanup
+      </div>
+      <hr />
+      <div class="my-page-date">
+        October 10, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/rust" class="tag-link">rust</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/llm" class="tag-link">llm</a>
+        
+      </div>
+      <div class="my-page-content">
+        <h2 id="backstory">Backstory</h2>
+<p>Some years ago in my last job, a lot of us used to exceed disk space quotas. Which sometimes meant getting an email from the IT department asking us to reduce the disk space we were using on a particular hard drive. I guess this is pretty common. I remember I used to wonder what would be a better way to find out what to delete. Of course the standard &lsquo;du -hsc&rsquo; command was all you needed, if you were patient enough to wait for it to finish. Many times I was not.</p>
+<p>This is how I found out about two excellent replacements for du</p>
+<ul>
+<li><a href="https://github.com/sharkdp/diskus">diskus</a></li>
+<li><a href="https://github.com/nachoparker/dutree">dutree</a></li>
+</ul>
+<p>I managed to build both of them by downloading the sources, and they were pretty good. Both of these tools were written in Rust, which increased my respect for the Rust language. Eventually I spent <a href="/blog/almost-6-weeks-of-rust/">almost 6 weeks learning Rust</a> during a temporary job break.</p>
+<h2 id="what-i-dreamed-of">What I dreamed of</h2>
+<p>I wanted a GUI-based program instead of command-line tools. I also wanted to get a &lsquo;quick and dirty&rsquo; analysis. Instead of waiting to know everything, I wanted to delete a few things which would keep me comfortably below the quota.</p>
+<h2 id="initial-attempts---2022">Initial attempts - 2022</h2>
+<p>My first attempt was in Rust. It was still <a href="https://github.com/debamitro/biggest-files">a command-line program</a>, written in Rust. It was not correct, or complete, but it did what I was looking for. However, I had no idea how to strap a GUI to it.</p>
+<p>So I moved to C++ for the next attempt. I used wxWidgets and created <a href="https://github.com/debamitro/du-gui">a simple GUI app</a>. Like the previous one, it was far from perfect but did what I needed it to do. The real problem was distributing it from the machine where I built it to the one where I needed to use it. C++ distribution is notoriously hard, with umpteen versions of the C++ standard library installed on different machines.</p>
+<p>I realized that I had to come back to Rust, and somehow figure out how to build GUIs with it.</p>
+<h2 id="enter-rust-and-ai---2025">Enter Rust, and AI - 2025</h2>
+<p>This year I started using AI coding tools for all development tasks. After a few months of doing it, I got the itch to try out Rust GUI programming. After all, I&rsquo;d need to command and AI would deliver! It turned out to be harder than I thought. There is <a href="https://areweguiyet.com">no clear winner yet in Rust GUI frameworks</a>, as far as I know. So I picked the latest framework I could find - GPUI. I had a hard time vibe coding in the framework - most probably because it was not used widely outside of the <a href="https://zed.dev">Zed</a> project. I liked the potential of the framework - it had great multi-window support, and a layout system similar to HTML+Tailwind.</p>
+<p>Eventually I had to move to something easier, and I chose <a href="https://iced.rs">Iced</a>. This framework was smaller, but had ready-made widgets and was already being used in a number of successful projects. LLMs were much more aware of this framework, and my journey was smoother.</p>
+<h2 id="the-tool">The tool</h2>
+<p>A few weeks ago I saw that I was running out of disk space on my new Mac Mini. I was actually happy about it - because I got an excuse to build and try out my disk cleanup tool.In a matter of 10 days, I built <a href="https://github.com/debamitro/du-gui-rs">the tool I had dreamed of three years ago</a>. I even used it to free up disk space on my Mac Mini. I am sure there are better tools for this purpose out there, but the joy of building a tool that solves your own problem is incomparable. The best thing about Rust is that you can use it for building truly cross-platform desktop applications. I built the Linux version of the tool from my Mac Mini, and I know how to build the Windows version too.</p>
+<h2 id="credits">Credits</h2>
+<p>Most of the code was written by <a href="https://x.ai/news/grok-code-fast-1">Grok Code Fast 1</a> inside Windsurf. I am really happy with this code generation LLM - it is pretty good and very cheap. I had to come back to Claude Sonnet 4 for a bit - while upgrading my code from version 0.12.0 to version 0.13.0 of the Iced framework. And of course, I had to write a few lines here and there. Also, I had to help the LLMs a little bit with a local MCP server I had created. Maybe I&rsquo;ll write about that later on.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="How I Built My Own Tool for Disk Space Cleanup" 
+           data-via="debamitro" 
+           data-hashtags="rust,ai,llm" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/how-i-built-my-own-tool-for-disk-space-cleanup/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fhow-i-built-my-own-tool-for-disk-space-cleanup%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

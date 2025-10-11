@@ -6,8 +6,15 @@
     <description>Recent content in Llm on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 May 2025 11:05:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Oct 2025 13:24:04 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built My Own Tool for Disk Space Cleanup</title>
+      <link>https://debamitro.github.io/blog/how-i-built-my-own-tool-for-disk-space-cleanup/</link>
+      <pubDate>Fri, 10 Oct 2025 13:24:04 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/how-i-built-my-own-tool-for-disk-space-cleanup/</guid>
+      <description>&lt;h2 id=&#34;backstory&#34;&gt;Backstory&lt;/h2&gt;&#xA;&lt;p&gt;Some years ago in my last job, a lot of us used to exceed disk space quotas. Which sometimes meant getting an email from the IT department asking us to reduce the disk space we were using on a particular hard drive. I guess this is pretty common. I remember I used to wonder what would be a better way to find out what to delete. Of course the standard &amp;lsquo;du -hsc&amp;rsquo; command was all you needed, if you were patient enough to wait for it to finish. Many times I was not.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Attempting to Vibe Code in Rust</title>
       <link>https://debamitro.github.io/blog/attempting-to-vibe-code-rust/</link>
