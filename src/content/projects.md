@@ -8,7 +8,7 @@ menu:
 
 ## Current
 
-* [Durga Puja Map of USA](https://apps.apple.com/us/app/durga-puja-map-of-usa/id6752311800) - an iOS app for the US edition of a major Indian cultural festival
+* [FindBigFolders](https://www.eastcoastsoft.com/products/findbigfolders) - a tool for finding out who's taking up disk space on your computer
 * [Patch Explorer](https://www.patchexplorer.com) - a tool for comparing multiple diffs for the same change
 * [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner) - a tool to clean up your Gmail inbox
 
@@ -16,6 +16,7 @@ menu:
 
 ### Not-so-tiny things
 
+* [Durga Puja Map of USA](https://apps.apple.com/us/app/durga-puja-map-of-usa/id6752311800) - an iOS app for the US edition of a major Indian cultural festival
 * [www.codepromptfu.com](https://www.codepromptfu.com) - a community-driven website for finding the best AI prompts for coding.
   * [Here is a presentation about it](/presentations/codepromptfu-020225)
   * [Here is a blog you can follow for more information](https://blog.codepromptfu.com)
