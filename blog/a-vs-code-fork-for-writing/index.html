@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/a-vs-code-fork-for-writing/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="A VS Code Fork for Writing" />
+<meta property="og:description"   content="A VS Code Fork for Writing" />
+
+    <title>
+      A VS Code Fork for Writing
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/a-vs-code-fork-for-writing';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        A VS Code Fork for Writing
+      </div>
+      <hr />
+      <div class="my-page-date">
+        November 22, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/ide" class="tag-link">ide</a>, 
+            <a href="/tags/writing" class="tag-link">writing</a>
+        
+      </div>
+      <div class="my-page-content">
+        <h2 id="the-seed">The seed</h2>
+<p>It was my friend <a href="https://x.com/FridoHaugg">Frido</a> who planted the seeds of this idea into my brain, by showing me a <a href="https://www.cladlabs.ai">&lsquo;brainrot IDE&rsquo;</a> which had been accepted into YCombinator&rsquo;s Fall 2025 batch. I tried it out and discovered that, like many other AI-enabled IDEs, it was a forked version of Visual Studio Code a.k.a. VS Code. The only difference was that it was an indirect fork. Its &lsquo;parent&rsquo; source code came from an open-source AI-enabled IDE called <a href="https://voideditor.com">Void</a>. VS Code was technically the &lsquo;grandpa&rsquo;.</p>
+<h2 id="using-void">Using Void</h2>
+<p>Thanks to the brainrot IDE I got interested in Void, and started using it. I made some minor local modifications to the source code and built it locally. It was a great feeling. I hadn&rsquo;t turned my coding experience upside down, but I had successfully tweaked the source code of my IDE. Long ago I was a vim user, and then for many years I was an emacs user. Somehow I never ended up modifying the source code of either tool. Maybe I didn&rsquo;t need to - after all vim and emacs are both amazing tools out of the box. But today, here I was, rebuilding my own IDE. And using what I built.</p>
+<h2 id="my-own-vs-code-fork">My own VS Code fork</h2>
+<p>I could already feel a thread starting in my mind &lsquo;what if I created my own VS Code fork&rsquo;. I considered some ideas, and the one which stuck to my mind was a &lsquo;Cursor for writers&rsquo;.</p>
+<h2 id="sundai-week-96">SundAI week 96</h2>
+<p>I prototyped the idea of &lsquo;Cursor for writers&rsquo; on a <a href="https://sundai.club">SundAI</a> hack day. All I managed to do was add a new button to my locally modified version of Void. Clicking that button would generate the structure of an empty book in the current workspace. I used LLMs to fill up the contents of the book, and then used a VS Code extension called <a href="https://marketplace.visualstudio.com/items?itemName=abechanta.vscode-ext-paged-media">&lsquo;Markdown Paged Media&rsquo;</a> to convert every page to a pdf. I got convinced that more could be done. I decided to turn this into a project called <a href="https://github.com/debamitro/asimov">Asimov</a>.</p>
+<h2 id="the-real-work-begins">The real work begins</h2>
+<p>Creating the fork from Void was easy enough. Adding the functionality I had in mind was not. Claude Code got me started, but I felt a little uneasy proceeding without knowing how the VS Code source code was organized. So I did a lot of research using GPT-5 and Claude on how to proceed. I learned the architecture behind VSCode and how such a big desktop app was written purely in TypeScript. I should admit that GPT-5 has become quite good. It is also convenient to use it from Github Copilot because it can see a Github repository.</p>
+<p>After a couple of days&rsquo; effort, I could add a menu option which saved the book from markdown source to final pdf. I still have much more to do before this is usable. Right now I am integrating <a href="https://pagedjs.org">pagedjs</a> into the generated book.</p>
+<h2 id="the-future-of-ides">The future of IDEs</h2>
+<p>The reason I am writing this blog post is that I had never imagined creating a customized version of an IDE all by myself. This is only possible because of AI-assisted coding. And of course, because of the excellent base version provided by Microsoft (and subsequently, Void).</p>
+<p>What could this mean for the future? Maybe we&rsquo;ll see many more locally customized versions of VS Code in small and medium-sized businesses. Instead of learning how to use a general tool for handling proprietary knowledge, we could have just the right tool for a specific problem. Earlier this was unaffordable for anyone other than large tech companies. That is no longer the case.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="A VS Code Fork for Writing" 
+           data-via="debamitro" 
+           data-hashtags="ai,ide,writing" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/a-vs-code-fork-for-writing/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fa-vs-code-fork-for-writing%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

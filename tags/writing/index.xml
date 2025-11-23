@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/writing/</link>
+    <description>Recent content in Writing on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Nov 2025 20:30:37 -0500</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A VS Code Fork for Writing</title>
+      <link>https://debamitro.github.io/blog/a-vs-code-fork-for-writing/</link>
+      <pubDate>Sat, 22 Nov 2025 20:30:37 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/a-vs-code-fork-for-writing/</guid>
+      <description>&lt;h2 id=&#34;the-seed&#34;&gt;The seed&lt;/h2&gt;&#xA;&lt;p&gt;It was my friend &lt;a href=&#34;https://x.com/FridoHaugg&#34;&gt;Frido&lt;/a&gt; who planted the seeds of this idea into my brain, by showing me a &lt;a href=&#34;https://www.cladlabs.ai&#34;&gt;&amp;lsquo;brainrot IDE&amp;rsquo;&lt;/a&gt; which had been accepted into YCombinator&amp;rsquo;s Fall 2025 batch. I tried it out and discovered that, like many other AI-enabled IDEs, it was a forked version of Visual Studio Code a.k.a. VS Code. The only difference was that it was an indirect fork. Its &amp;lsquo;parent&amp;rsquo; source code came from an open-source AI-enabled IDE called &lt;a href=&#34;https://voideditor.com&#34;&gt;Void&lt;/a&gt;. VS Code was technically the &amp;lsquo;grandpa&amp;rsquo;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
