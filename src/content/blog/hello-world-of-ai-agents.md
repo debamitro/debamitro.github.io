@@ -1,7 +1,6 @@
 ---
 title: "Hello World of AI Agents"
 date: 2025-12-09T12:42:17-05:00
-draft: true
 tags: ["ai", "agents", "tiny example"]
 ---
 

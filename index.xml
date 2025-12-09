@@ -6,8 +6,15 @@
     <description>Recent content on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Nov 2025 20:30:37 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 12:42:17 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World of AI Agents</title>
+      <link>https://debamitro.github.io/blog/hello-world-of-ai-agents/</link>
+      <pubDate>Tue, 09 Dec 2025 12:42:17 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/hello-world-of-ai-agents/</guid>
+      <description>&lt;p&gt;My favorite guidebook of all time is &amp;lsquo;The C Programming Language&amp;rsquo; by Kernighan and Ritchie. In the first chapter of the book are the immortal words:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The only way to learn a new programming language is by writing programs in it.&#xA;The first program to write is the same for all languages:&#xA;&lt;em&gt;Print the words&lt;/em&gt; &amp;lsquo;hello, world&amp;rsquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;I have always believed that a &amp;lsquo;hello world&amp;rsquo; is the best way to understand the basics of a system.&#xA;Given that AI agents are the hottest systems in the news all the time now, I decided to find out the &amp;lsquo;hello world of AI agents&amp;rsquo;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A VS Code Fork for Writing</title>
       <link>https://debamitro.github.io/blog/a-vs-code-fork-for-writing/</link>
