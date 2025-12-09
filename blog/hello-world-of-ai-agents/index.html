@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="http://localhost:1313/blog/hello-world-of-ai-agents/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Hello World of AI Agents" />
+<meta property="og:description"   content="Hello World of AI Agents" />
+
+    <title>
+      Hello World of AI Agents
+    </title>
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
+
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/hello-world-of-ai-agents';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="http://localhost:1313//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="http://localhost:1313//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="http://localhost:1313//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Hello World of AI Agents
+      </div>
+      <hr />
+      <div class="my-page-date">
+        December 9, 2025
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/agents" class="tag-link">agents</a>, 
+            <a href="/tags/tiny-example" class="tag-link">tiny example</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>My favorite guidebook of all time is &lsquo;The C Programming Language&rsquo; by Kernighan and Ritchie. In the first chapter of the book are the immortal words:</p>
+<blockquote>
+<p>The only way to learn a new programming language is by writing programs in it.
+The first program to write is the same for all languages:
+<em>Print the words</em> &lsquo;hello, world&rsquo;</p></blockquote>
+<p>I have always believed that a &lsquo;hello world&rsquo; is the best way to understand the basics of a system.
+Given that AI agents are the hottest systems in the news all the time now, I decided to find out the &lsquo;hello world of AI agents&rsquo;.</p>
+<h2 id="re-cap---what-is-an-ai-agent">Re-cap - what <em>is</em> an AI agent</h2>
+<p>There are many examples of AI agents today. Since they have the word AI in them, obviously they engage LLMs - because somehow these two words have become synonymous. But, they have to do something more than what an LLM can do.</p>
+<p>So, for example, the &lsquo;hello world&rsquo; of LLMs could be a software program that can satisfactorily do this task.</p>
+<blockquote>
+<p>tell me a joke, starting with ‘you won’t believe what happened&rsquo;</p></blockquote>
+<p>You can try this with any LLM and you will get some answer that was not exactly rote learning.</p>
+<p>An AI agent has to go beyond this</p>
+<h2 id="my-definition-of-ai-agent">My definition of AI agent</h2>
+<p>Here&rsquo;s my simplified take, at least for the purpose of this blog post. An AI agent is a software program which can answer your question, and in case it doesn&rsquo;t know the answer it will consult a reference and find the answer, or ask you what to do next.</p>
+<p>So, you could use a regular piece of software or maybe an LLM to commit a crime, but you would need an AI agent to solve the mystery and find out who did it.</p>
+<p><img src="/images/ai_agent_crime_scene.png" alt="generated by Nano Banana"></p>
+<h2 id="lets-get-started">Let&rsquo;s get started</h2>
+<p>We&rsquo;ll use python, Ollama and some python libraries for communication between the two, and also with the external reference. For simplicity we&rsquo;ll consider the internet our external reference.</p>
+<p>First the LLM needs to ask a question</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">input</span><span style="color:#111">(</span><span style="color:#d88200">&#34;What would you like to know? </span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
+</span></span></code></pre></div><p>Then, it needs to pass it to the agent and get the answer</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#111">research_agent</span><span style="color:#111">(</span><span style="color:#111">q</span><span style="color:#111">))</span>
+</span></span></code></pre></div><h3 id="our-agent">Our agent</h3>
+<p>Our agent follows these rules:</p>
+<ul>
+<li>Ask an LLM if it knows the answer, and tells the LLM to reply with NEEDS_SEARCH in case it does not</li>
+<li>One of the following:
+<ul>
+<li>Return the answer if the LLM knows it</li>
+<li>If the LLM said NEEDS_SEARCH then call an internet search engine to get some results
+<ul>
+<li>Ask the LLM to summarize the search results, and give the summary as the answer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/debamitro/tiniest-ai-agent/blob/main/main.py">Here</a> is the full &lsquo;hello world&rsquo; source code. I asked chatgpt a few months ago and got a bigger version of this code, which I have simplified to its current form.</p>
+<h2 id="using-the-ai-agent">Using the AI agent</h2>
+<p>Here&rsquo;s a conversation I had with my AI agent a while ago. I used <a href="https://ollama.com/library/qwen3-vl">qwen3:14b</a> via Ollama as the LLM.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>What would you like to know? 
+</span></span><span style="display:flex;"><span>who is the richest man in the world today?
+</span></span><span style="display:flex;"><span>[Checking with LLM...]
+</span></span><span style="display:flex;"><span>[Searching online...]
+</span></span><span style="display:flex;"><span>[Summarizing your answer...]
+</span></span><span style="display:flex;"><span><span style="color:#111">&lt;</span><span style="color:#f92672">think</span><span style="color:#111">&gt;</span>
+</span></span><span style="display:flex;"><span>Okay, so the user is asking who the richest man in the world is today. Let me look through the provided sources.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>First, the Wikipedia page on The World&#39;s Billionaires mentions that 
+</span></span><span style="display:flex;"><span>Jeff Bezos was the top in 2018 and held the position for four years until 2022. 
+</span></span><span style="display:flex;"><span>But the text cuts off there, so I don&#39;t know what happened after that. 
+</span></span><span style="display:flex;"><span>However, the Forbes Real-Time Billionaires page might have more up-to-date info. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Looking at the Forbes link, it&#39;s about their real-time list. 
+</span></span><span style="display:flex;"><span>But the description doesn&#39;t specify the current top person. It does say that 
+</span></span><span style="display:flex;"><span>the list updates net worth based on stock market changes, but without 
+</span></span><span style="display:flex;"><span>current data, I can&#39;t tell who&#39;s on top now. The Bloomberg Billionaires 
+</span></span><span style="display:flex;"><span>Index is another source, but the info given there is about the index&#39;s 
+</span></span><span style="display:flex;"><span>methodology and history, not the current top individual.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Since the user is asking for today&#39;s richest person, and the sources don&#39;t 
+</span></span><span style="display:flex;"><span>provide current rankings beyond 2022, I might need to note that the latest info 
+</span></span><span style="display:flex;"><span>from the sources is up to 2022, where Bezos was the top. However, I should check 
+</span></span><span style="display:flex;"><span>if there&#39;s any recent data. But the sources provided don&#39;t have that. So the answer 
+</span></span><span style="display:flex;"><span>should mention that as of the latest info from the sources, Jeff Bezos was the richest, 
+</span></span><span style="display:flex;"><span>but note that the current status might be different and suggest checking the latest Forbes or Bloomberg reports.
+</span></span><span style="display:flex;"><span><span style="color:#111">&lt;/</span><span style="color:#f92672">think</span><span style="color:#111">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>As of the latest information available from the provided sources, 
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Jeff Bezos**</span> was the richest person in the world in 2022, according to 
+</span></span><span style="display:flex;"><span>the <span style="font-weight:bold">**Forbes**</span> rankings. He held the top position for four years until being 
+</span></span><span style="display:flex;"><span>surpassed by others in subsequent years. However, the sources do not specify the 
+</span></span><span style="display:flex;"><span>current (2023) ranking. For real-time updates, <span style="font-weight:bold">**Forbes&#39; Real-Time Billionaires**</span> 
+</span></span><span style="display:flex;"><span>list tracks daily changes in net worth, but the exact current top individual is not detailed in the provided text. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>For the most up-to-date information, refer to the latest editions 
+</span></span><span style="display:flex;"><span>of <span style="font-weight:bold">**Forbes**</span> or <span style="font-weight:bold">**Bloomberg Billionaires Index**</span>. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>References:  
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">-</span> [<span style="color:#f92672">The World&#39;s Billionaires (Wikipedia)</span>](<span style="color:#75af00">https://en.wikipedia.org/wiki/The_World&#39;s_Billionaires</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">-</span> [<span style="color:#f92672">Bloomberg Billionaires Index (Wikipedia)</span>](<span style="color:#75af00">https://en.wikipedia.org/wiki/Bloomberg_Billionaires_Index</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">-</span> [<span style="color:#f92672">Forbes Real-Time Billionaires</span>](<span style="color:#75af00">https://www.forbes.com/real-time-billionaires/</span>)
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>Since we moved to <a href="/blog/karpathian-classification-of-software">software 3.0</a> there is almost no limit to what software can do. Quite naturally, there could be many more versions of this &lsquo;hello world&rsquo;. So, I cannot claim that this is the canonical &lsquo;hello world of ai agents.</p>
+<p>Note: If you change the one-question-one-answer structure of my AI agent into a loop, you can create a chatgpt or perplexity of your own!</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Hello World of AI Agents" 
+           data-via="debamitro" 
+           data-hashtags="ai,agents,tiny example" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="http://localhost:1313/blog/hello-world-of-ai-agents/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=http%2f%2flocalhost1313%2fblog%2fhello-world-of-ai-agents%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>
