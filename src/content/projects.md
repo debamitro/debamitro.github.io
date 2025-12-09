@@ -8,6 +8,7 @@ menu:
 
 ## Current
 
+* [Asimov](https://github.com/debamitro/asimov) - a 'Cursor for writers' product
 * [FindBigFolders](https://www.eastcoastsoft.com/products/findbigfolders) - a tool for finding out who's taking up disk space on your computer
 * [Patch Explorer](https://www.patchexplorer.com) - a tool for comparing multiple diffs for the same change
 * [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner) - a tool to clean up your Gmail inbox
