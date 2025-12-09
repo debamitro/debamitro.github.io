@@ -19,6 +19,6 @@ unsafe = true
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = 'monokai'
+    style = 'monokailight'
     tabWidth = 4
     wrapperClass = 'highlight'
