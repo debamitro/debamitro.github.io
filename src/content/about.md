@@ -36,7 +36,7 @@ Some day I'll write about the link between this tag and [my English-to-Bangla tr
 
 <h2>💼 Business</h2>
 
-I own [East Coast Software LLC](https://www.eastcoastsoft.com), which aims to develop apps.
+I own [East Coast Software LLC](https://www.eastcoastsoft.com?utm_source=debamitro.github.io), which develops desktop and mobile apps.
 
 <h2>🌐 Social networks</h2>
 I am on
