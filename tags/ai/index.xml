@@ -6,8 +6,15 @@
     <description>Recent content in Ai on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Dec 2025 12:42:17 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 21:21:25 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictions About Software Engineering in the Age of AI - I</title>
+      <link>https://debamitro.github.io/blog/predictions-about-software-engineering-in-the-age-of-ai-i/</link>
+      <pubDate>Fri, 26 Dec 2025 21:21:25 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/predictions-about-software-engineering-in-the-age-of-ai-i/</guid>
+      <description>&lt;p&gt;Since &lt;a href=&#34;https://openai.com/index/chatgpt/&#34;&gt;the end of 2022&lt;/a&gt;, AI has been disrupting the world of software engineering. Looking at how 2023, 2024 and 2025 went - there is a lot of discussion about the future of software engineers. Not all of that discussion is hopeful.&lt;/p&gt;&#xA;&lt;p&gt;Being a serial optimist, I wanted to write down my predictions for software engineering in the age of AI.&#xA;Here it goes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;software-products-will-grow-up-faster&#34;&gt;Software products will grow up faster&lt;/h2&gt;&#xA;&lt;p&gt;The gold standard of the industry is that it takes &lt;a href=&#34;https://www.joelonsoftware.com/2001/07/21/good-software-takes-ten-years-get-used-to-it/&#34;&gt;10 years for &amp;lsquo;good&amp;rsquo; software&lt;/a&gt;. It should not take that long any more. AI tools have changed the way software is designed and developed. Many more steps in the process can be parallelized now. Many iterative steps can be automated and hence made to go faster. The next operating system or the next internet platform should take much less time to mature.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World of AI Agents</title>
       <link>https://debamitro.github.io/blog/hello-world-of-ai-agents/</link>
