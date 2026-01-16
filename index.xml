@@ -6,8 +6,15 @@
     <description>Recent content on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Dec 2025 17:50:01 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 20:30:16 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Of Code Coverage and the Internet</title>
+      <link>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</link>
+      <pubDate>Thu, 15 Jan 2026 20:30:16 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</guid>
+      <description>&lt;p&gt;Last week, a &lt;a href=&#34;https://x.com/ThePrimeagen/status/2009628174280474757?s=20&#34;&gt;post on X&lt;/a&gt; reminded me of my encounters with software code coverage. For a number of years in my professional career, I was required to do something or the other for improving software code coverage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;p&gt;Software code coverage is a metric which is defined as the percentage of source code lines executed by the test cases supplied with it. There is a school of thought that this metric should be as close to 100% as possible.&#xA;In other words, if the software runs on all the test cases supplied with it, almost every single line of source code should get executed. I don&amp;rsquo;t need to explain this further, because there is ample literature on the internet about this. And I am no expert on it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Predictions About Software Engineering in the Age of AI - II</title>
       <link>https://debamitro.github.io/blog/predictions-about-software-engineering-in-the-age-of-ai-ii/</link>
@@ -286,7 +293,7 @@
       <link>https://debamitro.github.io/about/</link>
       <pubDate>Tue, 13 Mar 2018 14:39:40 +0000</pubDate>
       <guid>https://debamitro.github.io/about/</guid>
-      <description>&lt;p&gt;I am an amateur musician, ex-programmer, as well as a husband and a father.&#xA;I am interested in applying computer science to solve problems in real life.&lt;/p&gt;&#xA;&lt;p&gt;In December 2024 I quit my job in order to start my entrepreneurial journey.&lt;/p&gt;&#xA;&lt;p&gt;&lt;transliterate language=&#34;bangla&#34;&gt;aami ekajan bAngAlI progrAmAr&#xA;&lt;/transliterate&gt;&lt;/p&gt;&#xA;&lt;p&gt;The HTML code for the above line is&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr&#xA;&amp;lt;/transliterate&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some day I&amp;rsquo;ll write about the link between this tag and &lt;a href=&#34;http://debamitro.github.io/generate-bangla-utf8-cljs-demo/&#34;&gt;my English-to-Bangla transliterator&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I am an entrepreneur, amateur musician, ex-programmer, as well as a husband and a father.&#xA;I am interested in applying computer science to solve problems in real life.&lt;/p&gt;&#xA;&lt;p&gt;In December 2024 I quit my job in order to start my entrepreneurial journey.&lt;/p&gt;&#xA;&lt;p&gt;&lt;transliterate language=&#34;bangla&#34;&gt;aami ekajan bAngAlI progrAmAr&#xA;&lt;/transliterate&gt;&lt;/p&gt;&#xA;&lt;p&gt;The HTML code for the above line is&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;transliterate language=&amp;#34;bangla&amp;#34;&amp;gt;aami ekajan bAngAlI progrAmAr&#xA;&amp;lt;/transliterate&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some day I&amp;rsquo;ll write about the link between this tag and &lt;a href=&#34;http://debamitro.github.io/generate-bangla-utf8-cljs-demo/&#34;&gt;my English-to-Bangla transliterator&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>💻⚙️ Projects</title>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code Coverage on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/code-coverage/</link>
+    <description>Recent content in Code Coverage on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jan 2026 20:30:16 -0500</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/code-coverage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Of Code Coverage and the Internet</title>
+      <link>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</link>
+      <pubDate>Thu, 15 Jan 2026 20:30:16 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</guid>
+      <description>&lt;p&gt;Last week, a &lt;a href=&#34;https://x.com/ThePrimeagen/status/2009628174280474757?s=20&#34;&gt;post on X&lt;/a&gt; reminded me of my encounters with software code coverage. For a number of years in my professional career, I was required to do something or the other for improving software code coverage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;&#xA;&lt;p&gt;Software code coverage is a metric which is defined as the percentage of source code lines executed by the test cases supplied with it. There is a school of thought that this metric should be as close to 100% as possible.&#xA;In other words, if the software runs on all the test cases supplied with it, almost every single line of source code should get executed. I don&amp;rsquo;t need to explain this further, because there is ample literature on the internet about this. And I am no expert on it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

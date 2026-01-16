@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/of-code-coverage-and-the-internet/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Of Code Coverage and the Internet" />
+<meta property="og:description"   content="Of Code Coverage and the Internet" />
+
+    <title>
+      Of Code Coverage and the Internet
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+    
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/of-code-coverage-and-the-internet';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Of Code Coverage and the Internet
+      </div>
+      <hr />
+      <div class="my-page-date">
+        January 15, 2026
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/software-engineering" class="tag-link">software engineering</a>, 
+            <a href="/tags/code-coverage" class="tag-link">code coverage</a>, 
+            <a href="/tags/internet" class="tag-link">internet</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>Last week, a <a href="https://x.com/ThePrimeagen/status/2009628174280474757?s=20">post on X</a> reminded me of my encounters with software code coverage. For a number of years in my professional career, I was required to do something or the other for improving software code coverage.</p>
+<h2 id="definition">Definition</h2>
+<p>Software code coverage is a metric which is defined as the percentage of source code lines executed by the test cases supplied with it. There is a school of thought that this metric should be as close to 100% as possible.
+In other words, if the software runs on all the test cases supplied with it, almost every single line of source code should get executed. I don&rsquo;t need to explain this further, because there is ample literature on the internet about this. And I am no expert on it.</p>
+<h2 id="my-experience-with-code-coverage">My experience with code coverage</h2>
+<p>My <em>personal</em> experience with code coverage is biased by trying to improve the metric on very large and very old software used for chip design. It is difficult to write meaningful tests which cause this kind of software to execute a particular line - but maybe I was not good at this activity. Some people are. What I recall is that at the times I succeeded in improving code coverage, I didn&rsquo;t feel like I was fixing a problem with the software. Or even improving something in the software. Again - maybe I wasn&rsquo;t sensitive enough.</p>
+<h2 id="the-lost-article">The lost article</h2>
+<p>I remember looking for advice on the internet years ago, and finding a highly cited article written by a person who had created software code coverage measurement tools. I wanted to find that article and reply to the post on X. To my dismay - I could not find it. The first page on Google showed blog posts from the last few years. I switched to DuckDuckGo and it was only slightly better.</p>
+<p>I had to search more and then found the <a href="https://www.testing.com/writings/coverage.pdf">link</a> to the article - which pointed to an invalid website. The domain had expired and belonged to someone else now, and the article was gone. Then I turned to the <a href="https://archive.org">Internet Archive</a> where I finally found it!</p>
+<h2 id="wisdom-and-the-internet">Wisdom and the internet</h2>
+<p>I have uploaded the article to this website - it is called <a href="/how-to-misuse-coverage/coverage.pdf">How to Misuse Code Coverage</a>. I don&rsquo;t want it to get lost again. It is a little bag of wisdom which every software engineer should read - whether he/she agrees with it or not.</p>
+<p>That day I felt bad about the internet. Wasn&rsquo;t it supposed to be a place where the world&rsquo;s wisdom can be safely stored for everyone to use? We need to make sure that things which have stood the test of time can always be found on the internet. This is all the more important today because AI agents have been trained on the internet - and humans (including myself) are increasingly trusting the decisions of AI agents. We don&rsquo;t want to go downhill as a species and repeat expensive mistakes that we had learned not to do.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Of Code Coverage and the Internet" 
+           data-via="debamitro" 
+           data-hashtags="software engineering,code coverage,internet" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/of-code-coverage-and-the-internet/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fof-code-coverage-and-the-internet%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>
