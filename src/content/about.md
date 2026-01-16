@@ -6,7 +6,7 @@ menu:
     weight: 6
 ---
 
-I am an amateur musician, ex-programmer, as well as a husband and a father.
+I am an entrepreneur, amateur musician, ex-programmer, as well as a husband and a father.
 I am interested in applying computer science to solve problems in real life.
 
 In December 2024 I quit my job in order to start my entrepreneurial journey.
