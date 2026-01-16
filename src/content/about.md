@@ -45,4 +45,5 @@ I am on
 * <a href="https://www.quora.com/profile/Debamitro-Chakraborti" target="_blank">Quora</a>
 * <a href="https://x.com/debamitro" target="_blank">X</a>
 * <a href="https://www.linkedin.com/in/debamitro" target="_blank">LinkedIn</a>
+* <a href="https://bsky.app/profile/debamitro.bsky.social" target="_blank">BlueSky</a>
 

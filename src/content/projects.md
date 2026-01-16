@@ -6,6 +6,9 @@ menu:
     weight: 3
 ---
 
+Note: A number of my projects are open source, so sponsorship helps me continue with them.
+<iframe src="https://github.com/sponsors/debamitro/button" title="Sponsor debamitro" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+
 ## Current
 
 * [Asimov](https://github.com/debamitro/asimov) - a 'Cursor for writers' product
