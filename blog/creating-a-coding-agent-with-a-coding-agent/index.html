@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Creating a Coding Agent With a Coding Agent" />
+<meta property="og:description"   content="Creating a Coding Agent With a Coding Agent" />
+
+    <title>
+      Creating a Coding Agent With a Coding Agent
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+    
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/creating-a-coding-agent-with-a-coding-agent';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Creating a Coding Agent With a Coding Agent
+      </div>
+      <hr />
+      <div class="my-page-date">
+        January 23, 2026
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/coding-agent" class="tag-link">coding agent</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>Yesterday in the morning I created a new AI coding agent, using an existing AI coding agent. It took me an hour, and it worked. This was sort of like creating a mini Claude Code using the existing Claude Code. I still can&rsquo;t believe it worked. I want to write down why and how I did this.</p>
+<h2 id="the-problem---an-old-laptop">The problem - an old laptop</h2>
+<p>My first laptop was a 2012 MacBook Pro, and it still works. I have been using AI coding agents for more than a year, and in the last six months, <a href="https://code.claude.com">Claude Code</a> has become wildly popular. People are using it almost like the first thing you open up on your computer. So I thought it was natural that I should install it on my old laptop as well.</p>
+<p>To my surprise - it didn&rsquo;t work. Claude Code does not work on MacOS 10. I tried two other competitors - <a href="https://sylph.ai">AdaL</a> and <a href="https://opencode.ai">OpenCode</a>. Even they didn&rsquo;t work.</p>
+<h2 id="digging-deeper">Digging deeper</h2>
+<p>I had to dig further to find out the real reason - <a href="https://bun.com">Bun</a> does not work on MacOS 10. And most of these tools are based on Bun. Since node.js works fine on MacOS 10, I tried to build OpenCode using node.js - but I could not. The dependency is deep.</p>
+<p>Then I tried to build bun on MacOS 10. It seems you need to have bun on a system in order to build bun. That was a nice recursive definition which works for things like <a href="https://gcc.gnu.org">gcc</a> which are, indeed, present on all Mac and Linux machines. Bun is not.</p>
+<h2 id="dreaming-of-a-solution">Dreaming of a solution</h2>
+<p>Over the years I have found <a href="https://rust-lang.org">Rust</a> to be an excellent choice for distributing programs which work everywhere. I have even built desktop apps in Rust which work on my ancient MacOS 10. I think Rust or C should be the language for building a command-line AI agent. Because both Rust and C work everywhere there is a terminal.</p>
+<p>The first AI coding agent I tried was an IDE called <a href="https://windsurf.com">Windsurf</a>. Eventually I got the taste of Claude Code and started using it more and more. In the last eight months, I saw two competitors come out with good alternatives to Claude Code - and they had pretty small teams.  I also watched a <a href="https://youtu.be/RFKCzGlAU6Q?si=2_h03twRl5Khey5b">video</a> which had a hypothetical explanation of how Claude Code worked internally. Based on these observations I decided that it can&rsquo;t be that hard to create an AI coding agent in Rust.</p>
+<h2 id="building-the-thing">Building the thing</h2>
+<p>I chose <a href="https://sylph.ai">AdaL</a> as my AI coding agent. In the last couple of months I have seen it is as good as Claude Code, and even better in some aspects. I cloned the OpenCode repo and asked it to generate a detailed architecture description of the product:</p>
+<pre tabindex="0"><code>study how this software works and prepare a detailed implementation spec, to be used by humans or AI agents
+</code></pre><p><a href="https://gist.github.com/debamitro/b992074ecf0db473f0f6ba272c015f69">Here</a> is what it came up with - a detailed description with 14 sections.</p>
+<p>Then I created a new directory and from inside of it I asked</p>
+<pre tabindex="0"><code>create an interactive coding agent in Rust which only works on the command-line. 
+refer to the IMPLEMENTATION_SPEC.md document and select the parts which you need to implement. 
+make sure the agent can handle OpenAI and Anthropic LLM APIs
+</code></pre><p>It took maybe 5 or 10 minutes to write the code, build it, fix it and build it again. I wasn&rsquo;t really watching all the time - in fact I went away from my desk and came back. And then it was done. Around 1500 lines of working Rust code.</p>
+<h2 id="running-it-on-my-old-laptop">Running it on my old laptop</h2>
+<p>Rust has great cross-compilation support. I built the coding agent on my Mac Mini, zipped it up and transferred it to the old laptop. And it worked! These days even screenshots can be faked, so I am not attaching one here. And terminals are terrible to watch - they are great to use.</p>
+<h2 id="the-code">The code</h2>
+<p>I was in a bit of a dilemma about the code - should I put it on GitHub? I didn&rsquo;t write it anyways. Wasn&rsquo;t I polluting the original purpose of GitHub - I couldn&rsquo;t decide. In the end I created <a href="https://github.com/debamitro/one-shot-cli-agent">a public repo</a> and pushed the code. I added a rider at the top of the README:</p>
+<blockquote>
+<p>Note: This project was entirely generated by a coding agent</p></blockquote>
+<h2 id="what-next">What next</h2>
+<p>I want to see if this really works on all low-end platforms and old machines. I might not do much with the actual code itself, because building a production-quality coding agent is more work than I want to take on now. Besides, GitHub is flooded with coding agents - mine is a drop in the ocean.
+My example proves that if a coding agent is not available on a machine and you know it will make life easier for you, you can build one in an hour. I am happy with that.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Creating a Coding Agent With a Coding Agent" 
+           data-via="debamitro" 
+           data-hashtags="coding agent,ai" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fcreating-a-coding-agent-with-a-coding-agent%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

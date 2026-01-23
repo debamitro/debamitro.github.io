@@ -6,8 +6,15 @@
     <description>Recent content in 📝 Blog on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2026 20:30:16 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 11:16:00 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Coding Agent With a Coding Agent</title>
+      <link>https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/</link>
+      <pubDate>Fri, 23 Jan 2026 11:16:00 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/</guid>
+      <description>&lt;p&gt;Yesterday in the morning I created a new AI coding agent, using an existing AI coding agent. It took me an hour, and it worked. This was sort of like creating a mini Claude Code using the existing Claude Code. I still can&amp;rsquo;t believe it worked. I want to write down why and how I did this.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem---an-old-laptop&#34;&gt;The problem - an old laptop&lt;/h2&gt;&#xA;&lt;p&gt;My first laptop was a 2012 MacBook Pro, and it still works. I have been using AI coding agents for more than a year, and in the last six months, &lt;a href=&#34;https://code.claude.com&#34;&gt;Claude Code&lt;/a&gt; has become wildly popular. People are using it almost like the first thing you open up on your computer. So I thought it was natural that I should install it on my old laptop as well.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Of Code Coverage and the Internet</title>
       <link>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</link>
