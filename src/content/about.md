@@ -27,16 +27,18 @@ Some day I'll write about the link between this tag and [my English-to-Bangla tr
 
 📋 [Here is my resume](https://github.com/debamitro/resume/blob/master/debamitro_resume.pdf)
 
+<h2>💼 Business</h2>
+
+I am a co-founder of [GrowthMax Inc](https://www.growthmaxinc.com?utm_source=debamitro.github.io) - where we are plannning to deploy custom AI agents
+<br />
+I also own [East Coast Software LLC](https://www.eastcoastsoft.com?utm_source=debamitro.github.io), which develops desktop and mobile apps.
+
 <h2>🐙 I attended the Recurse Center</h2>
 <script async defer src="https://www.recurse-scout.com/loader.js?t=8869b8fec4c9e0b04bd6c32d01776c91"></script>
 
 <h2>🎬 I make YouTube shorts</h2>
 
 <a href="https://www.youtube.com/@Programmingisdead" target="_blank">Here is my channel</a>, which focuses on using AI for programming.
-
-<h2>💼 Business</h2>
-
-I own [East Coast Software LLC](https://www.eastcoastsoft.com?utm_source=debamitro.github.io), which develops desktop and mobile apps.
 
 <h2>🌐 Social networks</h2>
 I am on
