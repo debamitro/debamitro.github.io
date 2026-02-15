@@ -6,8 +6,15 @@
     <description>Recent content on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jan 2026 11:16:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 10:31:12 -0500</lastBuildDate>
     <atom:link href="https://debamitro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Riding the Claw Wave</title>
+      <link>https://debamitro.github.io/blog/riding-the-claw-wave/</link>
+      <pubDate>Sun, 15 Feb 2026 10:31:12 -0500</pubDate>
+      <guid>https://debamitro.github.io/blog/riding-the-claw-wave/</guid>
+      <description>&lt;h2 id=&#34;the-wait&#34;&gt;The wait&lt;/h2&gt;&#xA;&lt;p&gt;In the last one month or so, &lt;a href=&#34;https://www.openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt; went viral. Some people claimed that it was even more viral than ChatGPT. I was a little late to the Claude Code wave, so I wanted to wait this one out as well. When everyone was screaming about how crazy OpenClaw was, I was trying to understand why Claude Code became such a big hit - even with non-technical people.&lt;/p&gt;&#xA;&lt;p&gt;My other reason for avoiding it was that it looked like a tool for &amp;lsquo;shallow work&amp;rsquo;. This is a term popularized by &lt;a href=&#34;https://calnewport.com&#34;&gt;Cal Newport&lt;/a&gt; who I have been following for a long time. A chat with a bot on your phone is no way to do intense &amp;lsquo;deep work&amp;rsquo;, I reasoned.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Creating a Coding Agent With a Coding Agent</title>
       <link>https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/</link>
