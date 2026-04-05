@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="http://localhost:1313/blog/coding-with-my-own-ai-coding-agent/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Coding With My Own AI Coding Agent" />
+<meta property="og:description"   content="Coding With My Own AI Coding Agent" />
+
+    <title>
+      Coding With My Own AI Coding Agent
+    </title>
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313//css/style.css" />
+
+    <script src="http://localhost:1313//js/onready.js"></script>
+    <script src="http://localhost:1313//js/transformtextnodes.js"></script>
+    <script src="http://localhost:1313//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/coding-with-my-own-ai-coding-agent';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="http://localhost:1313//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="http://localhost:1313/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="http://localhost:1313//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="http://localhost:1313//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        Coding With My Own AI Coding Agent
+      </div>
+      <hr />
+      <div class="my-page-date">
+        April 2, 2026
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/software-engineering" class="tag-link">software engineering</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/agent" class="tag-link">agent</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>Around two months ago, I had created a new AI coding agent using another AI coding agent. The results surprised me so much that I had written <a href="/blog/creating-a-coding-agent-with-a-coding-agent/">a post about it</a>. As I had written, I have no intention of continuing to do this. Because there are excellent and mature AI coding agents in the market today. But I kept on improving it until I reached a point where I can use it on existing projects.
+Here are some notes from this journey.</p>
+<h2 id="the-guts-of-an-ai-coding-agent">The guts of an AI coding agent</h2>
+<p>The guts for my AI coding agent are two loops. Here is the &lsquo;outer&rsquo; loop.</p>
+<pre tabindex="0"><code>   ┌─────────────────────────────┐
+   │ Ask for the user&#39;s prompt   │ ◄──────────────┐───────┐
+   └─────────────────────────────┘                │       │
+               │                                  │       │
+               │                                  │       │
+               │                                  │       │
+               ▼                                  │       │
+   ┌───────────────────────────────┐     ┌─────────────┐  │
+   │ Does the user want an answer  │ NO  │             │  │
+   │        from the LLM?          │────▶│ Do what the │  │
+   └───────────────────────────────┘     │  user says  │  │
+               │                         └─────────────┘  │
+               │ YES                                      │
+               │                                          │
+               ▼                                          │
+   ┌──────────────────────┐                               │
+   │  Do the &#39;inner&#39; loop │ ───────────────────────────-──┘
+   └──────────────────────┘
+</code></pre><p>And here is the &lsquo;inner&rsquo; loop</p>
+<pre tabindex="0"><code>   ┌─────────────────────────────────────────────┐
+   │ Send user&#39;s prompt, system prompt, and      │◄────────┐
+   │        the conversation to the LLM          │         |
+   └─────────────────────────────────────────────┘         |
+                       │                                   |
+                       ▼                                   |
+   ┌─────────────────────────────────────────────┐         |
+   │     Get the LLM&#39;s response and print it     │         |
+   └─────────────────────────────────────────────┘         |
+                       │                                   |
+                       ▼                                   |
+   ┌─────────────────────────────────────────────┐      NO |
+   │           Check for tool calls              │─────────────&gt; exit the loop
+   └─────────────────────────────────────────────┘         |
+                       │                                   |
+                       │                                   |
+                       │ YES                               |
+                       │                                   |   
+                       ▼                                   |   
+   ┌─────────────────────────────────────────────┐         |
+   │           Execute all tool calls            │         |
+   └─────────────────────────────────────────────┘         |
+                       │                                   |
+                       ▼                                   |
+   ┌─────────────────────────────────────────────┐         |
+   │ Add tool call requests and responses to     │─────────┘
+   │           the conversation                  │
+   └─────────────────────────────────────────────┘
+</code></pre><p>You can see this in detail in the <a href="https://github.com/debamitro/one-shot-cli-agent/blob/main/src/main.rs">source code on my github repo</a>.
+I didn&rsquo;t arrive at this structure, because the first version of the project was AI-generated. It looks reasonable to me, and I am happy to describe it.</p>
+<h2 id="the-system-prompt">The system prompt</h2>
+<p>Initially my coding agent had some bugs and was not displaying true intelligence even if I used Claude Sonnet as the LLM. For a while <a href="https://bsky.app/profile/debamitro.bsky.social/post/3mfsihlywfs2n">I was guessing that I needed to give a detailed system prompt, otherwise my agent would never behave like Claude Code</a>. I tried various system prompts and got some improvements. Later on, as my agent became more stable I saw those differences disappear. Until one day - when they were back!</p>
+<p>My current belief is that a system prompt tailored to the current project and task is going to give you the best result. Even without the system prompt you may get good results - probably because of some caching at the LLM provider&rsquo;s end</p>
+<h2 id="the-acid-test">The acid test</h2>
+<p>As I was tweaking and fixing the coding agent, I kept on using it for developing the agent itself. Finally a few weeks ago, it passed the test and managed to do one of the changes in <a href="https://github.com/debamitro/one-shot-cli-agent/commit/7617033ece234ff0befd11040d9940923f504b39">this commit</a> using the agent.</p>
+<h2 id="more-fun">More fun</h2>
+<p>Two days ago, I used my coding agent for working on a project which I had started with Claude Code. This was sort of <a href="https://x.com/debamitro/status/2039362192244425012?s=20">&lsquo;double vibe coding&rsquo;</a> for me. I used GLM-4.7 from <a href="https://z.ai">z.ai</a> as the LLM. It made a lot of changes, but produced a lot of build errors. I pushed it to fix the build errors, and it took a lot of pushing from my side. But it finally did it. I saved the entire conversation in a <a href="https://gist.github.com/debamitro/509e3965761a12b67cce9f15f6b91e3a">gist</a>. This was proof of the &lsquo;ralph wiggum&rsquo; concept, I think. If you keep pushing an LLM towards a goal with definite criteria, it will achieve it.</p>
+<h2 id="even-more-fun">Even more fun</h2>
+<p>I decided to implement one of my old ideas into my coding agent. Once you know the agent can do the job, you want it to have personality. I added a bunch of &lsquo;--persona&rsquo; switches for changing the personality of the agent. And the last one I added was &lsquo;--persona shakespeare&rsquo;. Here are some excerpts from a coding session with Shakespeare:</p>
+<blockquote>
+<p>Good tidings, noble seeker! I hath discovered the knowledge thou seekest
+regarding permission requests for file editing.</p>
+<p>&hellip;
+&hellip;</p>
+<p>Thou mayest specify different permissions for different file patterns:</p>
+<p>&hellip;</p>
+<p>Thou canst also override permissions per agent:
+&hellip;
+To ensure editing requires permission, set <code>&quot;edit&quot;: &quot;ask&quot;</code> in thy
+configuration. The system will then prompt thee before making any file
+modifications.</p>
+<p>Methinks this shall serve thee well on thy coding journey!</p></blockquote>
+<h2 id="usage-on-low-end-devices">Usage on low-end devices</h2>
+<p>Since my AI coding agent is written in Rust, it has very low memory requirements. I have used it for quick troubleshooting on a VPS - by simply copying the executable over ssh. Last week I verified that <a href="https://youtube.com/shorts/NbvyZAcqkOA?feature=share">it works on a Raspberry Pi</a>. None of this is surprising - and there are multiple AI agents written in Rust today.</p>
+<h2 id="realization">Realization</h2>
+<p>I think AI coding agents have the unique ability to do almost everything that a person can do sitting at a computer. Even if the end goal is not producing software. You can write code to create movies, control physical devices, talk to customers, and much more. Until a few years ago the barrier to entry was high because a person needed to know the software stack for a particular task, and it is impossible to know or remember them all. With AI coding tools, you only need a good command of English. Maybe this explains why so many AI coding tools are getting decent VC funding nowadays.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="Coding With My Own AI Coding Agent" 
+           data-via="debamitro" 
+           data-hashtags="software engineering,ai,agent" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="http://localhost:1313/blog/coding-with-my-own-ai-coding-agent/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=http%2f%2flocalhost1313%2fblog%2fcoding-with-my-own-ai-coding-agent%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agent on Home page of Debamitro Chakraborti</title>
+    <link>http://localhost:1313/tags/agent/</link>
+    <description>Recent content in Agent on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2026 15:34:03 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding With My Own Ai Coding Agent</title>
+      <link>http://localhost:1313/blog/coding-with-my-own-ai-coding-agent/</link>
+      <pubDate>Thu, 02 Apr 2026 15:34:03 -0400</pubDate>
+      <guid>http://localhost:1313/blog/coding-with-my-own-ai-coding-agent/</guid>
+      <description>&lt;p&gt;Around two months ago, I had created a new AI coding agent using another AI coding agent. The results surprised me so much that I had written &lt;a href=&#34;http://localhost:1313/blog/creating-a-coding-agent-with-a-coding-agent/&#34;&gt;a post about it&lt;/a&gt;. As I had written, I have no intention of continuing to do this. Because there are excellent and mature AI coding agents in the market today. But I kept on improving it until I reached a point where I can use it on existing projects.&#xA;Here are some notes from this journey.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
