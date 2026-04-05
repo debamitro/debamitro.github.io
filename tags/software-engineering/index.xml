@@ -6,8 +6,15 @@
     <description>Recent content in Software Engineering on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2026 20:30:16 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 12:34:03 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding With My Own AI Coding Agent</title>
+      <link>https://debamitro.github.io/blog/coding-with-my-own-ai-coding-agent/</link>
+      <pubDate>Sun, 05 Apr 2026 12:34:03 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/coding-with-my-own-ai-coding-agent/</guid>
+      <description>&lt;p&gt;Around two months ago, I had created a new AI coding agent using another AI coding agent. The results surprised me so much that I had written &lt;a href=&#34;https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/&#34;&gt;a post about it&lt;/a&gt;. As I had written, I have no intention of continuing to do this. Because there are excellent and mature AI coding agents in the market today. But I kept on improving it until I reached a point where I can use it on existing projects.&#xA;Here are some notes from this journey.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Of Code Coverage and the Internet</title>
       <link>https://debamitro.github.io/blog/of-code-coverage-and-the-internet/</link>
