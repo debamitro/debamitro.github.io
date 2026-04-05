@@ -1,7 +1,6 @@
 ---
 title: "Coding With My Own AI Coding Agent"
 date: 2026-04-05T15:34:03-04:00
-draft: true
 tags: ["software engineering","ai","agent"]
 ---
 
