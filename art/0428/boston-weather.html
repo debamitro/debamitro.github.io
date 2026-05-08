@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Weather - Overcast</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(180deg, 
+                #4a5568 0%, 
+                #5a6c7d 20%, 
+                #718096 50%, 
+                #8fa3b5 80%, 
+                #a8bcc9 100%);
+        }
+        
+        .scene {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Animated Clouds */
+        .cloud {
+            position: absolute;
+            background: linear-gradient(180deg, 
+                rgba(255,255,255,0.9) 0%, 
+                rgba(200,210,220,0.7) 50%,
+                rgba(150,165,180,0.5) 100%);
+            border-radius: 100px;
+            filter: blur(2px);
+        }
+        
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            border-radius: 100px;
+        }
+        
+        .cloud1 {
+            width: 200px;
+            height: 80px;
+            top: 10%;
+            left: -250px;
+            animation: float1 25s infinite linear;
+        }
+        .cloud1::before { width: 120px; height: 120px; top: -60px; left: 30px; }
+        .cloud1::after { width: 100px; height: 100px; top: -40px; left: 100px; }
+        
+        .cloud2 {
+            width: 150px;
+            height: 60px;
+            top: 25%;
+            left: -200px;
+            animation: float2 35s infinite linear;
+            opacity: 0.7;
+        }
+        .cloud2::before { width: 90px; height: 90px; top: -45px; left: 25px; }
+        .cloud2::after { width: 80px; height: 80px; top: -30px; left: 70px; }
+        
+        .cloud3 {
+            width: 280px;
+            height: 100px;
+            top: 5%;
+            left: -350px;
+            animation: float3 40s infinite linear;
+            opacity: 0.8;
+        }
+        .cloud3::before { width: 160px; height: 160px; top: -80px; left: 40px; }
+        .cloud3::after { width: 140px; height: 140px; top: -60px; left: 130px; }
+        
+        .cloud4 {
+            width: 180px;
+            height: 70px;
+            top: 35%;
+            right: -250px;
+            animation: float4 30s infinite linear;
+            opacity: 0.6;
+        }
+        .cloud4::before { width: 110px; height: 110px; top: -55px; left: 35px; }
+        .cloud4::after { width: 90px; height: 90px; top: -40px; left: 90px; }
+        
+        @keyframes float1 { from { left: -250px; } to { left: 110%; } }
+        @keyframes float2 { from { left: -200px; } to { left: 110%; } }
+        @keyframes float3 { from { left: -350px; } to { left: 110%; } }
+        @keyframes float4 { from { right: -250px; } to { right: 110%; } }
+        
+        /* Fog/Mist Layer */
+        .fog {
+            position: absolute;
+            width: 200%;
+            height: 300px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255,255,255,0.3) 25%, 
+                rgba(255,255,255,0.5) 50%, 
+                rgba(255,255,255,0.3) 75%, 
+                transparent 100%);
+            filter: blur(40px);
+            animation: drift 20s infinite ease-in-out;
+        }
+        .fog1 { bottom: 20%; animation-delay: 0s; }
+        .fog2 { bottom: 10%; animation-delay: -10s; opacity: 0.6; }
+        
+        @keyframes drift {
+            0%, 100% { transform: translateX(-50%); }
+            50% { transform: translateX(0%); }
+        }
+        
+        /* Boston Skyline Silhouette */
+        .skyline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35%;
+            background: linear-gradient(180deg, 
+                #2d3748 0%, 
+                #1a202c 100%);
+            clip-path: polygon(
+                0% 100%, 0% 60%, 3% 60%, 3% 45%, 6% 45%, 6% 55%, 9% 55%, 9% 30%, 
+                12% 30%, 12% 50%, 15% 50%, 15% 35%, 18% 35%, 18% 55%, 22% 55%, 
+                22% 25%, 26% 25%, 26% 45%, 30% 45%, 30% 20%, 35% 20%, 35% 40%, 
+                40% 40%, 40% 15%, 45% 15%, 45% 35%, 50% 35%, 50% 25%, 55% 25%, 
+                55% 45%, 60% 45%, 60% 30%, 65% 30%, 65% 50%, 70% 50%, 70% 35%, 
+                75% 35%, 75% 40%, 80% 40%, 80% 20%, 85% 20%, 85% 45%, 90% 45%, 
+                90% 55%, 95% 55%, 95% 65%, 100% 65%, 100% 100%
+            );
+        }
+        
+        /* Water Reflection */
+        .water {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8%;
+            background: linear-gradient(180deg, 
+                #4a6572 0%, 
+                #2c3e50 100%);
+            opacity: 0.8;
+        }
+        
+        .water::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent 0px,
+                rgba(255,255,255,0.1) 50px,
+                transparent 100px
+            );
+            animation: shimmer 3s infinite linear;
+        }
+        
+        @keyframes shimmer {
+            from { transform: translateX(0); }
+            to { transform: translateX(100px); }
+        }
+        
+        /* Weather Info Card */
+        .weather-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 40px 60px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            z-index: 100;
+        }
+        
+        .location {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #fff;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .temp {
+            font-size: 6rem;
+            font-weight: 100;
+            color: #fff;
+            line-height: 1;
+            margin: 20px 0;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+        
+        .temp sup { font-size: 2rem; font-weight: 300; }
+        
+        .feels-like {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+        }
+        
+        .condition {
+            font-size: 1.8rem;
+            color: rgba(255,255,255,0.95);
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        
+        .details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .detail-item {
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        
+        .detail-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Subtle rain effect */
+        .rain {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+        }
+        
+        .drop {
+            position: absolute;
+            width: 2px;
+            height: 15px;
+            background: linear-gradient(180deg, transparent, rgba(255,255,255,0.4));
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+        
+        /* Wind indicator */
+        .wind {
+            position: absolute;
+            bottom: 15%;
+            right: 10%;
+            color: rgba(255,255,255,0.6);
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+        
+        .wind::before {
+            content: '↙';
+            font-size: 2rem;
+            margin-right: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        /* Date display */
+        .date {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="date">Tuesday, April 28</div>
+        
+        <!-- Clouds -->
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+        
+        <!-- Fog layers -->
+        <div class="fog fog1"></div>
+        <div class="fog fog2"></div>
+        
+        <!-- Rain effect (subtle) -->
+        <div class="rain" id="rain"></div>
+        
+        <!-- Weather Card -->
+        <div class="weather-card">
+            <div class="location">BOSTON</div>
+            <div class="temp">46<sup>°F</sup></div>
+            <div class="feels-like">Feels like 41°F</div>
+            <div class="condition">OVERCAST</div>
+            <div class="details">
+                <div class="detail-item">
+                    ↙ 8 mph
+                    <span>Wind</span>
+                </div>
+                <div class="detail-item">
+                    9 mi
+                    <span>Visibility</span>
+                </div>
+                <div class="detail-item">
+                    0.0 in
+                    <span>Precipitation</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wind indicator -->
+        <div class="wind">8 MPH</div>
+        
+        <!-- Boston Skyline -->
+        <div class="skyline"></div>
+        
+        <!-- Water -->
+        <div class="water"></div>
+    </div>
+    
+    <script>
+        // Generate subtle rain drops
+        const rainContainer = document.getElementById('rain');
+        for (let i = 0; i < 50; i++) {
+            const drop = document.createElement('div');
+            drop.className = 'drop';
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = (Math.random() * 1 + 0.5) + 's';
+            drop.style.animationDelay = Math.random() * 2 + 's';
+            drop.style.opacity = Math.random() * 0.3;
+            rainContainer.appendChild(drop);
+        }
+    </script>
+</body>
+</html>

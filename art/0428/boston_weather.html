@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Weather - Overcast 46°F</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #4a5568 0%, #2d3748 50%, #1a202c 100%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .weather-container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .city {
+            font-size: 3em;
+            color: #e2e8f0;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .temperature {
+            font-size: 5em;
+            color: #cbd5e0;
+            margin: 20px 0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .condition {
+            font-size: 1.5em;
+            color: #a0aec0;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .weather-icon {
+            font-size: 8em;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Cloud animations */
+        .cloud {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            filter: blur(30px);
+            animation: drift linear infinite;
+        }
+
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            filter: blur(30px);
+        }
+
+        .cloud-1 {
+            width: 300px;
+            height: 100px;
+            top: 10%;
+            left: -20%;
+            animation-duration: 45s;
+        }
+
+        .cloud-1::before {
+            width: 150px;
+            height: 80px;
+            top: -40px;
+            left: 40px;
+        }
+
+        .cloud-1::after {
+            width: 120px;
+            height: 60px;
+            top: -20px;
+            left: 150px;
+        }
+
+        .cloud-2 {
+            width: 250px;
+            height: 80px;
+            top: 25%;
+            left: -30%;
+            animation-duration: 60s;
+            animation-delay: -20s;
+        }
+
+        .cloud-2::before {
+            width: 120px;
+            height: 60px;
+            top: -30px;
+            left: 30px;
+        }
+
+        .cloud-2::after {
+            width: 100px;
+            height: 50px;
+            top: -15px;
+            left: 120px;
+        }
+
+        .cloud-3 {
+            width: 200px;
+            height: 70px;
+            top: 40%;
+            left: -25%;
+            animation-duration: 55s;
+            animation-delay: -35s;
+        }
+
+        .cloud-3::before {
+            width: 100px;
+            height: 50px;
+            top: -25px;
+            left: 25px;
+        }
+
+        .cloud-3::after {
+            width: 80px;
+            height: 40px;
+            top: -12px;
+            left: 100px;
+        }
+
+        @keyframes drift {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(100vw + 100%)); }
+        }
+
+        /* Rain effect - light misty rain */
+        .rain {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .rain-drop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(100vh) translateX(30px);
+                opacity: 0;
+            }
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .detail-item {
+            text-align: center;
+            color: #cbd5e0;
+        }
+
+        .detail-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .detail-label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a0aec0;
+        }
+
+        .mood-text {
+            font-size: 1.1em;
+            color: #e2e8f0;
+            margin-top: 30px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        /* Ambient particles */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float-up 10s linear infinite;
+        }
+
+        @keyframes float-up {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+                transform: translateY(90vh) scale(1);
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .time {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="time" id="datetime"></div>
+
+    <!-- Clouds -->
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+
+    <!-- Ambient particles -->
+    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="particle" style="left: 70%; animation-delay: 6s;"></div>
+    <div class="particle" style="left: 90%; animation-delay: 8s;"></div>
+
+    <!-- Weather container -->
+    <div class="weather-container">
+        <div class="weather-icon">☁️</div>
+        <div class="city">Boston</div>
+        <div class="temperature">46°F</div>
+        <div class="condition">Overcast</div>
+
+        <div class="details">
+            <div class="detail-item">
+                <div class="detail-value">8 mph</div>
+                <div class="detail-label">Wind</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-value">9 mi</div>
+                <div class="detail-label">Visibility</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-value">8°C</div>
+                <div class="detail-label">Celsius</div>
+            </div>
+        </div>
+
+        <div class="mood-text">
+            "A soft gray blanket covers the Boston skyline,<br>
+            winds whisper through the streets,<br>
+            a contemplative day for quiet moments."
+        </div>
+    </div>
+
+    <script>
+        // Add current date/time
+        const now = new Date();
+        const options = { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        };
+        document.getElementById('datetime').textContent = now.toLocaleDateString('en-US', options);
+
+        // Create random rain/mist drops
+        const rainContainer = document.querySelector('.rain');
+        for (let i = 0; i < 50; i++) {
+            const drop = document.createElement('div');
+            drop.className = 'rain-drop';
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = (Math.random() * 2 + 1) + 's';
+            drop.style.animationDelay = Math.random() * 2 + 's';
+            drop.style.opacity = Math.random() * 0.2 + 0.1;
+            rainContainer.appendChild(drop);
+        }
+    </script>
+</body>
+</html>

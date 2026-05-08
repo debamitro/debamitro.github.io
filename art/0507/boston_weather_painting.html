@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boston Spring Day - Animated Painting</title>
+  <script>p5.disableFriendlyErrors = true;</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; overflow: hidden; background: #1a1a2e; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+<script>
+// === Boston Weather Painting ===
+// Partly cloudy, 60°F (15°C), gentle 8mph breeze
+// A spring day on the Charles River with sailboats and drifting clouds
+
+const CONFIG = {
+  seed: 42,
+  cloudCount: 12,
+  boatCount: 5,
+  birdCount: 15,
+  waveLayers: 4,
+  windSpeed: 0.8
+};
+
+let clouds = [];
+let boats = [];
+let birds = [];
+let waves = [];
+let time = 0;
+
+function setup() {
+  createCanvas(1920, 1080);
+  randomSeed(CONFIG.seed);
+  noiseSeed(CONFIG.seed);
+  colorMode(HSB, 360, 100, 100, 100);
+  
+  // Initialize clouds - soft white and gray for partly cloudy
+  for (let i = 0; i < CONFIG.cloudCount; i++) {
+    clouds.push(new Cloud());
+  }
+  
+  // Initialize sailboats on the Charles River
+  for (let i = 0; i < CONFIG.boatCount; i++) {
+    boats.push(new Boat());
+  }
+  
+  // Initialize birds
+  for (let i = 0; i < CONFIG.birdCount; i++) {
+    birds.push(new Bird());
+  }
+  
+  // Initialize wave layers
+  for (let i = 0; i < CONFIG.waveLayers; i++) {
+    waves.push(new WaveLayer(i));
+  }
+}
+
+function draw() {
+  time += 0.008;
+  
+  // Sky gradient - spring blue with warm undertones
+  drawSky();
+  
+  // Sun with soft glow (diffused by partial clouds)
+  drawSun();
+  
+  // Boston skyline silhouette
+  drawSkyline();
+  
+  // Water layers
+  for (let wave of waves) {
+    wave.display();
+  }
+  
+  // Sailboats
+  for (let boat of boats) {
+    boat.update();
+    boat.display();
+  }
+  
+  // Birds
+  for (let bird of birds) {
+    bird.update();
+    bird.display();
+  }
+  
+  // Clouds (foreground)
+  for (let cloud of clouds) {
+    cloud.update();
+    cloud.display();
+  }
+  
+  // Subtle texture overlay for painterly effect
+  drawTexture();
+}
+
+function drawSky() {
+  // Spring sky gradient - from warm horizon blue to deeper zenith
+  for (let y = 0; y < height * 0.65; y++) {
+    let inter = map(y, 0, height * 0.65, 0, 1);
+    let h = lerp(200, 215, inter);  // Blue to deeper blue
+    let s = lerp(35, 55, inter);    // Low to medium saturation
+    let b = lerp(95, 85, inter);    // Bright to slightly dimmer
+    stroke(h, s, b);
+    line(0, y, width, y);
+  }
+  
+  // Horizon glow
+  for (let y = height * 0.55; y < height * 0.65; y++) {
+    let inter = map(y, height * 0.55, height * 0.65, 0, 1);
+    let h = lerp(35, 200, inter);   // Warm yellow to blue
+    let s = lerp(25, 35, inter);
+    let b = lerp(90, 95, inter);
+    stroke(h, s, b, 30);
+    line(0, y, width, y);
+  }
+}
+
+function drawSun() {
+  let sunX = width * 0.75;
+  let sunY = height * 0.18;
+  
+  // Soft sun glow - diffused by partial clouds
+  noStroke();
+  for (let r = 150; r > 0; r -= 5) {
+    let alpha = map(r, 0, 150, 60, 0);
+    fill(45, 30, 100, alpha * 0.4);
+    ellipse(sunX, sunY, r * 2);
+  }
+  
+  // Sun core
+  fill(45, 25, 100, 80);
+  ellipse(sunX, sunY, 50);
+}
+
+function drawSkyline() {
+  // Boston skyline silhouette - Prudential, Hancock, etc.
+  push();
+  noStroke();
+  fill(210, 40, 25);
+  
+  let baseY = height * 0.65;
+  
+  // Draw skyline with some recognizable shapes
+  beginShape();
+  vertex(0, baseY);
+  
+  // Left buildings
+  vertex(0, baseY - 80);
+  vertex(100, baseY - 80);
+  vertex(100, baseY - 120);
+  vertex(180, baseY - 120);
+  vertex(180, baseY - 60);
+  vertex(250, baseY - 60);
+  
+  // Prudential-like tower
+  vertex(250, baseY - 180);
+  vertex(320, baseY - 200);
+  vertex(350, baseY - 180);
+  vertex(380, baseY - 160);
+  vertex(400, baseY - 160);
+  
+  // Middle buildings
+  vertex(400, baseY - 100);
+  vertex(500, baseY - 100);
+  vertex(500, baseY - 140);
+  vertex(580, baseY - 140);
+  vertex(580, baseY - 90);
+  vertex(650, baseY - 90);
+  
+  // Hancock-like tower
+  vertex(650, baseY - 220);
+  vertex(700, baseY - 240);
+  vertex(720, baseY - 220);
+  vertex(720, baseY - 80);
+  
+  // Right side
+  vertex(800, baseY - 80);
+  vertex(800, baseY - 130);
+  vertex(900, baseY - 130);
+  vertex(900, baseY - 70);
+  vertex(1000, baseY - 70);
+  vertex(1000, baseY - 110);
+  vertex(1100, baseY - 110);
+  vertex(1100, baseY - 50);
+  vertex(width, baseY - 50);
+  vertex(width, baseY);
+  endShape(CLOSE);
+  
+  // Atmospheric haze over buildings
+  fill(210, 20, 40, 20);
+  rect(0, baseY - 250, width, 250);
+  
+  pop();
+}
+
+function drawTexture() {
+  // Subtle canvas texture for painterly feel
+  push();
+  noStroke();
+  for (let i = 0; i < 3000; i++) {
+    let x = random(width);
+    let y = random(height);
+    let alpha = random(2, 8);
+    fill(0, 0, 100, alpha);
+    rect(x, y, 1, 1);
+  }
+  pop();
+}
+
+class Cloud {
+  constructor() {
+    this.x = random(width);
+    this.y = random(height * 0.05, height * 0.35);
+    this.size = random(80, 200);
+    this.speed = random(0.2, 0.6) * CONFIG.windSpeed;
+    this.opacity = random(40, 70);
+    this.puffs = [];
+    
+    // Create cloud from multiple puffs
+    let puffCount = floor(random(3, 7));
+    for (let i = 0; i < puffCount; i++) {
+      this.puffs.push({
+        x: random(-this.size/2, this.size/2),
+        y: random(-this.size/4, this.size/4),
+        r: random(this.size * 0.3, this.size * 0.6)
+      });
+    }
+  }
+  
+  update() {
+    this.x += this.speed;
+    if (this.x > width + this.size) {
+      this.x = -this.size;
+      this.y = random(height * 0.05, height * 0.35);
+    }
+  }
+  
+  display() {
+    push();
+    noStroke();
+    
+    for (let puff of this.puffs) {
+      // Soft cloud gradient
+      for (let r = puff.r; r > 0; r -= 3) {
+        let alpha = map(r, 0, puff.r, this.opacity, 0);
+        fill(0, 0, 100, alpha * 0.3);
+        ellipse(this.x + puff.x, this.y + puff.y, r * 2);
+      }
+    }
+    pop();
+  }
+}
+
+class Boat {
+  constructor() {
+    this.x = random(width);
+    this.y = random(height * 0.72, height * 0.88);
+    this.size = random(30, 60);
+    this.speed = random(0.15, 0.35);
+    this.bobOffset = random(TWO_PI);
+    this.hue = random(0, 360);
+  }
+  
+  update() {
+    this.x += this.speed;
+    if (this.x > width + 100) {
+      this.x = -100;
+    }
+  }
+  
+  display() {
+    push();
+    let bob = sin(time * 2 + this.bobOffset) * 3;
+    translate(this.x, this.y + bob);
+    
+    // Hull
+    noStroke();
+    fill(0, 0, 95);
+    beginShape();
+    vertex(-this.size, 0);
+    bezierVertex(-this.size * 0.7, this.size * 0.4, this.size * 0.7, this.size * 0.4, this.size, 0);
+    bezierVertex(this.size * 0.5, -this.size * 0.15, -this.size * 0.5, -this.size * 0.15, -this.size, 0);
+    endShape();
+    
+    // Hull shadow
+    fill(0, 0, 70);
+    beginShape();
+    vertex(-this.size * 0.8, this.size * 0.1);
+    bezierVertex(-this.size * 0.5, this.size * 0.35, this.size * 0.5, this.size * 0.35, this.size * 0.8, this.size * 0.1);
+    endShape();
+    
+    // Mast
+    stroke(0, 0, 30);
+    strokeWeight(2);
+    line(0, 0, 0, -this.size * 1.8);
+    
+    // Sail
+    noStroke();
+    fill(this.hue, 40, 95);
+    beginShape();
+    vertex(3, -this.size * 0.3);
+    vertex(3, -this.size * 1.7);
+    bezierVertex(this.size * 0.8, -this.size * 1.2, this.size * 0.6, -this.size * 0.5, 3, -this.size * 0.3);
+    endShape();
+    
+    // Sail shadow
+    fill(this.hue, 50, 75);
+    beginShape();
+    vertex(3, -this.size * 0.3);
+    vertex(3, -this.size * 1.7);
+    bezierVertex(this.size * 0.4, -this.size * 1.3, this.size * 0.3, -this.size * 0.6, 3, -this.size * 0.3);
+    endShape();
+    
+    pop();
+  }
+}
+
+class Bird {
+  constructor() {
+    this.x = random(width);
+    this.y = random(height * 0.1, height * 0.4);
+    this.speed = random(1, 2.5);
+    this.size = random(3, 6);
+    this.wingOffset = random(TWO_PI);
+  }
+  
+  update() {
+    this.x += this.speed;
+    this.y += sin(time + this.wingOffset) * 0.3;
+    if (this.x > width + 20) {
+      this.x = -20;
+      this.y = random(height * 0.1, height * 0.4);
+    }
+  }
+  
+  display() {
+    push();
+    stroke(210, 30, 20);
+    strokeWeight(1.5);
+    noFill();
+    
+    let wingY = sin(time * 8 + this.wingOffset) * this.size * 0.8;
+    
+    beginShape();
+    vertex(this.x - this.size, this.y + wingY * 0.3);
+    vertex(this.x, this.y);
+    vertex(this.x + this.size, this.y + wingY * 0.3);
+    endShape();
+    pop();
+  }
+}
+
+class WaveLayer {
+  constructor(index) {
+    this.index = index;
+    this.yBase = height * 0.65 + index * 35;
+    this.amplitude = 5 + index * 3;
+    this.frequency = 0.003 + index * 0.001;
+    this.speed = 0.02 + index * 0.01;
+    this.hue = 195 + index * 5;
+    this.sat = 45 + index * 8;
+    this.bri = 55 + index * 10;
+  }
+  
+  display() {
+    push();
+    noStroke();
+    fill(this.hue, this.sat, this.bri, 70);
+    
+    beginShape();
+    vertex(0, height);
+    
+    for (let x = 0; x <= width; x += 10) {
+      let y = this.yBase + sin(x * this.frequency + time * this.speed * 50 + this.index) * this.amplitude;
+      y += sin(x * this.frequency * 2.3 + time * this.speed * 30) * (this.amplitude * 0.5);
+      vertex(x, y);
+    }
+    
+    vertex(width, height);
+    endShape(CLOSE);
+    
+    // Highlight on waves
+    fill(this.hue, this.sat * 0.6, this.bri + 15, 40);
+    beginShape();
+    for (let x = 0; x <= width; x += 10) {
+      let y = this.yBase + sin(x * this.frequency + time * this.speed * 50 + this.index) * this.amplitude;
+      y += sin(x * this.frequency * 2.3 + time * this.speed * 30) * (this.amplitude * 0.5);
+      vertex(x, y - 3);
+    }
+    endShape();
+    
+    pop();
+  }
+}
+
+function keyPressed() {
+  if (key === 's' || key === 'S') saveCanvas('boston_spring_day', 'png');
+  if (key === 'g' || key === 'G') saveGif('boston_spring_day', 8);
+}
+</script>
+</body>
+</html>
