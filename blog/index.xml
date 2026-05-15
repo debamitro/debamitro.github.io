@@ -6,8 +6,15 @@
     <description>Recent content in 📝 Blog on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 12:34:03 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 12:16:49 -0400</lastBuildDate>
     <atom:link href="https://debamitro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is Software Engineering Needed Any More?</title>
+      <link>https://debamitro.github.io/blog/is-software-engineering-needed-any-more/</link>
+      <pubDate>Fri, 15 May 2026 12:16:49 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/is-software-engineering-needed-any-more/</guid>
+      <description>&lt;p&gt;I was pretty optimistic about the future of software engineering &lt;a href=&#34;https://debamitro.github.io/blog/predictions-about-software-engineering-in-the-age-of-ai-i/&#34;&gt;five months ago&lt;/a&gt;, and I still am. Despite my involvement with AI and agents and what not. Here I try to document some examples that justify my optimism.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ai-coding-requires-a-lot-of-non-llm-work&#34;&gt;AI coding requires a lot of non-LLM work&lt;/h2&gt;&#xA;&lt;p&gt;The first talk I ever saw on AI coding was before Cursor or Claude Code or any tool we know today came out. It was given by &lt;a href=&#34;https://www.emeryberger.com&#34;&gt;Emery Berger&lt;/a&gt; at CppCon 2023, and titled &amp;lsquo;Powered by AI: A Cambrian Explosion for C++ Software Development Tools&amp;rsquo;. There is a demo of an early version of &lt;a href=&#34;https://github.com/plasma-umass/ChatDBG&#34;&gt;ChatDBG&lt;/a&gt; in the talk, and then &lt;a href=&#34;https://youtu.be/w7tYe-xTrPw?si=EWj1CiYU59bSb3Ep&amp;amp;t=1100&#34;&gt;at around 18:45&lt;/a&gt; he says &amp;lsquo;&amp;hellip; there&amp;rsquo;s a lot of engineering that went on to make this work &amp;hellip;&amp;rsquo;. Mind you, Prof Berger is not to be taken lightly - he is famous for authoring a &lt;a href=&#34;https://dl.acm.org/doi/10.1145/378993.379232&#34;&gt;memory manager&lt;/a&gt; which eventually made it into MacOS. If he says that a small tool needs much more than calling an OpenAI endpoint, imagine what the likes of Cursor look like under the hood.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Coding With My Own AI Coding Agent</title>
       <link>https://debamitro.github.io/blog/coding-with-my-own-ai-coding-agent/</link>
