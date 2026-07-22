@@ -11,15 +11,18 @@ Note: A number of my projects are open source, so sponsorship helps me continue 
 
 ## Current
 
-* [Asimov](https://github.com/debamitro/asimov) - a 'Cursor for writers' product
-* [FindBigFolders](https://www.eastcoastsoft.com/products/findbigfolders?utm_source=debamitro.github.io) - a tool for finding out who's taking up disk space on your computer
-* [Patch Explorer](https://www.patchexplorer.com?utm_source=debamitro.github.io) - a tool for comparing multiple diffs for the same change
-* [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner?utm_source=debamitro.github.io) - a tool to clean up your Gmail inbox
+* [CodeAgent](https://github.com/debamitro/one-shot-cli-agent) - a CLI coding agent
+* [Lean MD](https://github.com/debamitro/lean-md) - a minimal markdown viewer and editor
+  * [Here](https://www.youtube.com/playlist?list=PLDpMCGUlzrvy9EnxDleiiZJKNK0LUxxF5) are some YouTube live streams on building this
 
 ## Past
 
 ### Not-so-tiny things
 
+* [Asimov](https://github.com/debamitro/asimov) - a 'Cursor for writers' product
+* [FindBigFolders](https://www.eastcoastsoft.com/products/findbigfolders?utm_source=debamitro.github.io) - a tool for finding out who's taking up disk space on your computer
+* [Patch Explorer](https://www.patchexplorer.com?utm_source=debamitro.github.io) - a tool for comparing multiple diffs for the same change
+* [Gmail Cleaner](https://www.eastcoastsoft.com/products/gmail-cleaner?utm_source=debamitro.github.io) - a tool to clean up your Gmail inbox
 * [Durga Puja Map of USA](https://apps.apple.com/us/app/durga-puja-map-of-usa/id6752311800) - an iOS app for the US edition of a major Indian cultural festival
 * [www.codepromptfu.com](https://www.codepromptfu.com?utm_source=debamitro.github.io) - a community-driven website for finding the best AI prompts for coding.
   * [Here is a presentation about it](/presentations/codepromptfu-020225)
