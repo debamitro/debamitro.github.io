@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/my-impressions-of-loop-engineering/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="My Impressions of Loop Engineering" />
+<meta property="og:description"   content="My Impressions of Loop Engineering" />
+
+    <title>
+      My Impressions of Loop Engineering
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+    
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/my-impressions-of-loop-engineering';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        My Impressions of Loop Engineering
+      </div>
+      <hr />
+      <div class="my-page-date">
+        August 4, 2026
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/agent" class="tag-link">agent</a>, 
+            <a href="/tags/loop" class="tag-link">loop</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>A few months ago &lsquo;Loop Engineering&rsquo; became a hot topic in the AI agent space. I couldn&rsquo;t find a compelling reason to add a loop to my agentic AI usage just for the sake of it. Neither did I understand what it really meant. I even made a <a href="https://youtube.com/shorts/kMg9G8e94gM?feature=share">short video</a> about this.</p>
+<h2 id="previous-attempts-at-looping-ai">Previous attempts at looping AI</h2>
+<p>Late last year, there was a lot of excitement about <a href="https://ghuntley.com/loop/">Ralph Loops</a>. There was also Steve Yegge&rsquo;s <a href="https://github.com/gastownhall/gastown">GasTown</a> which, to me, was a framework to do much more sophisticated forms of multi-agent work than loops. The <a href="https://openclaw.ai">OpenClaw</a> wave was the first large-scale demonstration of the power of AI running in a loop.</p>
+<h2 id="loops-now">Loops now</h2>
+<p>My guess is that the recent trend towards &rsquo;loop engineering&rsquo; really took off with the idea of the <a href="https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/">&lsquo;Dark Software Factory&rsquo;</a>. The gist of the idea seems to be that instead of giving a prompt for doing one part of the software engineering process, define multiple agents with their own prompts and let them continue working in a loop until the goals are met. My friend <a href="https://x.com/natea">Nate</a> demo&rsquo;ed a project he had done based on this idea, and his loop had 15 steps in total, if I remember correctly.</p>
+<h2 id="my-experience">My experience</h2>
+<p>The first time I tried a small, controlled version of loop engineering was about a month ago. <a href="https://x.com/panda_liyin">Li Yin</a>, the founder of <a href="https://adalagent.ai">AdaL</a> gave me a nudge over a DM that I need to try out loop engineering. I tried it using the tool her startup builds (which I use quite regularly), and exhausted my rate limit in an hour!</p>
+<p>The following week, I tried again, and was able to add an enhancement to one of my full-stack projects without supervision. And without messing with rate limits. This was a two-agent version of loop engineering, where one agent &lsquo;builds&rsquo; and the other one &rsquo;evaluates&rsquo;, based on a set of plans created by the top-level agent. It was simple to understand, and seems to be working. I used it a couple more times, including <a href="https://x.com/debamitro/status/2081366372144050230?s=20">one time when I used it on a project which I had already launched</a>, and another time when I was busy with my kid because the nanny was on leave.</p>
+<h2 id="where-can-this-shine">Where can this shine</h2>
+<p>I think this kind of &rsquo;loop engineering&rsquo; can be helpful in fixing bugs and adding small changes to existing software. It can also be helpful in regular software maintenance tasks, like triaging failures or categorizing bugs. In short - in all the &lsquo;boring&rsquo; tasks one needs to do after a software product has started to sell and needs to be kept in good shape. From my professional experience, that is a large part of a software engineering. One of my mentors used to call it &rsquo;lather, rinse, repeat&rsquo;.</p>
+<p>Another situation where this might be useful is when top-class frontier models cannot be used. Think of local LLMs, which might need more assistance in order to solve a problem.</p>
+<h2 id="where-to-not-use-this">Where to not use this</h2>
+<p>Again, this is my opinion only - I don&rsquo;t think you should use &rsquo;loop engineering&rsquo; for a creative task. Because creative tasks need the human to be actively involved. So I don&rsquo;t recommend using loops for starting off a new product, or for writing a new report. I am not sure it is going to be useful for debugging as well, because debugging needs creative breakthroughs and single-minded focus. Which is completely fine, I think. As we try to rave about autonomous AI agents, I keep feeling that interactive AI agents are still  very powerful tools for human beings.</p>
+<h2 id="what-next">What next</h2>
+<p>Like every other term that has sprung up in AI, &rsquo;loop engineering&rsquo; could have a half life of three months. I think the name could be better, like &lsquo;multi-agent-team engineering&rsquo;. The concept seems relevant and is unlikely to go away. Who knows, the entire loop might become a ready-made API endpoint, served by frontier LLMs.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="My Impressions of Loop Engineering" 
+           data-via="debamitro" 
+           data-hashtags="agent,loop,ai" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/my-impressions-of-loop-engineering/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fmy-impressions-of-loop-engineering%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

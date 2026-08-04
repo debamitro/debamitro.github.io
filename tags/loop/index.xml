@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agent on Home page of Debamitro Chakraborti</title>
-    <link>https://debamitro.github.io/tags/agent/</link>
-    <description>Recent content in Agent on Home page of Debamitro Chakraborti</description>
+    <title>Loop on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/loop/</link>
+    <description>Recent content in Loop on Home page of Debamitro Chakraborti</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Aug 2026 10:17:41 -0400</lastBuildDate>
-    <atom:link href="https://debamitro.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://debamitro.github.io/tags/loop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Impressions of Loop Engineering</title>
       <link>https://debamitro.github.io/blog/my-impressions-of-loop-engineering/</link>
       <pubDate>Tue, 04 Aug 2026 10:17:41 -0400</pubDate>
       <guid>https://debamitro.github.io/blog/my-impressions-of-loop-engineering/</guid>
       <description>&lt;p&gt;A few months ago &amp;lsquo;Loop Engineering&amp;rsquo; became a hot topic in the AI agent space. I couldn&amp;rsquo;t find a compelling reason to add a loop to my agentic AI usage just for the sake of it. Neither did I understand what it really meant. I even made a &lt;a href=&#34;https://youtube.com/shorts/kMg9G8e94gM?feature=share&#34;&gt;short video&lt;/a&gt; about this.&lt;/p&gt;&#xA;&lt;h2 id=&#34;previous-attempts-at-looping-ai&#34;&gt;Previous attempts at looping AI&lt;/h2&gt;&#xA;&lt;p&gt;Late last year, there was a lot of excitement about &lt;a href=&#34;https://ghuntley.com/loop/&#34;&gt;Ralph Loops&lt;/a&gt;. There was also Steve Yegge&amp;rsquo;s &lt;a href=&#34;https://github.com/gastownhall/gastown&#34;&gt;GasTown&lt;/a&gt; which, to me, was a framework to do much more sophisticated forms of multi-agent work than loops. The &lt;a href=&#34;https://openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt; wave was the first large-scale demonstration of the power of AI running in a loop.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Coding With My Own AI Coding Agent</title>
-      <link>https://debamitro.github.io/blog/coding-with-my-own-ai-coding-agent/</link>
-      <pubDate>Sun, 05 Apr 2026 12:34:03 -0400</pubDate>
-      <guid>https://debamitro.github.io/blog/coding-with-my-own-ai-coding-agent/</guid>
-      <description>&lt;p&gt;Around two months ago, I had created a new AI coding agent using another AI coding agent. The results surprised me so much that I had written &lt;a href=&#34;https://debamitro.github.io/blog/creating-a-coding-agent-with-a-coding-agent/&#34;&gt;a post about it&lt;/a&gt;. As I had written, I have no intention of continuing to do this. Because there are excellent and mature AI coding agents in the market today. But I kept on improving it until I reached a point where I can use it on existing projects.&#xA;Here are some notes from this journey.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
