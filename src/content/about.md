@@ -29,9 +29,9 @@ Some day I'll write about the link between this tag and [my English-to-Bangla tr
 
 <h2>💼 Business</h2>
 
-I am a co-founder of [GrowthMax Inc](https://www.growthmaxinc.com?utm_source=debamitro.github.io) - we build and manage AI agents.
+I am the solo founder of [Derrick CPP](https://www.derrickcpp.com?utm_source=debamitro.github.io) - the world's coolest C++ code reviewer.
 <br />
-I also operate as [East Coast Software LLC](https://www.eastcoastsoft.com?utm_source=debamitro.github.io) for contract work around web, desktop and mobile apps.
+I also operate as [East Coast Software LLC](https://www.eastcoastsoft.com?utm_source=debamitro.github.io) for contract work around software.
 
 <h2>👕 I design and sell merchandise</h2>
 <a href="https://www.eastcoastsoft.com/merch?utm_source=debamitro.github.io" target="_blank">Buy my merch</a>
