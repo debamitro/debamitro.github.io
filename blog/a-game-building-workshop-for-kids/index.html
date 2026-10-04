@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:url"           content="https://debamitro.github.io/blog/a-game-building-workshop-for-kids/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="A Game Building Workshop for Kids and Parents" />
+<meta property="og:description"   content="A Game Building Workshop for Kids and Parents" />
+
+    <title>
+      A Game Building Workshop for Kids and Parents
+    </title>
+        <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://debamitro.github.io//css/style.css" />
+
+    <script src="https://debamitro.github.io//js/onready.js"></script>
+    <script src="https://debamitro.github.io//js/transformtextnodes.js"></script>
+    <script src="https://debamitro.github.io//generate-bangla-utf8-cljs-demo/target/out.js"></script>
+    <script>
+      ready(transformtextnodes(generate_bangla_utf8_cljs.converter.to_bangla_utf8));
+    </script>
+        
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT65MZJG4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-TT65MZJG4S');
+    </script>
+    
+
+    
+<script>
+    async function getPageViews() {
+      const pageViewsArea = document.querySelector('#pageViews');
+      if (pageViewsArea) {
+        try {
+          const path = '\/blog\/a-game-building-workshop-for-kids';
+          const finalPath = path.endsWith('/') ? path : path + '/';
+          const response = await fetch('https://simple-ga-stats.onrender.com/api/v1?site=debamitro.github.io&page=' + encodeURIComponent(finalPath));
+          const data = await response.json();
+          if (data.success && data.data.length > 0) {
+            pageViewsArea.textContent = data.data[0].sessions + ' views';
+          }
+        } catch (error) {
+          console.error('Error fetching page views:', error);
+        }
+      }
+    }
+    
+   ready(getPageViews);
+  </script>
+  
+    
+    
+    <script src="https://debamitro.github.io//js/external-links.js"></script>
+  </head>
+  <body>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+  
+    <div class="my-menu-bar">
+  <ul class="my-menu">
+    <li class="my-menu-item">
+      <a href="https://debamitro.github.io/" class="my-menu-item-link">Home</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/projects/" class="my-menu-item-link">💻⚙️ Projects</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/blog/" class="my-menu-item-link">📝 Blog</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="/about/" class="my-menu-item-link">🙋🏻‍♂️ About</a>
+    </li>
+    
+    <li class="my-menu-item">
+      <a href="https://x.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/x-logo-white.png" /></a>
+    </li>
+    <li class="my-menu-item">
+      <a href="https://github.com/debamitro" class="my-menu-item-link" target="_blank"><img src="https://debamitro.github.io//images/github-mark-white.png" /></a>
+    </li>
+  </ul>
+</div>
+
+    <div class="my-page-container">
+      <div class="my-page-head">
+        A Game Building Workshop for Kids and Parents
+      </div>
+      <hr />
+      <div class="my-page-date">
+        October 3, 2026
+      </div>
+      <div class="my-page-visits">
+        <svg class="analytics-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm14 12l-4-4-4 4-4-4v3l4 4 4-4 4 4v-3z"/>
+        </svg>
+        <span id="pageViews"></span>
+      </div>
+      <div class="my-page-tags">
+        Tags:
+        
+          
+            <a href="/tags/games" class="tag-link">games</a>, 
+            <a href="/tags/ai" class="tag-link">ai</a>, 
+            <a href="/tags/teaching" class="tag-link">teaching</a>
+        
+      </div>
+      <div class="my-page-content">
+        <p>Last Sunday I co-organized a workshop for kids and their parents. The goal was to let Claude Code build games using the <a href="https://godotengine.org">Godot Game Engine</a>. It went really well, much better than I had expected.</p>
+<h2 id="back-story">Back story</h2>
+<p>It all began with the <a href="https://www.nerdyparentsclub.org">Nerdy Parents Club of Cambridge</a> - a very nice community I joined earlier this year. Members of this club are parents, who take turns showing how they have used AI and coding for doing something useful inside their homes. Sometime in late spring there were two conversations happening in the community about hands-on AI workshops. One was between Wendy, the founder of this club, and my friend Nate - who&rsquo;s also part of this community. Another one was between Nate and myself.
+Soon, these conversations combined into an email thread, and we started planning a real event together.</p>
+<h2 id="realization">Realization</h2>
+<p>Close to the event, I was making some introductory slides. That&rsquo;s when it occurred to my parent brain that we would be putting AI in the hands of kids in this event. I am not against this. In fact, I have been proposing a ChatGPT app for kids since January 2025, and have circulated <a href="https://app.notion.com/p/Chatgpt-for-kids-175b510ae6e5806ab10bced4986ff4df?source=copy_link">a brief description of the idea</a> among friends. But I want some healthy caution in the process, and I want parents to be involved whenever kids are using AI. So I added a &lsquo;Use AI when an adult is around&rsquo; slide.</p>
+<h2 id="the-day">The day</h2>
+<p>I believe seven or eight families showed up, armed with laptops. Most of them had MacBooks, but there was at least one Windows user as well. The kids were from 5 till 13 years of age. We started out with a brief introduction to Godot, and then went over the details of connecting Claude Code with it. Nate&rsquo;s son showed the audience some of the many games he had built in this way. Once everyone had &lsquo;pitched&rsquo; their game idea for the day, we let everyone get started.</p>
+<p>There were surprisingly few hiccups. Both Claude Code and Codex users had no problems using the <a href="https://github.com/Coding-Solo/godot-mcp">Godot MCP</a>. A few families used <a href="https://xogot.com">Xogot</a> - a simpler version of Godot for Apple devices. Joseph from the Xogot team was present as a participant, and that was very helpful.</p>
+<h2 id="the-games">The games</h2>
+<p>In the end, everyone showed what they had built in a couple of hours. There were all kinds of games, from simple 2-d adventures to 3-d games driven by motion tracking. My favorite was a &lsquo;Titanic game&rsquo; with a Lego Jack and a Lego Rose. It had some Titanic-flavored music as well :-)</p>
+<h2 id="going-forward">Going forward</h2>
+<p>We are pretty excited by the success of our first workshop, and want to do a couple more. Who knows where this will end up. The <a href="https://mathschool.com">Russian School of Math</a> started from a kitchen in Massachusetts, so anything is possible! If you are reading this and want to do something similar, do reach out, I can share our format and slides.</p>
+
+      </div>
+      
+      <div class="tweet-button-container">
+        <div style="float:left">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+           class="twitter-share-button" 
+           data-text="A Game Building Workshop for Kids and Parents" 
+           data-via="debamitro" 
+           data-hashtags="games,ai,teaching" 
+           data-show-count="false">
+          Share on X
+        </a>
+        </div>
+        <div style="float:left; margin-left: 5px">
+         <div class="fb-share-button" data-href="https://debamitro.github.io/blog/a-game-building-workshop-for-kids/" data-layout="button" data-size="small">
+          <a target="_blank" 
+          href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2fdebamitro.github.io%2fblog%2fa-game-building-workshop-for-kids%2f&amp;src=sdkpreparse" 
+          class="fb-xfbml-parse-ignore">
+          Share on Facebook
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="my-bottom-bar">
+  Made using <a href="https://gohugo.io" target="_blank">Hugo</a>
+  (<a href="https://www.github.com/debamitro/debamitro.github.io/tree/master/src" target="_blank">source</a>)
+</div>
+
+  </body>
+
+</html>

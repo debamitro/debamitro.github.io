@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Home page of Debamitro Chakraborti</title>
+    <link>https://debamitro.github.io/tags/games/</link>
+    <description>Recent content in Games on Home page of Debamitro Chakraborti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2026 22:47:01 -0400</lastBuildDate>
+    <atom:link href="https://debamitro.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Game Building Workshop for Kids and Parents</title>
+      <link>https://debamitro.github.io/blog/a-game-building-workshop-for-kids/</link>
+      <pubDate>Sat, 03 Oct 2026 22:47:01 -0400</pubDate>
+      <guid>https://debamitro.github.io/blog/a-game-building-workshop-for-kids/</guid>
+      <description>&lt;p&gt;Last Sunday I co-organized a workshop for kids and their parents. The goal was to let Claude Code build games using the &lt;a href=&#34;https://godotengine.org&#34;&gt;Godot Game Engine&lt;/a&gt;. It went really well, much better than I had expected.&lt;/p&gt;&#xA;&lt;h2 id=&#34;back-story&#34;&gt;Back story&lt;/h2&gt;&#xA;&lt;p&gt;It all began with the &lt;a href=&#34;https://www.nerdyparentsclub.org&#34;&gt;Nerdy Parents Club of Cambridge&lt;/a&gt; - a very nice community I joined earlier this year. Members of this club are parents, who take turns showing how they have used AI and coding for doing something useful inside their homes. Sometime in late spring there were two conversations happening in the community about hands-on AI workshops. One was between Wendy, the founder of this club, and my friend Nate - who&amp;rsquo;s also part of this community. Another one was between Nate and myself.&#xA;Soon, these conversations combined into an email thread, and we started planning a real event together.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
